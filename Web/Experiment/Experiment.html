@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="../common.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../lightbox.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <title>YOKABIO2018</title>
+
+        <script>
+          $(function() {
+            var $win = $(window),
+                $main = $('main'),
+                $nav = $('nav'),
+                navHeight = $nav.outerHeight(),
+                navPos = $nav.offset().top,
+                fixedClass = 'is-fixed';
+
+            $win.on('load scroll', function() {
+              var value = $(this).scrollTop();
+              if ( value > navPos ) {
+                $nav.addClass(fixedClass);
+                $main.css('margin-top', navHeight);
+              } else {
+                $nav.removeClass(fixedClass);
+                $main.css('margin-top', '0');
+              }
+            });
+          });
+        </script>
+
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" }},
+            tex2jax: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              processEscapes: true
+            },
+            "HTML-CSS": { matchFontHeight: false },
+            displayAlign: "left",
+            displayIndent: "2em"
+          });
+        </script>
+
+    </head>
+
+    <body>
+        <!--↓トップに戻るボタン↓-->
+        <div id="page_top">
+            <i class="fas fa-angle-double-up fa-2x faa-bounce animated-hover top-bottom"></i>
+            <a href="#"></a></div>
+        <!--↑トップに戻るボタン↑-->
+
+        <!--↓変更するのはここから↓-->
+        <!--↓ナビゲーションバー(メイン)↓-->
+        <header>
+            <ul>
+                <!--このファイルのaタグにclass="current"を追加して下さい-->
+                <li><a href="../Home/Home.html" id="yokabio">YOKABIO</a></li>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../Idea/Idea.html">Idea</a></li>
+                <li><a href="../Simulation/Simulation.html">Simulation</a></li>
+                <li><a href="../DNADesign/DNADesign.html">DNA Design</a></li>
+                <li><a class="current" href="../Experiment/Experiment.html">Experiment</a></li>
+                <li><a href="../Discussion/Discussion.html">Discussion</a></li>
+                <li><a href="../Team/Team.html">Team</a></li>
+            </ul>
+        </header>
+        <!--↑ナビゲーションバー(メイン)↑-->
+
+        <!--↓ナビゲーションバー(サブ)↓-->
+        <nav>
+            <ul>
+                <!--hrefをサブタイトルに変更して下さい-->
+                <li><a href="#DryExperiment">Dry Experiment</a></li>
+                <li><a href="#Material&Method">Material &amp; Method</a></li>
+            </ul>
+        </nav>
+        <!--↑ナビゲーションバー(サブ)↑-->
+
+        <main class="container">
+            <!--section1とsection2は交互に書いて下さい-->
+            <!--section1,section2の直前に,
+                <div class="space" id="subX"></div>
+                idはsectionではなく、spaceのクラスに追加して下さい。
+                h1とh2とpタグのみ使用して下さい。
+            -->
+            <div class="space" id="DryExperiment"></div>
+            <div class="section1">
+                <h1>Dry Experiment</h1>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We simulated by a numerical calculation software Matlab[13].
+                    First, we checked that a seesaw gate is able to control a time for ON state of DCC.
+                    The simulation is done only in the green area of Figure 1.
+                    We simulated time-dependent concentration change of Releaer in the case of
+                    initial concentrations of Signal2 and Gete2 are 100nM and, an initial concentration of Threshold is 20, 50, 80nM.
+                    As shown in Figure 2, we recognized that time dependent concentration change of the output depends on
+                    initial concentration of Threshold.<br><br>
+                </p>
+                <a href="Image/circuit_m_greenline.gif" data-lightbox="fig1"><img src="Image/circuit_m_greenline.gif" width="70%" height="auto"></a><br>
+                Figure 1 : Simulation Area<br><br>
+
+                <a href="Image/Releaser_3pattern.jpg" data-lightbox="fig2"><img src="Image/Releaser_3pattern.jpg" width="70%" height="auto"></a><br>
+                Figure 2 : Delay by the Seesaw Gate<br><br>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Similarly, as shown in Figure 3, We simulated time-dependent concentration change of DCC(ON),
+                    when innitial contcentrations of Input, Gate1, Gate2 and DCC(OFF) are 100nM and,
+                    an initial concentration of Threshold is 20, 50, 80, 100nM.
+                    As shown in Figure 4, we recognized that the larger the initial concentration of Threshold is,
+                    the longer the time of ON state is and the more DCC(ON) is generated.
+                    Moreover, when the initial concentration of Input is smaller than the initial concentration of Threshold,
+                    it was confirmed that DCC is always ON state.<br><br>
+                </p>
+                <a href="Image/circuit_m_final.gif" data-lightbox="fig3"><img src="Image/circuit_m_final.gif" width="80%" height="auto"></a><br>
+                Figure 3 : Concentration of Simulation <br><br>
+
+                <a href="Image/DCC_ON_4pattern.jpg" data-lightbox="fig4"><img src="Image/DCC_ON_4pattern.jpg" width="70%" height="auto"></a><br>
+                Figure 4 : Output of the DCC(ON)<br><br>
+            </div>
+
+            <div class="space" id="Material&Methods"></div>
+            <div class="section2" >
+                <h1>Material &amp; Methods</h1>
+                <h2>Simulation conditions</h2>
+                <p>We set the binding rate constant (kf) based on toehold length as follows.<br><br></p>
+                <p>If toehold_length &#8804; 6</p>
+                <p>　kf = 5.0×10<sup>n-1</sup>[M<sup>-1</sup>s<sup>-1</sup>]</p>
+                <p>else<br></p>
+                <p>　kf = 3.0×10<sup>6</sup>[M<sup>-1</sup>s<sup>-1</sup>]</p>
+                <p>Where<br></p>
+                <p>　n : toehold_length</p>
+
+                <h2>Type of Strands</h2>
+                <p>We designed the strands shown in Figures 5~9.<br><br>
+                </p>
+
+                <a href="Image/Gate1.gif" data-lightbox="fig5"><img src="Image/Gate1.gif" width="30%" height="auto"></a>
+                <a href="Image/Input.gif" data-lightbox="fig5"><img src="Image/Input.gif" width="30%" height="auto"></a><br><br>
+
+                <a href="Image/Threshold.gif" data-lightbox="fig5"><img src="Image/Threshold.gif" width="30%" height="auto"></a>
+                <a href="Image/Gate2.gif" data-lightbox="fig5"><img src="Image/Gate2.gif" width="30%" height="auto"></a><br>
+
+                <a href="Image/DCC(OFF).gif" data-lightbox="fig5"><img src="Image/DCC(OFF).gif" width="30%" height="auto"></a><br><br>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, we designed DNA sequences using NUPACK.
+                    The DNA sequences are shown in Table 1.
+                    NUPACK is able to design DNA sequences and evaluate their secondary structures at a room temperature.<br><br>
+                </p>
+                Table 1 : DNA Sequences (Main Reaction Units)<br>
+                <a href="Image/DNAsequences.png" data-lightbox="table-1"><img src="Image/DNAsequences.png" width="80%" height="auto"></a>
+                <br><br>
+
+                <h2>Method of Experiment</h2>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will introduce the ways to introduce DNA circuits into cells here.
+                    The ways are three types. They are a chemical method called transfection, a physical method called electroporation
+                    and an biological method called virus vector.
+                    They have each advantage and each disadvantage.
+                    Accordingly, we should take a selectiton along the purpose of experimants.
+                    In this time, we used the electroporation method whitch is physical method[14].
+                    The electroporation method makes a hole in a cell membrane temporarily using electric pulse
+                    and introduces DNA or some materials into the cell through the hole.
+                    In additon, this method needs to destroy a cell wall of E. coli in advance.
+                    A reason we chose this method is it is known that its efficiency of introducing gene is higher than other methods
+                    and we are able to apply for various cells using it(Figure 10).<br><br>
+                </p>
+
+                <a href="Image/Electroporation.png" data-lightbox="fig10"><img src="Image/Electroporation.png" width="70%" height="auto"></a><br><br>
+                Figure 10 : Electroporation Method<br>
+
+            </div>
+
+        </main>
+        <!--↑変更するのはここまで↑-->
+
+        <footer>
+            <p>&copy;YOKABIO 2018</p>
+        </footer>
+        <script src="../lightbox-plus-jquery.js"></script>
+    </body>
+</html>

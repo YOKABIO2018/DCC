@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="Team.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../lightbox.css">
+
+        <title>YOKABIO2018</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+          $(function() {
+            var $win = $(window),
+                $main = $('main'),
+                $nav = $('nav'),
+                navHeight = $nav.outerHeight(),
+                navPos = $nav.offset().top,
+                fixedClass = 'is-fixed';
+
+            $win.on('load scroll', function() {
+              var value = $(this).scrollTop();
+              if ( value > navPos ) {
+                $nav.addClass(fixedClass);
+                $main.css('margin-top', navHeight);
+              } else {
+                $nav.removeClass(fixedClass);
+                $main.css('margin-top', '0');
+              }
+            });
+          });
+        </script>
+
+    </head>
+
+    <body>
+        <!--↓トップに戻るボタン↓-->
+        <div id="page_top">
+            <i class="fas fa-angle-double-up fa-2x faa-bounce animated-hover top-bottom"></i>
+            <a href="#"></a></div>
+        <!--↑トップに戻るボタン↑-->
+
+        <!--↓変更するのはここから↓-->
+        <!--↓ナビゲーションバー(メイン)↓-->
+        <header>
+            <ul>
+                <!--このファイルのaタグにclass="current"を追加して下さい-->
+                <li><a href="../Home/Home.html" id="yokabio">YOKABIO</a></li>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../Idea/Idea.html">Idea</a></li>
+                <li><a href="../Simulation/Simulation.html">Simulation</a></li>
+                <li><a href="../DNADesign/DNADesign.html">DNA Design</a></li>
+                <li><a href="../Experiment/Experiment.html">Experiment</a></li>
+                <li><a href="../Discussion/Discussion.html">Discussion</a></li>
+                <li><a class="current" href="../Team/Team.html">Team</a></li>
+            </ul>
+        </header>
+        <!--↑ナビゲーションバー(メイン)↑-->
+
+        <main class="container">
+        <!--section1とsection2は交互に書いて下さい-->
+            <!--section1,section2の直前に,
+                <div class="space" id="subX"></div>
+                idはsectionではなく,直前のspaceのクラスに追加して下さい
+                divタグの内部では,h1,h2,pタグのみ使用して下さい
+                img,videoタグを使用するときは,pタグの外で使用して下さい
+            -->
+
+            <!---Team ------------><!--
+            <div class="space" id="suA"></div>
+            <div class="section1">
+
+            </div>
+            -->
+            <h1>Member</h1>
+            <!--- Member ------------>
+            <!--<div class="space" id="subB"></div>
+            -->
+            <!-- <a href="Image/Member-example.gif" data-lightbox="image-1">
+                </a> -->
+            <div class="section1">
+                    <p>
+                        <img class="circle" src="Image/Watanabe.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Keisuke Watanabe</span><br>
+                        <span class="title">Grade:</span>M1<br>
+                        <span class="title">Role:</span>Mentor, DNA Design, Simulation, Illustration<br>
+                        <span class="title">Favorite Base Sequence:</span>GTTGTT
+                        <br>
+                        <br>
+                    </p>
+            </div>
+            <div class="section2">
+                    <p>
+                        <img class="circle" src="Image/Akita.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Minoru Akita</span><br>
+                        <span class="title">Grade:</span>B4<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Web, Illustration<br>
+                        <span class="title">Favorite Base Sequence:</span>GG
+                        <br>
+                    </p>
+            </div>
+            <div class="section1">
+                    <p>
+                        <img class="circle" src="Image/Hattori.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Kazufumi Hattori</span><br>
+                        <span class="title">Grade:</span>B4<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Simulation, Movie<br>
+                        <span class="title">Favorite Base Sequence:</span>TCGTCG
+                        <br>
+                    </p>
+            </div>
+            <div class="section2">
+                    <p>
+                        <img class="circle" src="Image/Koga.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Mizuki Koga</span><br>
+                        <span class="title">Grade:</span>B4<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Simulation<br>
+                        <span class="title">Favorite Base Sequence:</span>AGCGCA
+                        <br>
+                    </p>
+            </div>
+            <div class="section1">
+                    <p>
+                        <img class="circle" src="Image/Toda.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Shizuka Toda</span><br>
+                        <span class="title">Grade:</span>B4<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Simulation<br>
+                        <span class="title">Favorite Base Sequence:</span>??????
+                        <br>
+                    </p>
+            </div>
+            <div class="section2">
+                    <p>
+                        <img class="circle" src="Image/Hino.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Koichiro Hino</span><br>
+                        <span class="title">Grade:</span>B3<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Simulation, Web<br>
+                        <span class="title">Favorite Base Sequence:</span>ACC
+                        <br>
+                    </p>
+            </div>
+            <div class="section1">
+                    <p>
+                        <img class="circle" src="Image/Furukawa.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Motoki Furukawa</span><br>
+                        <span class="title">Grade:</span>B3<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Simulation, Illustration<br>
+                        <span class="title">Favorite Base Sequence:</span>U
+                        <br>
+                    </p>
+            </div>
+            <div class="section2">
+                    <p>
+                        <img class="circle" src="Image/Yoneshiro.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Koichi Yoneshiro</span><br>
+                        <span class="title">Grade:</span>B3<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Web<br>
+                        <span class="title">Favorite Base Sequence:</span>ATG
+                        <br>
+                    </p>
+            </div>
+            <div class="section1">
+                    <p>
+                        <img class="circle" src="Image/Katafuchi.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Ryoya Katafuchi</span><br>
+                        <span class="title">Grade:</span>B3<br>
+                        <span class="title">Department:</span>Systems Design and Informatics<br>
+                        <span class="title">Role:</span>Simulation, Web, Illustration<br>
+                        <span class="title">Favorite Base Sequence:</span>GGGTTCACTTGGG
+                        <br>
+                    </p>
+            </div>
+            <div class="section2">
+                    <p>
+                        <img class="circle" src="Image/Shinichiro.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Shinichiro Harano</span><br>
+                        <span class="title">Grade:</span>B3<br>
+                        <span class="title">Department:</span>Bioscience and Bioinformatics<br>
+                        <span class="title">Role:</span>Mentor<br>
+                        <span class="title">Favorite Base Sequence:</span>TGC
+                        <br>
+                    </p>
+            </div>
+            <div class="section1">
+                    <p>
+                        <img class="circle" src="Image/nakakuki.gif" width="230px" height="230px" align="left">
+                        <br>
+                        <span class="name title">Takashi Nakakuki</span><br>
+                        <span class="title">Role:</span>Supervisor<br>
+                        <span class="title">Favorite Base Sequence:</span>NAKAKUKI ← What!?!?
+                        <br><br><br>
+                    </p>
+            </div>
+
+
+        </main>
+        <!--↑変更するのはここまで↑-->
+
+        <footer>
+            <p>&copy;YOKABIO 2018</p>
+        </footer>
+        <script src="../lightbox-plus-jquery.js"></script>
+    </body>
+</html>
