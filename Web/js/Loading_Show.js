@@ -7,9 +7,9 @@ $(function(){
 });
 
 $(window).on("load",function(){
+  $("#main_image").fadeIn("narmal");
   $("main").fadeIn("slow");
   $("#page_top").fadeIn("slow");
-  $("#main_image").fadeIn("slow");
   $("footer").fadeIn("slow");
   $("header").delay(600).slideDown("slow");
 });
