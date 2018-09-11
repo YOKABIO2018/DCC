@@ -107,8 +107,6 @@ body {
 }
 
 header {
-    padding: 0px;
-    margin: 0px;
     text-align: center;
     font-size: 25px;
     height: auto;
@@ -116,27 +114,22 @@ header {
 }
 header ul {
     margin: 0px;
-    padding: 0px 0px;
+    padding: 10px 0px;
 }
 header ul li{
-    display: inline-block;
-    margin-right: 0px;
+    display: inline;
+    margin-right: 1em;
 }
 header ul li a {
-    display: inline-block;
-    padding: 10px 20px 10px 20px;
     color: gainsboro;
     text-decoration: none;
-    transition: 0.3s;
 }
 header ul li a:hover{
     color: white;
-    background-color: rgba(255,255,255,0.5);
     text-decoration: none;
 }
 header ul li a.current{
     color: white;
-    background-color: rgba(255,255,255,0.5);
     text-decoration: none;
 }
 
@@ -163,7 +156,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 #yokabio{
-    margin-left: -50%;
+    margin-right: 5%;
 }
 
 .container{
