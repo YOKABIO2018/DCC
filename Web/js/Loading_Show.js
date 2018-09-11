@@ -1,8 +1,8 @@
 $(function(){
  $("header").css("display","none");
- //$("main").css("display","none");
+ $("main").css("display","none");
  $("#page_top").css("display","none");
- $("#main_image").css("display","none");
+ //$("#main_image").css("display","none");
  $("footer").css("display","none");
 });
 
