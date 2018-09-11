@@ -195,7 +195,7 @@ h1{
     height: auto;
     padding-bottom: 3%;
     background-color: gainsboro;
-    border-radius: 1%;
+    border-radius: 10px;
     margin-top: 1%;
 }
 .section2 {
@@ -203,7 +203,7 @@ h1{
     height: auto;
     padding-bottom: 3%;
     background-color: whitesmoke;
-    border-radius: 1%;
+    border-radius: 10px;
     margin-top: 1%
 }
 .section1 h1{

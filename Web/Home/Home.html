@@ -14,32 +14,13 @@
   <title>YOKABIO2018</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <script>
-    $(function() {
-      var $win = $(window),
-        $main = $('main'),
-        $nav = $('nav'),
-        navHeight = $nav.outerHeight(),
-        navPos = $nav.offset().top,
-        fixedClass = 'is-fixed';
-
-      $win.on('load scroll', function() {
-        var value = $(this).scrollTop();
-        if (value > navPos) {
-          $nav.addClass(fixedClass);
-          $main.css('margin-top', navHeight);
-        } else {
-          $nav.removeClass(fixedClass);
-          $main.css('margin-top', '0');
-        }
-      });
-    });
-  </script>
-
+  <script src="../js/stick_nav.js"></script>
+  <script src="../js/scroll_current.js"></script>
+  
 </head>
 
 <body>
+
   <!--↓トップに戻るボタン↓-->
   <div id="page_top">
     <i class="fas fa-angle-double-up fa-2x faa-bounce animated-hover top-bottom"></i>
@@ -62,9 +43,9 @@
     </ul>
   </header>
   <!--↑ナビゲーションバー(メイン)↑-->
-    
+
   <img src="Image/top_image.gif" width="100%" height="auto">
-    
+
   <main class="container">
     <div class="space"></div>
     <div class="section1">

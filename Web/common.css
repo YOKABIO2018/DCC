@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 html, body, div, span, object, iframe,
@@ -13,7 +13,7 @@ small, strong, var, b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -28,7 +28,7 @@ body {
     line-height:1;
 }
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
     display:block;
 }
 nav ul {
@@ -58,7 +58,7 @@ ins {
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
@@ -77,7 +77,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -86,6 +86,146 @@ input, select {
     vertical-align:middle;
 }
 /*----------以上、リセットCSS------------------*/
+
+/* --------- Loading 画面 ------------------ */
+/* --------- preload 1 ---------------*/
+/*
+#content img {
+  width: 100%;
+  }
+#loader {
+  font-family: 'Marvel', sans-serif;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  font-size: 40px;
+  color: #efefef;
+  margin-top: 300px;
+  }
+#bar {
+  width: 300px;
+  height: 10px;
+  border:1px solid #efefef;
+  padding: 1px;
+  margin-top: 10px;
+  font-size: 1px;
+  }
+#bar span {
+  display: block;
+  width: 0px;
+  height: 10px;
+  background: #efefef;
+  }
+ */
+
+/* -------------- preload 2 --------------*/
+.loading {
+width: 100%;
+height: 100%;
+background: rgba(255,255,255,1.0);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 20000;
+}
+.loading img {
+width: 300px;
+height: 300px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -20px;
+margin-left: -20px;
+}
+/*
+.loading {
+width: 100%;
+height: 100%;
+background: rgba(255,255,255,1.0);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 20000;
+}
+.loader {
+  position: relative;
+  width: 80px;
+  margin: 100px auto;
+}
+
+.duo {
+  height: 20px;
+  width: 50px;
+  background: hsla(0, 0%, 0%, 0.0);
+  position: absolute;
+
+}
+
+.duo, .dot {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.duo1 {
+  left: 0;
+}
+
+.duo2 {
+  left: 30px
+}
+
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #333;
+  position: absolute;
+}
+
+.dot-a {
+  left: 0px;
+}
+
+.dot-b {
+  right: 0px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(180deg) }
+  100% { transform: rotate(180deg) }
+}
+
+@keyframes onOff {
+    0% { opacity: 0; }
+   49% { opacity: 0; }
+   50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.duo1 {
+  animation-name: spin;
+}
+
+.duo2 {
+  animation-name: spin;
+  animation-direction: reverse;
+}
+
+.duo2 .dot-b {
+  animation-name: onOff;
+}
+
+.duo1 .dot-a {
+  opacity: 0;
+  animation-name: onOff;
+  animation-direction: reverse;
+}
+*/
+/*---------------------------------------------------------*/
 
 body {
     position: relative;
@@ -97,10 +237,10 @@ body {
     color: #212529;
     text-align: left;
     background-color: #303030;
-    
+
     /* 画像ファイルの指定 */
     background-image: url(back.gif);
-    
+
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -121,7 +261,7 @@ header ul li{
 }
 header ul li a {
     color: gainsboro;
-    text-decoration: none; 	 
+    text-decoration: none;
 }
 header ul li a:hover{
     color: white;
@@ -148,11 +288,15 @@ nav ul li{
 }
 nav ul li a {
     color: gray;
-    text-decoration: none; 	 
+    text-decoration: none;
 }
 nav ul li a:hover{
     color: black;
     text-decoration: none;
+}
+nav ul li a.current{
+  color: red;
+  text-decoration: none;
 }
 #yokabio{
     margin-right: 5%;
@@ -167,7 +311,7 @@ nav ul li a:hover{
     height: auto;
     padding-bottom: 3%;
     background-color: gainsboro;
-    border-radius: 1%;
+    border-radius: 10px;
     margin-top: 1%;
 }
 .section2 {
@@ -175,7 +319,7 @@ nav ul li a:hover{
     height: auto;
     padding-bottom: 3%;
     background-color: whitesmoke;
-    border-radius: 1%;
+    border-radius: 10px;
     margin-top: 1%
 }
 .section1 h1{

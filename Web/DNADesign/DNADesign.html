@@ -12,28 +12,8 @@
         <link rel="stylesheet" href="../lightbox.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <script>
-          $(function() {
-            var $win = $(window),
-                $main = $('main'),
-                $nav = $('nav'),
-                navHeight = $nav.outerHeight(),
-                navPos = $nav.offset().top,
-                fixedClass = 'is-fixed';
-
-            $win.on('load scroll', function() {
-              var value = $(this).scrollTop();
-              if ( value > navPos ) {
-                $nav.addClass(fixedClass);
-                $main.css('margin-top', navHeight);
-              } else {
-                $nav.removeClass(fixedClass);
-                $main.css('margin-top', '0');
-              }
-            });
-          });
-        </script>
+        <script src="../js/stick_nav.js"></script>
+        <script src="../js/scroll_current.js"></script>
 
         <title>YOKABIO2018</title>
 
@@ -52,7 +32,7 @@
         <header>
             <ul>
                 <!--このファイルのaタグにclass="current"を追加して下さい-->
-                <li><a href="../../index.html" id="yokabio">YOKABIO</a></li>
+                <li><a href="../Home/Home.html" id="yokabio">YOKABIO</a></li>
                 <li><a href="../Home/Home.html">Home</a></li>
                 <li><a href="../Idea/Idea.html">Idea</a></li>
                 <li><a href="../Simulation/Simulation.html">Simulation</a></li>
@@ -291,7 +271,7 @@
                 <p> As this Figure 13, it is clear that G and T are binding to each other, but in contrast A and C are not.</p>
 
                 <h2>Use of Mismatch</h2>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When DNA(A)(B) which we expect to be doubel stranded include mismatched GT base pair,
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When DNA(A)(B) which we expect to be double stranded include mismatched GT base pair,
                     DNA(C) which is complete complementary to (A) and DNA(D) which is complete complementary to (B) make mismatched CA base pair.
                     Therefore, (A) is bound with (B) but (C) is not bound with (D) (Figure 14).<br><br>
                 </p>
