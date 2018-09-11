@@ -202,11 +202,11 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover{
-    color: black;
+    color: #f76b00;
     text-decoration: none;
 }
 nav ul li a.current{
-  color: black;
+  color: #f76b00;
   text-decoration: none;
 }
 #yokabio{
