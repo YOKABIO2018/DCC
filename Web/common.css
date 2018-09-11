@@ -88,36 +88,6 @@ input, select {
 /*----------以上、リセットCSS------------------*/
 
 /* --------- Loading 画面 ------------------ */
-/* --------- preload 1 ---------------*/
-/*
-#content img {
-  width: 100%;
-  }
-#loader {
-  font-family: 'Marvel', sans-serif;
-  margin: 0 auto;
-  width: 300px;
-  text-align: center;
-  font-size: 40px;
-  color: #efefef;
-  margin-top: 300px;
-  }
-#bar {
-  width: 300px;
-  height: 10px;
-  border:1px solid #efefef;
-  padding: 1px;
-  margin-top: 10px;
-  font-size: 1px;
-  }
-#bar span {
-  display: block;
-  width: 0px;
-  height: 10px;
-  background: #efefef;
-  }
- */
-
 /* -------------- preload 2 --------------*/
 .loading {
 width: 100%;
@@ -157,6 +127,8 @@ body {
 }
 
 header {
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     font-size: 25px;
     height: auto;
@@ -164,22 +136,27 @@ header {
 }
 header ul {
     margin: 0px;
-    padding: 10px 0px;
+    padding: 0px 0px;
 }
 header ul li{
-    display: inline;
-    margin-right: 1em;
+    display: inline-block;
+    margin-right: 0px;
 }
 header ul li a {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
     color: gainsboro;
     text-decoration: none;
+    transition: 0.3s;
 }
 header ul li a:hover{
     color: white;
+    background-color: rgba(255,255,255,0.5);
     text-decoration: none;
 }
 header ul li a.current{
     color: white;
+    background-color: rgba(255,255,255,0.5);
     text-decoration: none;
 }
 
@@ -202,15 +179,17 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover{
-    color: black;
+    color: #f76b00;
     text-decoration: none;
+    transition: 0.3s;
 }
 nav ul li a.current{
-  color: black;
-  text-decoration: none;
+    color: #f76b00;
+    text-decoration: underline #f76b00;
+    transition: 0.5s;
 }
 #yokabio{
-    margin-right: 5%;
+    margin-left: -50%;
 }
 
 .container{
