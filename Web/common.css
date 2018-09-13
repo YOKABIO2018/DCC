@@ -279,6 +279,7 @@ footer {
   background: gray;
   opacity: 0.6;
   border-radius: 50%;
+  z-index: 5;
 }
 #page_top a{
   position: relative;
