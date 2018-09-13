@@ -110,33 +110,35 @@ header {
     padding: 0px;
     margin: 0px;
     text-align: center;
-    font-size: 25px;
     height: auto;
     background: #353a3f;
 }
 header ul {
     margin: 0px;
     padding: 0px 0px;
+    font-size: 0;
 }
 header ul li{
+    font-size: 20px;
     display: inline-block;
     margin-right: 0px;
 }
 header ul li a {
     display: inline-block;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
     color: gainsboro;
     text-decoration: none;
     transition: 0.3s;
+    /*width: 135px;*/
 }
 header ul li a:hover{
-    color: white;
-    background-color: rgba(255,255,255,0.5);
+    color: gray;
+    background-color: #f8f9fa;
     text-decoration: none;
 }
 header ul li a.current{
-    color: white;
-    background-color: rgba(255,255,255,0.5);
+    color: gray;
+    background-color: #f8f9fa;
     text-decoration: none;
 }
 
