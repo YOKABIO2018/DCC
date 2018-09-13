@@ -9,6 +9,11 @@ content:"";
 clear:both;
 display:block;
 }
+
+.pulldown_mark{
+  font-size: 10px;
+  vertical-align: middle;
+}
 /*
 #icon_page ul:after{
 content:"";
