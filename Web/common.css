@@ -125,11 +125,11 @@ header ul li{
 }
 header ul li a {
     display: inline-block;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 20px 15px 20px;
     color: gainsboro;
     text-decoration: none;
     transition: 0.3s;
-    width: 135px;
+    /*width: 135px;*/
 }
 header ul li a:hover{
     color: gray;
@@ -170,8 +170,9 @@ nav ul li a.current{
     text-decoration: underline #f76b00;
     transition: 0.5s;
 }
+
 #yokabio{
-    margin-left: -100%;
+    margin-left: -150%;
 }
 
 .container{
