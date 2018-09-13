@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.icon_section {
+  font-size: 40px;
+  /*font-family: */
+  color: #222;
+  /*background: #222;*/
+}
+
+.icon-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  float: left;
+  margin: 10px;
+}
+.icon-box:hover .icon-border {
+  transform: scale(0.94);
+  transition-duration: 140ms; /* borderが完全に表示されるまでの時間 */
+}
+.icon-box:hover .icon-text {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-duration: 140ms; /* textが完全に表示されるまでの時間 */
+}
+.icon-box:hover .icon-image-wrap {
+  transform: scale(0.95); /* hover時の中画像の拡大具合 */
+  opacity: 1;
+  transition-duration: 500ms; /* hover時の画像拡大に要する時間 */
+}
+
+.icon-border, .icon-text, .icon-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.icon-image-wrap {
+  position: absolute;
+  width: 130%;
+  /* 画像の大きさを指定、borderなどの大きさは変化しない */
+  height: 130%;
+  left: -15%;
+  top: -15%;
+  transform: scale(0.8); /* 通常時の画像の大きさ */
+  transition: 280ms ease-out;
+  pointer-events: none;
+  opacity: 0.8; /* 通常時に透明度 */
+}
+
+.icon-border {
+  left: -30px;
+  top: -30px;
+  border: 30px solid #f76b00; /* borderの色 */
+  /* 画像の裏に隠れているボーダーの情報 */
+  box-sizing: content-box;
+  /* content-boxを指定すると、widthとheightで指定する幅と高さが内容領域に対して適用される。幅と高さにはパディングとボーダーは含まれない。*/
+  transition: 360ms ease-in-out;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translate3d(0, -4%, 0);
+  transition: 280ms ease-out;
+  text-align: center;
+  font-family: 'Suez One', serif;
+  color: #f76b00;
+
+  /*
+  text-shadow:
+        white 5px 5px 0, white -5px -5px 0, 右下、左上
+        white -5px 5px 0, white 5px -5px 0, 右上、左下
+        white 0px 5px 0, white  0 -5px 0,   右  、左
+        white -5px 0 0, white 5px 0 0;      上  、下
+  */
+}
+
+.icon-image {
+  background-size: 90%;
+}
+
+/* box sizing */
+.icon-box {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+/* 使用するデバイスの画面サイズに応じてどの関数が実行されるかが決まる */
+/* 上二つは消してもいいかも*/
+@media (min-width: 500px) {
+  .icon-box {
+    width: 100%;
+    height: 100vw;
+  }
+}
+@media (min-width: 800px) {
+  .icon-box {
+    width: 33.333333%;
+    height: 33.33333vw;
+  }
+}
+/* PCの場合これが適応される */
+@media (min-width: 1200px) {
+  .icon-box {
+    width: 25%;
+    height: 20vw;
+  }
+}
+
+/* ---------- image backgrounds --------- */
+.icon-image-1 {
+  background: url("Image/icon-01.png");
+  background-size: 100% 100%;
+}
+
+.icon-image-2 {
+  background: url("Image/icon-02.png");
+  background-size: 100% 100%;
+}
+
+.icon-image-3 {
+  background: url("Image/icon-03.png");
+  background-size: 100% 100%;
+}
+
+.icon-image-4 {
+  background: url("Image/icon-04.png");
+  background-size: 100% 100%;
+}
+
+.icon-image-5 {
+  background: url("Image/icon-05.png");
+  background-size: 100% 100%;
+}
+
+.icon-image-6 {
+  background: url("Image/icon-06.png");
+  background-size: 100% 100%;
+}
+
+/*# sourceMappingURL=icon.css.map */
