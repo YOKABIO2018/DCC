@@ -1,19 +1,20 @@
+#icon_page{
+  width: 100%;
+  height: auto;
+  margin: 5% 10%;
+}
+
 #icon_page:after{
 content:"";
 clear:both;
 display:block;
 }
-
+/*
 #icon_page ul:after{
 content:"";
 clear:both;
 display:block;
-
-/* 注意
-ulがliを含んでない状態！！ */
 }
-
-
 
 #icon_page ul{
   width: 100%;
@@ -26,3 +27,4 @@ ulがliを含んでない状態！！ */
   float:left;
   padding:3% 1.5%
 }
+*/
