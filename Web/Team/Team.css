@@ -165,7 +165,14 @@ nav ul li a:hover{
     text-decoration: none;
 }
 #yokabio{
-    margin-left: -150%;
+    background-image: url("../Logo.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -100%;
+}
+#yokabio span:before{
+    white-space: pre-wrap;
+    content: "        ";
 }
 
 .container{
