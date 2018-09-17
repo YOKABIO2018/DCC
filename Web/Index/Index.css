@@ -1,3 +1,40 @@
+/*プルダウン部分ここから*/
+.menu > li.menu_single {
+    position: relative;
+    z-index: 2;
+}
+
+li.menu_single ul.menu_second_level {
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    transition: 0.2s;
+    opacity: 0;
+    display: block;
+}
+
+li.menu_single ul.menu_second_level li a{
+    width: 150px;
+    font-size: 15px;
+    background-color: rgba(128, 128, 128, 0.3);
+    /*background: #353a3f;*/
+}
+
+li.menu_single:hover ul.menu_second_level {
+    top: 100%;
+    visibility: visible;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+li.menu_single ul.menu_second_level li:hover a{
+    color: grey;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*background-color: #f8f9fa;*/
+    transition: 0.2s;
+}
+/*プルダウン部分ここまで*/
+
 #icon_page{
   width: 100%;
   height: auto;
@@ -21,7 +58,9 @@ display:block;
 
 #scroll_down {
   padding-top: 20%;
+  cursor: default;
 }
+
 #scroll_down span {
   position: absolute;
   top: 80%;
@@ -37,6 +76,7 @@ display:block;
   animation: sdb 1.5s infinite;
   box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);

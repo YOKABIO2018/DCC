@@ -32,15 +32,43 @@
   <!--↓変更するのはここから↓-->
   <!--↓ナビゲーションバー(メイン)↓-->
   <header style="display:none">
-    <ul>
+    <ul class="menu">
       <!--このファイルのaタグにclass="current"を追加して下さい-->
       <li><a href="index.html" id="yokabio">YOKABIO</a></li>
       <li><a class="current" href="index.html">Home</a></li>
-      <li><a href="Web/Idea/Idea.html">Idea <span class="pulldown_mark">▼</spam></a></li>
-      <li><a href="Web/Simulation/Simulation.html">Simulation <span class="pulldown_mark">▼</spam></a></li>
-      <li><a href="Web/DNADesign/DNADesign.html">DNA Design <span class="pulldown_mark">▼</spam></a></li>
-      <li><a href="Web/Experiment/Experiment.html">Experiment <span class="pulldown_mark">▼</spam></a></li>
-      <li><a href="Web/Discussion/Discussion.html">Discussion <span class="pulldown_mark">▼</spam></a></li>
+      <li class="menu_single"><a href="Web/Idea/Idea.html">Idea <span class="pulldown_mark">▼</spam></a>
+        <ul class="menu_second_level">
+          <li><a href="Web/Idea/Idea.html#Background">Background</a></li>
+          <li><a href="Web/Idea/Idea.html#OurProject">Our Project</a></li>
+          <li><a href="Web/Idea/Idea.html#GoalsReached">Goals Reached</a></li>
+          <li><a href="Web/Idea/Idea.html#References">References</a></li>
+        </ul>
+      </li>
+      <li class="menu_single"><a href="Web/Simulation/Simulation.html">Simulation <span class="pulldown_mark">▼</spam></a>
+        <ul class="menu_second_level">
+          <li><a href="Web/Simulation/Simulation.html#AboutATP">About ATP</a></li>
+          <li><a href="Web/Simulation/Simulation.html#Simulation">Simulation</a></li>
+        </ul>
+      </li>
+      <li class="menu_single"><a href="Web/DNADesign/DNADesign.html">DNA Design <span class="pulldown_mark">▼</spam></a>
+        <ul class="menu_second_level">
+          <li><a href="Web/DNADesign/DNADesign.html#PolymeraseReaction">Polymerase Reaction</a></li>
+          <li><a href="Web/DNADesign/DNADesign.html#ON-OFFSwitch">ON-OFF Switch</a></li>
+        </ul>
+      </li>
+      <li class="menu_single"><a href="Web/Experiment/Experiment.html">Experiment <span class="pulldown_mark">▼</spam></a>
+        <ul class="menu_second_level">
+          <li><a href="Web/Experiment/Experiment.html#DryExperiment">Dry Experiment</a></li>
+          <li><a href="Web/Experiment/Experiment.html#Material&Methods">Material &amp; Methods</a></li>
+        </ul>
+      </li>
+      <li class="menu_single"><a href="Web/Discussion/Discussion.html">Discussion <span class="pulldown_mark">▼</spam></a>
+        <ul class="menu_second_level">
+          <li><a href="Web/Discussion/Discussion.html#Discussion">Discussion</a></li>
+          <li><a href="Web/Discussion/Discussion.html#Future">Future</a></li>
+          <li><a href="Web/Discussion/Discussion.html#ELSI">ELSI</a></li>
+        </ul>
+      </li>
       <li><a href="Web/Team/Team.html">Team</a></li>
     </ul>
   </header>

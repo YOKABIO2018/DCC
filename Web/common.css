@@ -114,16 +114,17 @@ header {
     background: #353a3f;
 }
 header ul {
+    padding: 0px;
     margin: 0px;
-    padding: 0px 0px;
     font-size: 0;
+    z-index: 3;
 }
 header ul li{
     font-size: 20px;
     display: inline-block;
     margin-right: 0px;
 }
-header ul li a {
+header ul li a{
     display: inline-block;
     padding: 15px 20px 15px 20px;
     color: gainsboro;
