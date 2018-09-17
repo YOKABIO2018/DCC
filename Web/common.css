@@ -132,7 +132,7 @@ header ul li a{
     transition: 0.3s;
     /*width: 135px;*/
 }
-header ul li a:hover{
+header ul li a:hover:not(#yokabio){
     color: gray;
     background-color: #f8f9fa;
     text-decoration: none;
@@ -173,7 +173,14 @@ nav ul li a.current{
 }
 
 #yokabio{
-    margin-left: -150%;
+    background-image: url(Logo.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -100%;
+}
+#yokabio span:before{
+  white-space: pre-wrap;
+  content: "        ";
 }
 
 .container{
