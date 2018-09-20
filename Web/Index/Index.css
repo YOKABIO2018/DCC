@@ -103,25 +103,3 @@ display:block;
     opacity: 0;
   }
 }
-
-
-
-/*
-#icon_page ul:after{
-content:"";
-clear:both;
-display:block;
-}
-
-#icon_page ul{
-  width: 100%;
-  height: 30px
-}
-
-#icon_page li{
-  list-style: none;
-  width: 30%;
-  float:left;
-  padding:3% 1.5%
-}
-*/

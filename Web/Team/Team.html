@@ -8,36 +8,16 @@
         <link rel="stylesheet" href="Team.css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
         <link rel="stylesheet" href="../lightbox.css">
 
         <title>YOKABIO2018</title>
         <link rel="shortcut icon" href="../Logo.ico" type="image/vnd.microsoft.icon">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="slick.css"/>
+        <script type="text/javascript" src="../js/slick.min.js"></script>
+        <script type="text/javascript" src="../js/slick.js"></script>
         <script src="../js/page_top.js"></script>
-
-        <script>
-          $(function() {
-            var $win = $(window),
-                $main = $('main'),
-                $nav = $('nav'),
-                navHeight = $nav.outerHeight(),
-                navPos = $nav.offset().top,
-                fixedClass = 'is-fixed';
-
-            $win.on('load scroll', function() {
-              var value = $(this).scrollTop();
-              if ( value > navPos ) {
-                $nav.addClass(fixedClass);
-                $main.css('margin-top', navHeight);
-              } else {
-                $nav.removeClass(fixedClass);
-                $main.css('margin-top', '0');
-              }
-            });
-          });
-        </script>
 
     </head>
 
@@ -65,27 +45,20 @@
         </header>
         <!--↑ナビゲーションバー(メイン)↑-->
 
+        <div id="slider-div">
+          <!--<h1>TEAM - YOKABIO</h1>-->
+          <ul class="slider">
+            <li><a href="#"><img src="Image/ironman.jpg" alt="image01"></a></li>
+            <li><a href="#"><img src="Image/blackwidow.jpg" alt="image02"></a></li>
+            <li><a href="#"><img src="Image/thor.jpg" alt="image03"></a></li>
+            <li><a href="#"><img src="Image/captainamerica.jpg" alt="image04"></a></li>
+          </ul>
+        </div>
+
         <main class="container">
-        <!--section1とsection2は交互に書いて下さい-->
-            <!--section1,section2の直前に,
-                <div class="space" id="subX"></div>
-                idはsectionではなく,直前のspaceのクラスに追加して下さい
-                divタグの内部では,h1,h2,pタグのみ使用して下さい
-                img,videoタグを使用するときは,pタグの外で使用して下さい
-            -->
 
-            <!---Team ------------><!--
-            <div class="space" id="suA"></div>
-            <div class="section1">
-
-            </div>
-            -->
             <h1>Member</h1>
-            <!--- Member ------------>
-            <!--<div class="space" id="subB"></div>
-            -->
-            <!-- <a href="Image/Member-example.gif" data-lightbox="image-1">
-                </a> -->
+
             <div class="section1">
                     <p>
                         <img class="circle" src="Image/Watanabe.gif" width="230px" height="230px" align="left">
