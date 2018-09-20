@@ -58,7 +58,7 @@ display:block;
 
 #scroll_down {
   padding-top: 20%;
-  cursor: default;
+  cursor: pointer;
 }
 
 #scroll_down span {
