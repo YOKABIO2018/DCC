@@ -2,7 +2,6 @@
   font-size: 3.2vw;
   /*font-family: */
   color: #222;
-  /*background: #222;*/
 }
 
 .icon-box {
@@ -11,6 +10,7 @@
   cursor: pointer;
   float: left;
   margin: 10px;
+  background: #222;
 }
 .icon-box:hover .icon-border {
   transform: scale(0.94);
@@ -44,7 +44,7 @@
   transform: scale(0.8); /* 通常時の画像の大きさ */
   transition: 280ms ease-out;
   pointer-events: none;
-  opacity: 0.8; /* 通常時に透明度 */
+  opacity: 0.68; /* 通常時に透明度 */
 }
 
 .icon-border {
