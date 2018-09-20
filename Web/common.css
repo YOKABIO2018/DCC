@@ -178,9 +178,9 @@ nav ul li a.current{
     background-repeat: no-repeat;
     margin-left: -100%;
 }
-#yokabio span:before{
+#yokabio span::before{
   white-space: pre-wrap;
-  content: "        ";
+  content: "         ";
 }
 
 .container{
