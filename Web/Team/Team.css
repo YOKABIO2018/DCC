@@ -100,7 +100,7 @@ body {
     background-color: #303030;
 
     /* 画像ファイルの指定 */
-    background-image: url(back.gif);
+    background-image: url(../back.gif);
 
     background-attachment: fixed;
     background-size: 100% 100%;
