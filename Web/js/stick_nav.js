@@ -15,5 +15,12 @@ $(function() {
       $nav.removeClass(fixedClass);
       $main.css('margin-top', '0');
     }
+
+    $nav.fadeIn('fast');
+    setTimeout(function(){
+    if (value === $(this).scrollTop() && $(this).scrollTop() > navPos){
+        $nav.fadeOut('normal');
+        }
+    },3000);
   });
 });
