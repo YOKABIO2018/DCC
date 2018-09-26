@@ -100,14 +100,14 @@
         when there is oxygen, many ATPs are synthesized with mitochondria[2]. Even in the absence of oxygen, it is possible to synthesize a small amount of ATP, but lactic acid is produced at the same time(Click <a href="../Simulation/Simulation.html#AboutATP">About ATP</a>        for more details). Here, when mitochondria is malfunctioning, it continues to produce lactic acid at the same time as a small amount of ATP, regardless of the presence or absence of oxygen. The cell becomes weak and leads to death by continuing
         to produce lactic acid, but in rare cases it will continue to live with carbohydrate as food. It becomes a cancer cell[3]. Cancer cells continue to live with small amounts of ATP obtained from carbohydrates as energy. Therefore, we thought that shutting
         down a small amount of ATP completely stops <a href="../Simulation/Simulation.html#Simulation">intracellular signal transduction</a> and is able to forcefully direct it to cell death. ATP is present in abundance in normal cells, but only in small
-        amounts in cancer cells. We thought that it is possible to make cancer cells only die and not to affect normal cells by utilizing its characteristics. It becomes ON state absorbing ATP in the cell at the timing when the Input is input. After that,
+        amounts in cancer cells. The reason why cancer cell has much less ATP than normal cells is they don’t use the mitochondria which generates the most ATP. We thought that it is possible to make cancer cells only die and not to affect normal cells by utilizing its characteristics. In summery, the reason we focused on ATP is because we think we can use ATP which is a power source of life activity to stop cells and it is useful that the amount of ATP is very different from cancer cells and normal cells. It becomes ON state absorbing ATP in the cell at the timing when the Input is input. After that,
         it turns OFF automatically when the cancer cell dies. This will minimize the burden on the cells even when our system is moving within normal cells.<br><br>
       </p>
       <a href="Image/ATP_concentration.png" data-lightbox="fig3"><img src="Image/ATP_concentration.png" width="70%" height="auto"></a><br>
         Figure 3 : Image of Our Project<br><br>
       <!-- <a href="Image/(m1)NUPACK.png" data-lightbox="fig3"><img src="Image/(m1)NUPACK.png" width="70%" height="auto"></a> -->
     </div>
-      
+
       <div class="space" id="Mechanism"></div>
       <div class="section1">
           <h1>Mechanism</h1>
@@ -117,7 +117,11 @@
                 In this project, we use double stranded DNA including T7 promoter squence as template,
                 NTP(Nucleoside triphosphate) as substrate.
                 In addition, we use T7RNA polymerase which is an enzyme and makes complementary single stranded RNA
-                for a template DNA being a part of downstream of the promoter (Figure 1, Video 1).<br><br>
+                for a template DNA being a part of downstream of the promoter (Figure 1, Video 1).
+                The reason for using T7RNA Polymer is that DNA Polymerase has dNTP as a matrix and RNA Polymerase has NTP as a matrix,
+                so RNA Polymerase can consume ATP. T7RNA Polymerase is useful because it detects specific base sequence
+                and it is convenient to our project using mismatch base pair.
+                <br><br>
           </p>
           <a href="Image/polymerase(Fig1).png" data-lightbox="fig-1"><img src="Image/polymerase(Fig1).png" width="60%" height="auto"></a>
           <br>
@@ -126,8 +130,16 @@
               <source src="Video/polymerase.mp4">
           </video>
           <br>
-          Video 1 : Polymerase Reaction(Video)<br><br>
-          
+          Video 1 : Polymerase Reaction(Video)<br>
+          <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we perform a verification experiment using mammalian cells
+            after confirming the validity of our idea and principle of operation,
+            there is one problem to be solved in order to realize DCC as a cancer treatment.
+            It is that T7 RNA polymerase is not present in humans.
+            But in this project, we just focus on if DCC(absorbing ATP) can affect only E.coli (It is described in <a href="../Simulation/Simulation.html#E.coli-Simulation">E.coli Simulation</a>).
+            <br><br>
+          </p>
+          <br><br>
+
           <h2>ON-OFF switch</h2>
           <p> We arranged adenine on a part of downstream of the T7 promoter to absorb only ATP as energy (Figure 2).<br></p>
 
@@ -135,7 +147,7 @@
           <br>
           Figure 2 : Promoter Design<br><br><br>
       </div>
-      
+
       <div class="space" id="Merits"></div>
       <div class="section2">
           <h1>Merits</h1>
