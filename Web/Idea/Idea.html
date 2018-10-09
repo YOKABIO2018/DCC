@@ -37,9 +37,9 @@
       <li><a href="../../index.html" id="yokabio"><span>YOKABIO</span></a></li>
       <li><a href="../../index.html">Home</a></li>
       <li><a class="current" href="../Idea/Idea.html">Idea</a></li>
-      <li><a href="../Simulation/Simulation.html">Simulation</a></li>
-      <li><a href="../DNADesign/DNADesign.html">DNA Design</a></li>
+      <li><a href="../SystemDesign/SystemDesign.html">System Design</a></li>
       <li><a href="../Experiment/Experiment.html">Experiment</a></li>
+      <li><a href="../Application/Application.html">Application</a></li>
       <li><a href="../Discussion/Discussion.html">Discussion</a></li>
       <li><a href="../Team/Team.html">Team</a></li>
     </ul>
@@ -53,10 +53,9 @@
       <!--liの数は必要に応じて変更して下さい-->
       <li><a href="#Background">Background</a></li>
       <li><a href="#OurProject">Our Project</a></li>
-        <li><a href="#Mechanism">Mechanism</a></li>
-        <li><a href="#Merits">Merits</a></li>
-      <li><a href="#GoalsReached">Goals Reached</a></li>
-      <li><a href="#References">References</a></li>
+      <li><a href="#Objective">Objective</a></li>
+      <li><a href="#Program">Program</a></li>
+      <li><a href="#Merits">Merits</a></li>
     </ul>
   </nav>
   <!--↑ナビゲーションバー(サブ)↑-->
@@ -108,11 +107,12 @@
       <!-- <a href="Image/(m1)NUPACK.png" data-lightbox="fig3"><img src="Image/(m1)NUPACK.png" width="70%" height="auto"></a> -->
     </div>
 
-      <div class="space" id="Mechanism"></div>
-      <div class="section1">
-          <h1>Mechanism</h1>
-          <h2>Polymerase Reaction</h2>
-          <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the polymerase reaction as a way to absorb ATP from cells.
+  <!--
+    <div class="space" id="Mechanism"></div>
+    <div class="section1">
+        <h1>Mechanism</h1>
+        <h2>Polymerase Reaction</h2>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the polymerase reaction as a way to absorb ATP from cells.
                 The polymerase is an enzyme which configuers a nucleic acid or a chain such as DNA or RNA[7].
                 In this project, we use double stranded DNA including T7 promoter squence as template,
                 NTP(Nucleoside triphosphate) as substrate.
@@ -122,46 +122,63 @@
                 so RNA Polymerase can consume ATP. T7RNA Polymerase is useful because it detects specific base sequence
                 and it is convenient to our project using mismatch base pair.
                 <br><br>
-          </p>
-          <a href="Image/polymerase(Fig1).png" data-lightbox="fig-1"><img src="Image/polymerase(Fig1).png" width="60%" height="auto"></a>
-          <br>
-          Figure 1 : Polymerase Reaction<br><br>
-          <video controls width="70%" height="auto">
-              <source src="Video/polymerase.mp4">
-          </video>
-          <br>
-          Video 1 : Polymerase Reaction(Video)<br>
-          <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we perform a verification experiment using mammalian cells
+        </p>
+        <a href="Image/polymerase(Fig1).png" data-lightbox="fig-1"><img src="Image/polymerase(Fig1).png" width="60%" height="auto"></a>
+        <br>
+        Figure 1 : Polymerase Reaction<br><br>
+        <video controls width="70%" height="auto">
+            <source src="Video/polymerase.mp4">
+        </video>
+        <br>
+        Video 1 : Polymerase Reaction(Video)<br>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we perform a verification experiment using mammalian cells
             after confirming the validity of our idea and principle of operation,
             there is one problem to be solved in order to realize DCC as a cancer treatment.
             It is that T7 RNA polymerase is not present in humans.
             But in this project, we just focus on if DCC(absorbing ATP) can affect only E.coli (It is described in <a href="../Simulation/Simulation.html#E.coli-Simulation">E.coli Simulation</a>).
-            <br><br>
-          </p>
           <br><br>
+        </p>
+        <br><br>
 
-          <h2>ON-OFF switch</h2>
-          <p> We arranged adenine on a part of downstream of the T7 promoter to absorb only ATP as energy (Figure 2).<br></p>
+        <h2>ON-OFF switch</h2>
+        <p> We arranged adenine on a part of downstream of the T7 promoter to absorb only ATP as energy (Figure 2).<br></p>
 
-          <a href="Image/polymerase_ATP(Fig2).png" data-lightbox="fig2"><img src="Image/polymerase_ATP(Fig2).png" width="60%" height="auto"></a>
+        <a href="Image/polymerase_ATP(Fig2).png" data-lightbox="fig2"><img src="Image/polymerase_ATP(Fig2).png" width="60%" height="auto"></a>
+        <br>
+        Figure 2 : Promoter Design<br><br><br>
+    </div>
+  -->
+    <div class="space" id="Objective"></div>
+    <div class="section2">
+        <h1>Objective</h1>
+        <p>
           <br>
-          Figure 2 : Promoter Design<br><br><br>
-      </div>
+        </p>
+    </div>
 
-      <div class="space" id="Merits"></div>
-      <div class="section2">
-          <h1>Merits</h1>
-          <p>The merit of DCC proposed by us is as follows.
-              First, the effect on normal cells other than cancer cells, compared to conventional cancer treatment it is less. 
-              Conventional cancer treatments are generally based on radiation or anticancer drugs. 
-              However, these methods seriously damage normal cells other than cancer cells. 
-              DCC we developed this time deals damage only to cancer cells and has little effect on normal cells we will not give it. 
-              Another merit is that we do not use enzymes in DNA circuit of DCC. 
-              T7 polymerase enzyme is used to absorb ATP, but in the design of DNA circuits we do not use enzymes. For details, please refer to <a href="../DNADesign/DNADesign.html">DNA Design</a>. 
-              By not using the enzyme, it can be expected to be used in vivo.<br>
-          </p>
-      </div>
+    <div class="space" id="Program"></div>
+    <div class="section2">
+        <h1>Program</h1>
+        <p>
+          <br>
+        </p>
+    </div>
 
+
+    <div class="space" id="Merits"></div>
+    <div class="section2">
+        <h1>Merits</h1>
+        <p>The merit of DCC proposed by us is as follows.
+            First, the effect on normal cells other than cancer cells, compared to conventional cancer treatment it is less.
+            Conventional cancer treatments are generally based on radiation or anticancer drugs.
+            However, these methods seriously damage normal cells other than cancer cells.
+            DCC we developed this time deals damage only to cancer cells and has little effect on normal cells we will not give it.
+            Another merit is that we do not use enzymes in DNA circuit of DCC.
+            T7 polymerase enzyme is used to absorb ATP, but in the design of DNA circuits we do not use enzymes. For details, please refer to <a href="../DNADesign/DNADesign.html">DNA Design</a>.
+            By not using the enzyme, it can be expected to be used in vivo.<br>
+        </p>
+    </div>
+  <!--
     <div class="space" id="GoalsReached"></div>
     <div class="section1">
       <h1>Goals Reached</h1>
@@ -174,7 +191,8 @@
       <a href="Image/goalsreached.png" data-lightbox="fig4"><img src="Image/goalsreached.png" width="70%" height="auto"></a><br>
         Figure 4 : Goals Reached<br><br>
     </div>
-
+  -->
+  <!--
     <div class="space" id="References"></div>
     <div class="section2">
       <h1>References</h1>
@@ -189,7 +207,7 @@
         March 2016<br> [9]Lulu Qian and Erik Winfree: A simple DNA gate motif for synthesizeing large-scale circuits, doi:10.1098/rsif.2010.0729<br> [10]Lulu Qian and Erik Winfree: Computation with DNA Strand Displacement Cascades, VOL 332, 3 June 2011<br>        [11]Yuki Yoshida, Takashi Nakakuki, Design tool of DNA base sequences for molecular circuits, Proc. of 17th International Conference on Control, Automation and Systems (ICCAS 2017), Oct, 2017.<br> [12]NUPACK: <a href="http://www.nupack.org">http://www.nupack.org</a><br>        [13]Matlab: <a href="https://jp.mathworks.com/products/matlab.html">https://jp.mathworks.com/products/matlab.html</a><br> [14]Sarah C. Spencer: Electroportion Technique of DNA Transfection<br>
       </p>
     </div>
-
+  -->
   </main>
   <!--↑変更するのはここまで↑-->
 
