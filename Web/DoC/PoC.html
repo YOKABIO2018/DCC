@@ -7,9 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <link rel="stylesheet" href="../common.css">
-
   <link rel="stylesheet" href="../lightbox.css">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <title>YOKABIO2018</title>
@@ -36,9 +34,9 @@
       <!--このファイルのaタグにclass="current"を追加して下さい-->
       <li><a href="../../index.html" id="yokabio"><span>YOKABIO</span></a></li>
       <li><a href="../../index.html">Home</a></li>
-      <li><a class="current" href="../Idea/Idea.html">Idea</a></li>
+      <li><a href="../Idea/Idea.html">Idea</a></li>
       <li><a href="../SystemDesign/SystemDesign.html">System Design</a></li>
-      <li><a href="../PoC/PoC.html">PoC</a></li>
+      <li><a class="current" href="../PoC/PoC.html">PoC</a></li>
       <li><a href="../Experiment/Experiment.html">Experiment</a></li>
       <li><a href="../Application/Application.html">Application</a></li>
       <li><a href="../Discussion/Discussion.html">Discussion</a></li>
@@ -52,11 +50,8 @@
     <ul>
       <!--hrefをサブタイトルに変更して下さい-->
       <!--liの数は必要に応じて変更して下さい-->
-      <li><a href="#Background">Background</a></li>
-      <li><a href="#OurProject">Our Project</a></li>
-      <li><a href="#Objective">Objective</a></li>
-      <li><a href="#Program">Program</a></li>
-      <li><a href="#Merit">Merit</a></li>
+      <li><a href="#Page-Overview">Page Overview</a></li>
+      <li><a href="#PoC">Proof of Concept</a></li>
     </ul>
   </nav>
   <!--↑ナビゲーションバー(サブ)↑-->
@@ -69,44 +64,6 @@
                 divタグの内部では,h1,h2,pタグのみ使用して下さい
                 img,videoタグを使用するときは,pタグの外で使用して下さい
             -->
-    <div class="space" id="Background"></div>
-    <div class="section1">
-      <h1>Background</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In recent years, due to technological progress, various kinds of manufacturing using DNA as a material are being carried out. These advantages are expected to be able to function in vivo in the future because of its ability to handle on the nanoscale
-        and high biocompatibility. Even in the past BIOMOD, various works considering the activity in vivo are actually proposed. Among them, attention is gathered in what is called a drug delivery system (DDS) that is able to carry by transporting drugs
-        into nanoscale structures. Conventional cancer treatments include radiotherapy and drug therapy, however these problems adversely affect healthy cells other than cancer cells, so that various side effects appear. On the other hand, DDS which has
-        been developed in recent years is thought to be able to treat cancer without causing side effects because it is able to pinpoint administer drug to cancer cells[1]. If that research succeeds, the technology of cancer treatment will advance greatly.
-        However, it is difficult to administer drugs only to cancer cells using DDS, which is very difficult to control. In addition, there are various problems to put the nanoscale structure in the cell actually, there is no example where the artificial
-        structure using DNA is moved in the living body now. We need to consider these solutions and perform verification experiments.<br>
-      </p>
-      <br>
-      <br>
-      <a href="Image/DDS.png" data-lightbox="fig1"><img src="Image/DDS.png" width="70%" height="auto"></a><br>
-        Figure 1 : Drug Delivery System<br><br>
-    </div>
-
-    <div class="space" id="OurProject"></div>
-    <div class="section2">
-      <h1>Our Project</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We propose a new cancer treatment method that overcomes the current cancer treatment problems. The method proposed by us aims at direct administration to cells like DDS. The system we propose is not a premise for drug use like the conventional cancer
-        treatment methods, but it causes death of cancer cells only by reaction of DNA. We named this system DCC (DNA Cancer Cancell). With current technology, as mentioned earlier it will be difficult to target only cancer cells completely. However, unlike
-        medication, DCC has little effect on healthy cells.<br><br>
-      </p>
-      <br>
-      <a href="Image/がん治療.png" data-lightbox="fig2"><img src="Image/がん治療.png" width="70%" height="auto"></a><br>
-        Figure 2 : Our Project<br><br>
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We focused attention on ATP (adenosine triphosphate) which is energy for cell's life activity. ATP is synthesized in mitochondria, but when mitochondrial abnormality occurs, the cell synthesizes ATP in a system called glycolysis system. After that,
-        when there is oxygen, many ATPs are synthesized with mitochondria[2]. Even in the absence of oxygen, it is possible to synthesize a small amount of ATP, but lactic acid is produced at the same time(Click <a href="../Simulation/Simulation.html#AboutATP">About ATP</a>        for more details). Here, when mitochondria is malfunctioning, it continues to produce lactic acid at the same time as a small amount of ATP, regardless of the presence or absence of oxygen. The cell becomes weak and leads to death by continuing
-        to produce lactic acid, but in rare cases it will continue to live with carbohydrate as food. It becomes a cancer cell[3]. Cancer cells continue to live with small amounts of ATP obtained from carbohydrates as energy. Therefore, we thought that shutting
-        down a small amount of ATP completely stops <a href="../Simulation/Simulation.html#Simulation">intracellular signal transduction</a> and is able to forcefully direct it to cell death. ATP is present in abundance in normal cells, but only in small
-        amounts in cancer cells. The reason why cancer cell has much less ATP than normal cells is they don’t use the mitochondria which generates the most ATP. We thought that it is possible to make cancer cells only die and not to affect normal cells by utilizing its characteristics. In summery, the reason we focused on ATP is because we think we can use ATP which is a power source of life activity to stop cells and it is useful that the amount of ATP is very different from cancer cells and normal cells. It becomes ON state absorbing ATP in the cell at the timing when the Input is input. After that,
-        it turns OFF automatically when the cancer cell dies. This will minimize the burden on the cells even when our system is moving within normal cells.<br><br>
-      </p>
-      <a href="Image/ATP_concentration.png" data-lightbox="fig3"><img src="Image/ATP_concentration.png" width="70%" height="auto"></a><br>
-        Figure 3 : Image of Our Project<br><br>
-      <!-- <a href="Image/(m1)NUPACK.png" data-lightbox="fig3"><img src="Image/(m1)NUPACK.png" width="70%" height="auto"></a> -->
-    </div>
 
   <!--
     <div class="space" id="Mechanism"></div>
@@ -149,36 +106,17 @@
         Figure 2 : Promoter Design<br><br><br>
     </div>
   -->
-    <div class="space" id="Objective"></div>
-    <div class="section2">
-        <h1>Objective</h1>
-        <p>
-          <br>
-        </p>
+    <div class="space" id="Page-Overview"></div>
+    <div class="section1">
+        <h1>Page Overview</h1>
     </div>
 
-    <div class="space" id="Program"></div>
+    <div class="space" id="PoC"></div>
     <div class="section2">
-        <h1>Program</h1>
-        <p>
-          <br>
-        </p>
+        <h1>Proof of Concept</h1>
     </div>
 
 
-    <div class="space" id="Merit"></div>
-    <div class="section2">
-        <h1>Merit</h1>
-        <p>The merit of DCC proposed by us is as follows.
-            First, the effect on normal cells other than cancer cells, compared to conventional cancer treatment it is less.
-            Conventional cancer treatments are generally based on radiation or anticancer drugs.
-            However, these methods seriously damage normal cells other than cancer cells.
-            DCC we developed this time deals damage only to cancer cells and has little effect on normal cells we will not give it.
-            Another merit is that we do not use enzymes in DNA circuit of DCC.
-            T7 polymerase enzyme is used to absorb ATP, but in the design of DNA circuits we do not use enzymes. For details, please refer to <a href="../DNADesign/DNADesign.html">DNA Design</a>.
-            By not using the enzyme, it can be expected to be used in vivo.<br>
-        </p>
-    </div>
   <!--
     <div class="space" id="GoalsReached"></div>
     <div class="section1">
