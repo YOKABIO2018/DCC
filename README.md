@@ -1,6 +1,6 @@
-# DCC
+# DPGB
 ## URL
-https://yokabio2018.github.io/DCC/
+https://yokabio2018.github.io/DPGB/
 
 ## Summary
 - 文章を追加した場合
