@@ -1,0 +1,35 @@
+#acMenu{
+  margin-bottom: 5%;
+  width: 95%;
+  margin: auto;
+}
+#acMenu dt{
+  display: block;
+  margin: auto;
+  line-height: 4;
+  text-align: left;
+  border: #eee 2px solid;
+  cursor: pointer;
+  color: #eee;
+  background-color: black;
+}
+#acMenu dd{
+  height: auto;
+  line-height: 1.8;
+  text-left: center;
+  border: #eee 1px solid;
+  display: none;
+  /*background-color: ;*/
+}
+
+figure{
+  width: 40%;
+  padding: 1%;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+figure img{
+}
+figcaption{
+  font-size: 15px;
+}
