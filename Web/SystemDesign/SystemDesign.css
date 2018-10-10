@@ -5,8 +5,7 @@
 }
 #acMenu dt{
   display: block;
-  margin: auto;
-  line-height: 4;
+  padding: 3% 3% 3% 1%;
   text-align: left;
   border: #eee 2px solid;
   cursor: pointer;
