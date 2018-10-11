@@ -173,16 +173,19 @@ nav ul li a.current{
 }
 
 #yokabio{
+  /*
     background-image: url(Logo.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: -100%;
+  */
+    margin-left: -50%;
 }
+/*
 #yokabio span::before{
   white-space: pre-wrap;
   content: "         ";
 }
-
+*/
 .container{
     margin: 0 10%;
     text-align: center;
