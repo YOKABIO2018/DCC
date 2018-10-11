@@ -19,6 +19,14 @@
   <script src="../js/scroll_current.js"></script>
   <script src="../js/page_top.js"></script>
 
+  <script>
+    $(function(){
+      $("#acMenu dt").on("click", function(){
+        $(this).next().slideToggle("slow");
+      });
+    });
+  </script>
+
 </head>
 
 <body>
@@ -37,7 +45,7 @@
       <li><a href="../../index.html">Home</a></li>
       <li><a href="../Idea/Idea.html">Idea</a></li>
       <li><a href="../SystemDesign/SystemDesign.html">System Design</a></li>
-      <li><a class="current" href="../PoC/PoC.html">PoC</a></li>
+      <li><a class="current" href="../PoC/PoC.html">Proof of Concept</a></li>
       <li><a href="../Experiment/Experiment.html">Experiment</a></li>
       <li><a href="../Application/Application.html">Application</a></li>
       <li><a href="../Discussion/Discussion.html">Discussion</a></li>
@@ -115,9 +123,15 @@
     <div class="space" id="PoC"></div>
     <div class="section2">
         <h1>Proof of Concept</h1>
-        <div class="code">
-          <script src="https://gist.github.com/KatafuchiRyoya/e2896b1bdf0d8d52ab7919489199a937.js"></script>
-        </div>
+        <dl id="acMenu">
+          <dt>ソースコードを見る</dt>
+          <dd>
+            <div class="code">
+              <script src="https://gist.github.com/KatafuchiRyoya/e2896b1bdf0d8d52ab7919489199a937.js"></script>
+              <p>If you want to download this file, click the file name and go to Gist.</p>
+            </div>
+          </dd>
+        </dl>
 
     </div>
 
