@@ -5,12 +5,16 @@
 }
 #acMenu dt{
   display: block;
-  padding: 3% 3% 3% 1%;
+  padding: 2% 2% 2% 1%;
   text-align: left;
   border: #eee 2px solid;
   cursor: pointer;
   color: #eee;
   background-color: black;
+}
+#acMenu dt .dt-mark{
+  float: right;
+  font-size: 1.2em;
 }
 #acMenu dd{
   height: auto;
