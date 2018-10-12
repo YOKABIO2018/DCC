@@ -20,6 +20,14 @@
   display: none;
   background-color: #eee;
 }
+.open{
+  transform: rotate(180deg);
+  transition: 1s;
+}
+.close{
+  transform: rotate(0deg);
+  transition: 1s;
+}
 
 figure{
   width: 40%;

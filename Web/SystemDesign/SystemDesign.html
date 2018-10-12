@@ -20,13 +20,7 @@
         <title>YOKABIO2018</title>
         <link rel="shortcut icon" href="../Logo.gif" type="image/vnd.microsoft.icon">
 
-        <script>
-          $(function(){
-            $("#acMenu dt").on("click", function() {
-              $(this).next().slideToggle("slow");
-            });
-          });
-        </script>
+        
     </head>
 
     <body>
@@ -380,5 +374,20 @@
             <p>&copy;YOKABIO 2018</p>
         </footer>
         <script src="../lightbox-plus-jquery.js"></script>
+        <script>
+          $(function(){
+            $("#acMenu dt").click(function(){
+              if($(this).next().css("display")==="block"){
+                $(this).children('span').removeClass('open');
+                $(this).children('span').toggleClass('close');
+              }
+              else{
+                $(this).children('span').removeClass('close');
+                $(this).children('span').toggleClass('open');
+              }
+              $(this).next().slideToggle("slow");
+            });
+          }.call(this));
+        </script>
     </body>
 </html>
