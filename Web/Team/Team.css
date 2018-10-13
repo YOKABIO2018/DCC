@@ -91,9 +91,9 @@ body {
     position: relative;
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.8;
     color: #212529;
     text-align: left;
 
@@ -114,18 +114,19 @@ header {
     background: #353a3f;
 }
 header ul {
+    padding: 0px;
     margin: 0px;
-    padding: 0px 0px;
     font-size: 0;
+    z-index: 3;
 }
 header ul li{
-    font-size: 20px;
+    font-size: 1.2vw;
     display: inline-block;
     margin-right: 0px;
 }
-header ul li a {
+header ul li a{
     display: inline-block;
-    padding: 15px 20px 15px 20px;
+    padding: 10px 20px 10px 20px;
     color: gainsboro;
     text-decoration: none;
     transition: 0.3s;
@@ -144,7 +145,7 @@ header ul li a.current{
 
 nav {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.2vw;
     height: auto;
     background: #f8f9fa;
 }
@@ -161,10 +162,22 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover{
-    color: black;
+    color: #f76b00;
     text-decoration: none;
+    transition: 0.3s;
 }
+nav ul li a.current{
+    color: #f76b00;
+    text-decoration: underline #f76b00;
+    transition: 0.5s;
+}
+
 #yokabio{
+  /*
+    background-image: url(Logo.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+  */
     margin-left: -50%;
 }
 
@@ -276,6 +289,13 @@ footer {
 }
 
 /*↓サブナビゲーションバー用↓*/
+.header-is-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
 .is-fixed {
   position: fixed;
   top: 0;
