@@ -1,13 +1,12 @@
 #acMenu{
-  margin-bottom: 5%;
   width: 95%;
-  margin: auto;
+  margin: 0 auto 5% auto;
 }
 #acMenu dt{
   display: block;
   padding: 2% 2% 2% 1%;
   text-align: left;
-  border: #eee 2px solid;
+  border: #eee 1px solid;
   cursor: pointer;
   color: #eee;
   background-color: black;
@@ -17,20 +16,18 @@
   font-size: 1.2em;
 }
 #acMenu dd{
-  height: auto;
-  line-height: 1.8;
-  text-left: center;
-  /*border: #eee 1px solid;*/
   display: none;
-  background-color: #eee;
+  line-height: 1.8;
+  border: #eee 1px solid;
+  background-color: white;
 }
 .open{
   transform: rotate(180deg);
-  transition: 1s;
+  transition: 0.5s;
 }
 .close{
   transform: rotate(0deg);
-  transition: 1s;
+  transition: 800ms ease-in-out;
 }
 
 figure{
@@ -38,8 +35,6 @@ figure{
   padding: 1%;
   display: inline-block;
   margin-bottom: 2%;
-}
-figure img{
 }
 figcaption{
   font-size: 15px;

@@ -255,8 +255,9 @@ nav ul li a.current{
 }
 .space {
     width: auto;
-    height: 50px;
-    margin: auto;
+    /*ight: 60px;*/
+    margin-top: -50px;
+    padding-top: 100px;
 }
 
 
