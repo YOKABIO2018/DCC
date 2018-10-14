@@ -72,57 +72,41 @@
                 idはsectionではなく,直前のspaceのクラスに追加して下さい
                 divタグの内部では,h1,h2,pタグのみ使用して下さい
                 img,videoタグを使用するときは,pタグの外で使用して下さい
-            -->
+    -->
 
-  <!--
-    <div class="space" id="Mechanism"></div>
-    <div class="section1">
-        <h1>Mechanism</h1>
-        <h2>Polymerase Reaction</h2>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the polymerase reaction as a way to absorb ATP from cells.
-                The polymerase is an enzyme which configuers a nucleic acid or a chain such as DNA or RNA[7].
-                In this project, we use double stranded DNA including T7 promoter squence as template,
-                NTP(Nucleoside triphosphate) as substrate.
-                In addition, we use T7RNA polymerase which is an enzyme and makes complementary single stranded RNA
-                for a template DNA being a part of downstream of the promoter (Figure 1, Video 1).
-                The reason for using T7RNA Polymer is that DNA Polymerase has dNTP as a matrix and RNA Polymerase has NTP as a matrix,
-                so RNA Polymerase can consume ATP. T7RNA Polymerase is useful because it detects specific base sequence
-                and it is convenient to our project using mismatch base pair.
-                <br><br>
-        </p>
-        <a href="Image/polymerase(Fig1).png" data-lightbox="fig-1"><img src="Image/polymerase(Fig1).png" width="60%" height="auto"></a>
-        <br>
-        Figure 1 : Polymerase Reaction<br><br>
-        <video controls width="70%" height="auto">
-            <source src="Video/polymerase.mp4">
-        </video>
-        <br>
-        Video 1 : Polymerase Reaction(Video)<br>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we perform a verification experiment using mammalian cells
-            after confirming the validity of our idea and principle of operation,
-            there is one problem to be solved in order to realize DCC as a cancer treatment.
-            It is that T7 RNA polymerase is not present in humans.
-            But in this project, we just focus on if DCC(absorbing ATP) can affect only E.coli (It is described in <a href="../Simulation/Simulation.html#E.coli-Simulation">E.coli Simulation</a>).
-          <br><br>
-        </p>
-        <br><br>
-
-        <h2>ON-OFF switch</h2>
-        <p> We arranged adenine on a part of downstream of the T7 promoter to absorb only ATP as energy (Figure 2).<br></p>
-
-        <a href="Image/polymerase_ATP(Fig2).png" data-lightbox="fig2"><img src="Image/polymerase_ATP(Fig2).png" width="60%" height="auto"></a>
-        <br>
-        Figure 2 : Promoter Design<br><br><br>
-    </div>
-  -->
     <div class="space" id="Page-Overview"></div>
     <div class="section1">
         <h1>Page Overview</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;このページでは、私たちのアイデアの妥当性を示すために、システム全体のシミュレーションを遂行する。
+            Ideaのページで紹介した、DNA回路が動作し、生体反応に影響を与える一連の様子をシミュレーションした。
+        </p>
+        
+        <a href="" data-lightbox=""><img src="" width="70%" height="auto"></a>
+        Figure 1:システム制御系の全体のシーケンス図
     </div>
 
     <div class="space" id="PoC"></div>
     <div class="section2">
         <h1>Proof of Concept</h1>
+        <h2>Overall Simulation</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今回は、私たちが設計したDNA回路が生体内で動作することでATPを消費し,
+            その結果、Ras活性化が抑えられることをシミュレーションした。
+            シミュレーションにはSystem Designで示したDNA回路とKholodenkoモデルを使用した。
+            また、シミュレーションの評価方法としては、Heinrich2002で示されているamplification,  duration,  integralの3つの中で、
+            今回はintegralを評価項目として用いる(参考文献としてKholodenkoとHeinrichの論文を紹介する)。
+            以下、DNA回路のATP消費効率をβとする。これは今回のプロジェクトでは確認できないため、複数の値でシミュレーションを行った。
+            まずは、今回のプロジェクトの全体図の中の線で囲った部分のシミュレーション結果を示す(図0)。
+        </p>
+        <a href="" data-lightbox=""><img src="" width="70%" height="auto"></a>
+        Figure 0:プロジェクトの全体図<br><br>
+        
+        <p>Thresholdを一定、βを変化させたときの、活性化したRasの時間変化を図1、その積分値を図2として以下に示す。
+        </p>
+        
+        <h2>DNA Circuit Operation</h2>
+        <h2>ATP Absorption</h2>
+        <h2>Inhibit Activation of Ras</h2>
+        <h2>File Download</h2>
         <dl id="acMenu">
           <dt>ソースコードを見る</dt>
           <dd>
@@ -135,37 +119,6 @@
 
     </div>
 
-
-  <!--
-    <div class="space" id="GoalsReached"></div>
-    <div class="section1">
-      <h1>Goals Reached</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The goals of our project are roughly divided into three. The first is to consider and simulate theory to suppress cell proliferation.<br>&nbsp;&#9312; Theory<br>&nbsp;&#9313; Simulation<br> The second one is DNA design. Because the DNA circuit designed this time is
-        complicated, there are <a href="../DNADesign/DNADesign.html#variousproblems">various problems</a>. We solved these problems using mismatched base pairs.<br>&nbsp;&#9312; DNA design<br>&nbsp;&#9313; Implementation of mismatch base pair<br>&nbsp;&#9314; Experiment<br> Third is
-        to do a consideration and verification experiment to move the DNA system inside the cell. In this project, we aim to use natural Escherichia coli and move the actually created DNA system.<br>&nbsp;&#9312; Method of experiment<br>&nbsp;&#9313; Experiment<br>
-      </p>
-      <br>
-      <br>
-      <a href="Image/goalsreached.png" data-lightbox="fig4"><img src="Image/goalsreached.png" width="70%" height="auto"></a><br>
-        Figure 4 : Goals Reached<br><br>
-    </div>
-  -->
-  <!--
-    <div class="space" id="References"></div>
-    <div class="section2">
-      <h1>References</h1>
-      <p>
-        [1]Ebbe S. Andersen, Mingdong Dong, Morten M.Nielsen, Kasper Jahn, Rnmesh Subramani, Wael Mamdouh, Monika M. Golas, Bjoern Sander, Holger Stark, Cristiano L. P. Oliveira, Jan Skov Pedersen, Victoria Virkedal, Flemming Besenbacher, Kurt V. Gothelf &amp;
-        Jorgen Kjems: Self-assembly of a nanoscale DNA box with a controllable lid, Vol459,7 May 2009, doi:10.1038/nature07971<br>
-          [2]Attardi, G., Schatz, G. Annu.Rev. Cell Viol. 4, doi: 10.1146/anurev.vb.04.110188.001445<br>[3]Rossignol, R.
-        et al. Cancer Res. Doi:10.1158/0008-5472.can-03-110<br> [4]Boris N. Kholodenko, Oleg V. Demin, Gisela Moehren, and jan B. Hoek: Quantifcation of Short Term Signaling by the Epidermal Growth Factor Receptor. Vol 274, No. 42, Issue of October 15,
-        pp. 30169-30181, 1999<br> [5]D. Zhan and E. Winfree: Control of DNA strand displacement kinetics using toehold exchange, J. Am. Chem. Soc., Vol. 131, pp. 17303-17314, 2009<br> [6]S. Kobayashi, K. Yanagibashi, K. Fujimoto, K. Komiya and M. Hagiya:
-        Analog DNA computing devices toward the control of molecular robots, Workshop on Self-organization in Swarm of Robots: from Molecular Robots to Mobile Agents (WSSR 2014), Nara, October, 2014<br> [7]Bruce Alberts, Alecander Johnson, Julian Lewis,
-        Martin Raff, Keith Roberts, and Peter Walter: Molecular Biology of the Cell, 4th edition. Garland Sciece(2002)<br> [8]Takashi Nakakuki and Jun-ichi Imura: Molecular Governor: DNA Feedback Regulator for Molecular Robotics, vol.9, No.2, pp. 060-069,
-        March 2016<br> [9]Lulu Qian and Erik Winfree: A simple DNA gate motif for synthesizeing large-scale circuits, doi:10.1098/rsif.2010.0729<br> [10]Lulu Qian and Erik Winfree: Computation with DNA Strand Displacement Cascades, VOL 332, 3 June 2011<br>        [11]Yuki Yoshida, Takashi Nakakuki, Design tool of DNA base sequences for molecular circuits, Proc. of 17th International Conference on Control, Automation and Systems (ICCAS 2017), Oct, 2017.<br> [12]NUPACK: <a href="http://www.nupack.org">http://www.nupack.org</a><br>        [13]Matlab: <a href="https://jp.mathworks.com/products/matlab.html">https://jp.mathworks.com/products/matlab.html</a><br> [14]Sarah C. Spencer: Electroportion Technique of DNA Transfection<br>
-      </p>
-    </div>
-  -->
   </main>
   <!--↑変更するのはここまで↑-->
 
