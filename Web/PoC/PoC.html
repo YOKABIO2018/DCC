@@ -167,12 +167,12 @@
         <p id="math"><br>Absorber(ON)がATPを吸収する反応を、次の$v_{1} \sim v_{5}$の反応速度式で記述する。<br></p>
         <p id="math-add"><br>
             $v_{1} = -\alpha_{1} \cdot [R_{2}] \cdot [ATP]$<br>
-            $v_{2} = -\alpha_{2} \cdot [R \mathchar`- PL] \cdot [ATP]$<br>
+            $v_{2} = -\alpha_{2} \cdot [R-PL] \cdot [ATP]$<br>
             $v_{3} = -\alpha_{3} \cdot [R-Sh] \cdot [ATP]$<br>
             $v_{4} = \gamma$<br>
             $v_{5} = -\beta \cdot [Absorber(ON)] \cdot [ATP]$<br><br>
         </p>
-        <p id="math">ただし、$\alpha_{1}=3.0×10^{-4},\alpha_{2}=7.0×10^{-4},\alpha_{3}=9.0×10^{-4},\gamma=90.0$とする。
+        <p id="math">ただし、$\alpha_{1}=3.0×10^{-4},\ \alpha_{2}=7.0×10^{-4},\ \alpha_{3}=9.0×10^{-4},\ \gamma=90.0$とする。
             ここで、$v_{1} \sim v_{3}$が以下のスキーム図の反応速度式を表す(図9).
             また、$v_{4}$が細胞内で生成されるATPの生成速度を表し、今回これは生成速度一定で生成されると仮定した。
             係数の$\alpha_{1} \sim \alpha_{3}$と$\gamma$の値はKholodenkoモデルの結果と比較しながら定めた。
@@ -185,7 +185,7 @@
         <p id="math"><br>$v_{1} \sim v_{5}$の反応速度式を用いると、ATPの微分方程式は以下のようになる。<br><br>
         </p>
         <p id="math-add">
-            $\frac{d[ATP]}{dt} = v_{1} + v_{2} + v_{3} + v_{4} + v_{5}$<br><br>
+            $\large \frac{d[ATP]}{dt} = v_{1} + v_{2} + v_{3} + v_{4} + v_{5}$<br><br>
         </p>
         
         <p id="math">先程DNA回路で生成されたAbsorber(ON)によってATPが吸収され、減少する様子を以下に示す(図10,図11).
@@ -231,7 +231,28 @@
         <a href="" data-lightbox="fig14"><img src="" width="100%"></a>
         <figcaption>Figure 13 : EGFR-mediated signaling pathwaysのスキーム図</figcaption>
         
+        <p id="math-add"><br>
+            $\large v_{6} = \frac{k_{12} \cdot [R-Sh-G-S] \cdot [Ras-GDP]}{k_{-12}+[Ras-GDP]}$<br><br>
+            $\large v_{7} = \frac{k_{12} \cdot [R-G-S] \cdot [Ras-GDP]}{k_{-12}+[Ras-GDP]}$<br><br>
+            $\large v_{8} = \frac{k_{13} \cdot [Ras-GTP]}{k_{-13}+[Ras-GTP]}$<br><br>
+        </p>
+        <p id="math">ただし、$k_{12}=5.40×10^{1},\ k_{-12}=2.28×10^{2},\ k_{13}=3.09×10^{1},\ k_{-13}=2.76×10^{1}$である。
+            これらの係数の値と図13のスキーム図はTopological Analysis of MAPK Cascade for Kinetic ErbB Signalingを参考にした。
+            $v_{6},v_{7}$がRasの活性化(リン酸化)を、$v_{8}$がRasの不活性化(脱リン酸化)を表す。
+            したがって、Ras-GTPとRas-GDPの微分方程式はそれぞれ以下のようになる。<br><br>
+        </p>
+        <p id="math-add">
+            $\large \frac{d[Ras-GTP]}{dt} = v_{6}+v_{7}-v_{8}$<br><br>
+            $\large \frac{d[Ras-GDP]}{dt} = -v_{6}-v_{7}+v_{8}$<br><br>
+        </p>
+        <p>したがって、上式や、これまで述べてきた反応速度係数を用いてシミュレーションを行うと冒頭で述べたような図1~4が得られる。</p>
+        
         <h2>File Download</h2>
+        <p>シミュレーションに用いたソースコードはC言語とMATLABの2つの種類で、以下のリンクからダウンロード可能である。
+            DP_Gate_Bridge.cというC言語のソースコードでシミュレーションを行う。
+            その結果がdata.txtに出力され、plot_data.mというMATLABのソースコードでグラフの描画を行う。
+            kholodenko_add_Absorber_run.mとkholodenko_add_Absorber.mというファイルはMATLABのみでシミュレーションを行う。<br><br>
+        </p>
         <dl id="acMenu">
           <dt>ソースコードを見る</dt>
           <dd>
