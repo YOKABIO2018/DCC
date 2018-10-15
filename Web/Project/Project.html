@@ -84,146 +84,87 @@
     <div class="section2">
       <h1>Problem</h1>
       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはDP gate bridgeになりうる例を考えた。DNAをシグナル伝達系のタンパク質そのものに作用させるには、タンパク質同士の結合部位への阻害などのタンパク質の構造に着目せねばならない。
-        しかし、DNA折り紙といったDNAナノ構造の技術をもってしても、タンパク質へ高い適合性を持った構造物を生成するのはたやすくない。<br>また、それらのタンパク質への作用させるためにmRNAに着目する方法もある。
+        しかし、DNA折り紙といったDNAナノ構造の技術をもってしても、タンパク質へ高い適合性を持った構造物を生成するのはたやすくない。<br><br>
+      </p>
+
+      <a href="Image/Protein_system.png" data-lightbox="fig2"><img src="Image/Protein_system.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 2 : Protein system</figcaption><br><br>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;また、それらのタンパク質への作用させるためにmRNAに着目する方法もある。
         ｍRNAはタンパク質の設計図であり、タンパク発現量や発現時間などを調整する物質であるとされている。つまり、DNAをmRNAに何らかの形で作用し、mRNAの阻害が出来れば、シグナル伝達系を制御しうることになる。
         しかし、mRNAは細胞内で精密に管理されており、mRNAの動きや、mRNAの発生時間を捉えることは非常に難しい。<br><br>
       </p>
 
-      <h2>Our Project</h2>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;そこで、私たちはシグナル伝達系の動きを詳細に追ってみた。シグナル伝達系のタンパク質間の働きにはリン酸化が重要な機構として働いている。
-        タンパク質のリン酸化はタンパク質間をつなぐ重要な伝達機能を果たしており、タンパク質のリン酸化にはATPの供給が不可欠である。私たちはこの仕組みに注目し、細胞内のATP量を調整すれば結果的に、シグナル伝達系を制御できるのではないかと考えた。
-      </p>
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはこのATPを介したタンパク質制御をATP Controllerと名付け、DP gate bridgeの一つになりうると考えた。このプロジェクトの最終目標はDP gate bridgeにおける新しいシステムを提示することである。
-        ATP  Controllerを完成させることである。ATP controllerの完成させるためにするべきことは、DNAとATPの作用方法、及びATP量の調整する機構を提案し、その妥当性と実現性を立証、実験する事である。<br><br>
-      </p>
-
+      <a href="Image/mRNA_system.png" data-lightbox="fig3"><img src="Image/mRNA_system.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 3 : mRNA system</figcaption><br><br>
     </div>
 
     <div class="space" id="OurProject"></div>
-    <div class="section2">
-      <h1>Our Project</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We propose a new cancer treatment method that overcomes the current cancer treatment problems. The method proposed by us aims at direct administration to cells like DDS. The system we propose is not a premise for drug use like the conventional cancer
-        treatment methods, but it causes death of cancer cells only by reaction of DNA. We named this system DCC (DNA Cancer Cancell). With current technology, as mentioned earlier it will be difficult to target only cancer cells completely. However, unlike
-        medication, DCC has little effect on healthy cells.<br><br>
-      </p>
-      <br>
-      <a href="Image/がん治療.png" data-lightbox="fig2"><img src="Image/がん治療.png" width="70%" height="auto"></a><br>
-        Figure 2 : Our Project<br><br>
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We focused attention on ATP (adenosine triphosphate) which is energy for cell's life activity. ATP is synthesized in mitochondria, but when mitochondrial abnormality occurs, the cell synthesizes ATP in a system called glycolysis system. After that,
-        when there is oxygen, many ATPs are synthesized with mitochondria[2]. Even in the absence of oxygen, it is possible to synthesize a small amount of ATP, but lactic acid is produced at the same time(Click <a href="../Simulation/Simulation.html#AboutATP">About ATP</a>        for more details). Here, when mitochondria is malfunctioning, it continues to produce lactic acid at the same time as a small amount of ATP, regardless of the presence or absence of oxygen. The cell becomes weak and leads to death by continuing
-        to produce lactic acid, but in rare cases it will continue to live with carbohydrate as food. It becomes a cancer cell[3]. Cancer cells continue to live with small amounts of ATP obtained from carbohydrates as energy. Therefore, we thought that shutting
-        down a small amount of ATP completely stops <a href="../Simulation/Simulation.html#Simulation">intracellular signal transduction</a> and is able to forcefully direct it to cell death. ATP is present in abundance in normal cells, but only in small
-        amounts in cancer cells. The reason why cancer cell has much less ATP than normal cells is they don’t use the mitochondria which generates the most ATP. We thought that it is possible to make cancer cells only die and not to affect normal cells by utilizing its characteristics. In summery, the reason we focused on ATP is because we think we can use ATP which is a power source of life activity to stop cells and it is useful that the amount of ATP is very different from cancer cells and normal cells. It becomes ON state absorbing ATP in the cell at the timing when the Input is input. After that,
-        it turns OFF automatically when the cancer cell dies. This will minimize the burden on the cells even when our system is moving within normal cells.<br><br>
-      </p>
-      <a href="Image/ATP_concentration.png" data-lightbox="fig3"><img src="Image/ATP_concentration.png" width="70%" height="auto"></a><br>
-        Figure 3 : Image of Our Project<br><br>
-      <!-- <a href="Image/(m1)NUPACK.png" data-lightbox="fig3"><img src="Image/(m1)NUPACK.png" width="70%" height="auto"></a> -->
-    </div>
-
-  <!--
-    <div class="space" id="Mechanism"></div>
     <div class="section1">
-        <h1>Mechanism</h1>
-        <h2>Polymerase Reaction</h2>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the polymerase reaction as a way to absorb ATP from cells.
-                The polymerase is an enzyme which configuers a nucleic acid or a chain such as DNA or RNA[7].
-                In this project, we use double stranded DNA including T7 promoter squence as template,
-                NTP(Nucleoside triphosphate) as substrate.
-                In addition, we use T7RNA polymerase which is an enzyme and makes complementary single stranded RNA
-                for a template DNA being a part of downstream of the promoter (Figure 1, Video 1).
-                The reason for using T7RNA Polymer is that DNA Polymerase has dNTP as a matrix and RNA Polymerase has NTP as a matrix,
-                so RNA Polymerase can consume ATP. T7RNA Polymerase is useful because it detects specific base sequence
-                and it is convenient to our project using mismatch base pair.
-                <br><br>
-        </p>
-        <a href="Image/polymerase(Fig1).png" data-lightbox="fig-1"><img src="Image/polymerase(Fig1).png" width="60%" height="auto"></a>
-        <br>
-        Figure 1 : Polymerase Reaction<br><br>
-        <video controls width="70%" height="auto">
-            <source src="Video/polymerase.mp4">
-        </video>
-        <br>
-        Video 1 : Polymerase Reaction(Video)<br>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we perform a verification experiment using mammalian cells
-            after confirming the validity of our idea and principle of operation,
-            there is one problem to be solved in order to realize DCC as a cancer treatment.
-            It is that T7 RNA polymerase is not present in humans.
-            But in this project, we just focus on if DCC(absorbing ATP) can affect only E.coli (It is described in <a href="../Simulation/Simulation.html#E.coli-Simulation">E.coli Simulation</a>).
-          <br><br>
-        </p>
-        <br><br>
+      <h1>Our Project</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;そこで、私たちはシグナル伝達系の動きを詳細に追ってみた。シグナル伝達系のタンパク質間の働きにはリン酸化が重要な機構として働いている。
+        タンパク質のリン酸化はタンパク質間をつなぐ重要な伝達機能を果たしており、タンパク質のリン酸化にはATPの供給が不可欠である。私たちはこの仕組みに注目し、細胞内のATP量を調整すれば結果的に、
+        シグナル伝達系を制御できるのではないかと考えた。<br><br>
+      </p>
 
-        <h2>ON-OFF switch</h2>
-        <p> We arranged adenine on a part of downstream of the T7 promoter to absorb only ATP as energy (Figure 2).<br></p>
+      <a href="Image/ATP_system.png" data-lightbox="fig4"><img src="Image/ATP_system.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 4 : ATP system</figcaption><br><br>
 
-        <a href="Image/polymerase_ATP(Fig2).png" data-lightbox="fig2"><img src="Image/polymerase_ATP(Fig2).png" width="60%" height="auto"></a>
-        <br>
-        Figure 2 : Promoter Design<br><br><br>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはこのATPを介したタンパク質制御をATP Controllerと名付け、DP gate bridgeの一つになりうると考えた。このプロジェクトの最終目標はDP gate bridgeにおける新しいシステムを提示することである。
+        ATP  Controllerを完成させることである。ATP controllerの完成させるためにするべきことは、DNAとATPの作用方法、及びATP量の調整する機構を提案し、その妥当性と実現性を立証、実験する事である。
+      </p>
+
+      <a href="Image/DPgatebridge_system.png" data-lightbox="fig5"><img src="Image/DPgatebridge_system.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 5 : Our project</figcaption><br><br>
+
     </div>
-  -->
-    <div class="space" id="Objective"></div>
+
+    <div class="space" id="Idea"></div>
     <div class="section2">
-        <h1>Objective</h1>
-        <p>
-          <br>
-        </p>
+      <h1>Idea</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちが初めに決定しなければならないことはDNAがATP量に対してどのようにして作用し、制御するかである。その関係性を明確にするために、私たちは二つのアイデアを考えた。<br><br>
+      </p>
+      <h2>ATP connection </h2>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはATP量に干渉する方法として、DNA結合RNAポリミラーゼによるRNA合成に着目した。DNA結合RNAポリミラーゼはDNA配列を設計図にRNAを作成する。この際、周りのNTPを材料にしてRNAを作る。
+        そのNTPの中にはATPも含まれ、ATPはRNAではアデニンに当たる。つまり、DNA配列に大量にアデニンを記録させることによって、大量のATPを消費させることができるのである。<br><br>
+      </p>
+      <h2>ATP connection </h2>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DNA結合RNAポリミラーゼはプロモーター配列のあるDNAを読み続けてしまう。これではアデニンで構成されたRNAを生産し続けてしまい、細胞内のATPが減少し続けてしまう。
+        これでは、ATP量を制御することができているとは言えない。そこで、DNA結合RNAポリミラーゼはDNA二本鎖に結びつく性質を利用した。私たちはプロモーター配列のあるDNA二本鎖を鎖置換反応によってDNA一本鎖にすることにした。
+        そうすることにより、ポリミラーゼは結合するはずだったDNAを認識できなくなり、RNAの生産が止まるのだ。このON—OFFを切り替えるDNAをReleaserと名付けた。（図挿入）また、シーソーゲートと呼ばれる技術を用いることで、このReleaserの出現時間を調整した。
+        つまり、私たちはATP量の調整をReleaserの出現時間の制御によって成し遂げた。この全体のDNA回路をDelay回路と名付けた。
+      </p>
     </div>
-
-    <div class="space" id="Program"></div>
-    <div class="section2">
-        <h1>Program</h1>
-        <p>
-          <br>
-        </p>
-    </div>
-
 
     <div class="space" id="Merit"></div>
-    <div class="section2">
-        <h1>Merit</h1>
-        <p>The merit of DCC proposed by us is as follows.
-            First, the effect on normal cells other than cancer cells, compared to conventional cancer treatment it is less.
-            Conventional cancer treatments are generally based on radiation or anticancer drugs.
-            However, these methods seriously damage normal cells other than cancer cells.
-            DCC we developed this time deals damage only to cancer cells and has little effect on normal cells we will not give it.
-            Another merit is that we do not use enzymes in DNA circuit of DCC.
-            T7 polymerase enzyme is used to absorb ATP, but in the design of DNA circuits we do not use enzymes. For details, please refer to <a href="../DNADesign/DNADesign.html">DNA Design</a>.
-            By not using the enzyme, it can be expected to be used in vivo.<br>
-        </p>
-    </div>
-  <!--
-    <div class="space" id="GoalsReached"></div>
     <div class="section1">
-      <h1>Goals Reached</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The goals of our project are roughly divided into three. The first is to consider and simulate theory to suppress cell proliferation.<br>&nbsp;&#9312; Theory<br>&nbsp;&#9313; Simulation<br> The second one is DNA design. Because the DNA circuit designed this time is
-        complicated, there are <a href="../DNADesign/DNADesign.html#variousproblems">various problems</a>. We solved these problems using mismatched base pairs.<br>&nbsp;&#9312; DNA design<br>&nbsp;&#9313; Implementation of mismatch base pair<br>&nbsp;&#9314; Experiment<br> Third is
-        to do a consideration and verification experiment to move the DNA system inside the cell. In this project, we aim to use natural Escherichia coli and move the actually created DNA system.<br>&nbsp;&#9312; Method of experiment<br>&nbsp;&#9313; Experiment<br>
+      <h1>Merit</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;このATP controllerの技術を確立する事は、今まで成し遂げられなかったDNAとタンパク質間との相互作用を証明することになる。
+        ATPは細胞の活動源であり、不可欠なものであるので細胞内ATPは膨大に存在している。
+        これらは、前述した二つの方法より、DNAを作用させやすい特徴であることを意味し、このDNAとATPの作用間はDNAがタンパク質、細胞応答の順番で制御できることを表す。
+        つまり、このシステムはDNAとProtein間をつなぐ比較的、簡単な方法だと言える。<br>
+        また、DNA結合RNAポリミラーゼによるRNA発現量を調整することのできる技術、ATPcontrolの完成は別の技術にも応用できると考える。
+        例えば、大腸菌へのプラスミド導入という形でタンパク質を作る技術は確立している。
+        この技術にもDNA結合RNAポリミラーゼは使用されているが、この酵素の活動は長期的であり、タンパク質量を調整することは難しい。
+        そこで、ATPcontrolを使えばタンパク質量の過剰な発現を抑えることができる。
+        これは生物学の研究実験において、より緻密で正確なデータを確保することができるようになると考える。
       </p>
-      <br>
-      <br>
-      <a href="Image/goalsreached.png" data-lightbox="fig4"><img src="Image/goalsreached.png" width="70%" height="auto"></a><br>
-        Figure 4 : Goals Reached<br><br>
     </div>
-  -->
-  <!--
-    <div class="space" id="References"></div>
+
+    <div class="space" id="Goal"></div>
     <div class="section2">
-      <h1>References</h1>
-      <p>
-        [1]Ebbe S. Andersen, Mingdong Dong, Morten M.Nielsen, Kasper Jahn, Rnmesh Subramani, Wael Mamdouh, Monika M. Golas, Bjoern Sander, Holger Stark, Cristiano L. P. Oliveira, Jan Skov Pedersen, Victoria Virkedal, Flemming Besenbacher, Kurt V. Gothelf &amp;
-        Jorgen Kjems: Self-assembly of a nanoscale DNA box with a controllable lid, Vol459,7 May 2009, doi:10.1038/nature07971<br>
-          [2]Attardi, G., Schatz, G. Annu.Rev. Cell Viol. 4, doi: 10.1146/anurev.vb.04.110188.001445<br>[3]Rossignol, R.
-        et al. Cancer Res. Doi:10.1158/0008-5472.can-03-110<br> [4]Boris N. Kholodenko, Oleg V. Demin, Gisela Moehren, and jan B. Hoek: Quantifcation of Short Term Signaling by the Epidermal Growth Factor Receptor. Vol 274, No. 42, Issue of October 15,
-        pp. 30169-30181, 1999<br> [5]D. Zhan and E. Winfree: Control of DNA strand displacement kinetics using toehold exchange, J. Am. Chem. Soc., Vol. 131, pp. 17303-17314, 2009<br> [6]S. Kobayashi, K. Yanagibashi, K. Fujimoto, K. Komiya and M. Hagiya:
-        Analog DNA computing devices toward the control of molecular robots, Workshop on Self-organization in Swarm of Robots: from Molecular Robots to Mobile Agents (WSSR 2014), Nara, October, 2014<br> [7]Bruce Alberts, Alecander Johnson, Julian Lewis,
-        Martin Raff, Keith Roberts, and Peter Walter: Molecular Biology of the Cell, 4th edition. Garland Sciece(2002)<br> [8]Takashi Nakakuki and Jun-ichi Imura: Molecular Governor: DNA Feedback Regulator for Molecular Robotics, vol.9, No.2, pp. 060-069,
-        March 2016<br> [9]Lulu Qian and Erik Winfree: A simple DNA gate motif for synthesizeing large-scale circuits, doi:10.1098/rsif.2010.0729<br> [10]Lulu Qian and Erik Winfree: Computation with DNA Strand Displacement Cascades, VOL 332, 3 June 2011<br>        [11]Yuki Yoshida, Takashi Nakakuki, Design tool of DNA base sequences for molecular circuits, Proc. of 17th International Conference on Control, Automation and Systems (ICCAS 2017), Oct, 2017.<br> [12]NUPACK: <a href="http://www.nupack.org">http://www.nupack.org</a><br>        [13]Matlab: <a href="https://jp.mathworks.com/products/matlab.html">https://jp.mathworks.com/products/matlab.html</a><br> [14]Sarah C. Spencer: Electroportion Technique of DNA Transfection<br>
+      <h1>Goal</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちは、BIOMODとしての研究目標をこの新しい制御系の妥当性、実現性を証明することとした。私たちはこの研究を始める際にいくつかの段階を考えた。
+        これらの段階は研究目標を意識し、BIOMODの期間内に果たすことを前提として定めた。（Figure 6）SystemDesign提案したシステムを現実にするための仕組みを考案する1,RNA合成酵素の選択2,そのATP量を調整するための機構Proof of ConceptSystem Designを踏まえ、
+        私たちのアイデアがシグナル伝達系への接続を可能にするか、またはシグナル伝達系を制御できるかを確定論的手法によって示す。
+        ExperimentMaterial and MethodDNA配列を現実的なものとして設計できたか。Operation Experiment 回路全体が動くかどうかの実験を行う。<br><br>
       </p>
+
+      <a href="Image/flow.png" data-lightbox="fig6"><img src="Image/flow.png" width="35%" height="auto"></a><br>
+      <figcaption>Figure 6 : flow</figcaption><br><br>
     </div>
-  -->
+
+
   </main>
   <!--↑変更するのはここまで↑-->
 
