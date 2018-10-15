@@ -96,57 +96,57 @@
         <h2>Overall Simulation</h2>
         <p id="math">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今回は、私たちが設計したDNA回路が生体内で動作することでATPを消費し,
             その結果、Ras活性化が抑えられることをシミュレーションした。
-            シミュレーションにはSystem Designで示したDNA回路とKholodenkoモデルを使用した。
+            シミュレーションにはSystem Designで示したDNA回路のATP ControllerとKholodenkoモデルを使用した。
             また、シミュレーションの評価方法としては、Heinrich2002で示されているamplification,  duration,  integralの3つの中で、
             今回はintegralを評価項目として用いる(参考文献としてKholodenkoとHeinrichの論文を紹介する)。
             以下、DNA回路のATP消費効率を$\beta$とする。これは今回のプロジェクトでは確認できないため、複数の値でシミュレーションを行った。
-            まずは、今回のプロジェクトの全体図の中の赤線で囲った部分のシミュレーション結果を示す(図0)。
+            まずは、今回のプロジェクトの全体図の中の赤線で囲った部分のシミュレーション結果を示す(図2)。
         </p>
         <a href="Image/Block_Figure3.png" data-lightbox="fig1"><img src="Image/Block_Figure3.png" width="70%"></a>
-        <figcaption>Figure 0 : プロジェクトの全体図</figcaption>
+        <figcaption>Figure 2 : プロジェクトの全体図</figcaption>
         
-        <p id="math"><br>Thresholdを一定、$\beta$を変化させたときの、活性化したRasの時間変化を図1、その積分値を図2として以下に示す。<br><br>
+        <p id="math"><br>Thresholdを一定、$\beta$を変化させたときの、活性化したRasの時間変化を図3、その積分値を図4として以下に示す。<br><br>
         </p>
         <figure>
             <a href="Image/Ras_Threshold_50.jpg" data-lightbox="fig2"><img src="Image/Ras_Threshold_50.jpg" width="100%"></a>
-            <figcaption id="math">Figure 1 : $\beta$の値に対するactivated Rasの濃度の時間変化(Threshold=50)</figcaption>
+            <figcaption id="math">Figure 3 : $\beta$の値に対するactivated Rasの濃度の時間変化(Threshold=50)</figcaption>
         </figure>
         <figure>
             <a href="Image/Threshold_50.jpg" data-lightbox="fig3"><img src="Image/Threshold_50.jpg" width="100%"></a>
-            <figcaption id="math">Figure 2 : $\beta$の値に対するactivated Rasの積分値(Threshold=50)</figcaption>
+            <figcaption id="math">Figure 4 : $\beta$の値に対するactivated Rasの積分値(Threshold=50)</figcaption>
         </figure>
         
-        <p id="math">図1,2から$\beta$の値を大きくする、つまり、ATPの消費効率を大きくするほど、Ras活性化が抑えられていることがわかる。
+        <p id="math">図3,4から$\beta$の値を大きくする、つまり、ATPの消費効率を大きくするほど、Ras活性化が抑えられていることがわかる。
             また、$\beta$=0のとき、つまり、ATPを消費する回路を動作させなかった場合(通常のKholodenkoモデル)と比較すると、
             いずれの場合も、Rasの活性化が抑えられていることが確認できる。
-            次に、$\beta$を一定、Thresholdを変化させたときの、活性化したRasの時間変化を図3,その積分値を図4として以下に示す。
+            次に、$\beta$を一定、Thresholdを変化させたときの、活性化したRasの時間変化を図5,その積分値を図6として以下に示す。
             Thresholdの役割については、System Designの<a href="../SystemDesign/SystemDesign.html#DNA-Circuit">DNA Circuit</a>を参照。<br><br>
         </p>
         <figure>
             <a href="Image/Ras_beta_0_0005.jpg" data-lightbox="fig4"><img src="Image/Ras_beta_0_0005.jpg" width="100%"></a>
-            <figcaption id="math">Figure 3 : Thresholdの値に対するactivated Rasの濃度の時間変化($\beta$=0.0005)</figcaption>
+            <figcaption id="math">Figure 5 : Thresholdの値に対するactivated Rasの濃度の時間変化($\beta$=0.0005)</figcaption>
         </figure>
         <figure>
             <a href="Image/beta_0_0005.jpg" data-lightbox="fig5"><img src="Image/beta_0_0005.jpg" width="100%"></a>
-            <figcaption id="math">Figure 4 : Thresholdの値に対するactivated Rasの積分値($\beta$=0.0005)</figcaption>
+            <figcaption id="math">Figure 6 : Thresholdの値に対するactivated Rasの積分値<br>($\beta$=0.0005)</figcaption>
         </figure>
         
-        <p>図3,4からThresholdの値を大きくする、つまり、DNA回路がONの時間を長くするほど、ATPをより多く消費するため、
-            Ras活性化が抑えられていることがわかる。こちらの場合も先程と同様に、ATPを消費する回路を動作させなかった場合(通常のKholodenkoモデル)と比較すると、
-            いずれの場合も、Rasの活性化が抑えられていることが確認できる。これらの結果から以下のことが確認できる(図5).<br><br>
+        <p>図5,6からThresholdの値を大きくする、つまり、ATP ControllerがONの時間を長くするほど、ATPをより多く消費するため、
+            Ras活性化が抑えられていることがわかる。こちらの場合も先程と同様に、ATP Controllerを動作させなかった場合(通常のKholodenkoモデル)と比較すると、
+            いずれの場合も、Rasの活性化が抑えられていることが確認できる。これらの結果から以下のことが確認できる(図7).<br><br>
         </p>
         <figure>
             <a href="" data-lightbox="fig6"><img src="" width="100%"></a>
-            <figcaption>Figure 5 : 全体のシミュレーションから確認できること</figcaption>
+            <figcaption>Figure 7 : 全体のシミュレーションから確認できること</figcaption>
         </figure>
 
         <h2>DNA Circuit Operation</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;まず、DNA回路の動作についてシミュレーションを行う(図6).
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;まず、DNA回路のATP Controllerの動作についてシミュレーションを行う(図8).
         </p>
         <a href="Image/Block_Figure4.png" data-lightbox="fig7"><img src="Image/Block_Figure4.png" width="70%"></a>
-        <figcaption>Figure 6 : プロジェクトの全体図のDNA Circuitを囲った図</figcaption>
+        <figcaption>Figure 8 : プロジェクトの全体図のATP Controllerを囲った図</figcaption>
         
-        <p id="math"><br>System Designで述べたDNA回路が動作することで生成されるAbsorber(ON)の濃度の時間変化を以下に示す(図7).
+        <p id="math"><br>System Designで述べたATP Controllerが動作することで生成されるAbsorber(ON)の濃度の時間変化を以下に示す(図9).
             なお、シミュレーションに使用した各物質の初期濃度は以下の通りである.<br><br>
         </p>
         <p id="math-add">
@@ -154,16 +154,16 @@
             $\rm Other\ substances=0[nM]$<br><br>
         </p>
         <a href="Image/Absorber_beta_0_0005.jpg" data-lightbox="fig8"><img src="Image/Absorber_beta_0_0005.jpg" width="50%"></a>
-        <figcaption>Figure 7 : Thresholdの値の変化によるAbsorber(ON)の時間変化</figcaption>
+        <figcaption>Figure 9 : Thresholdの値の変化によるAbsorber(ON)の時間変化</figcaption>
         
-        <p><br>図7からThresholdの値が大きいほど、Absorber(ON)の生成量がより多く、つまりDNA回路のON状態が長くなっていることが確認できる。
+        <p><br>図9からThresholdの値が大きいほど、Absorber(ON)の生成量がより多く、つまりATP ControllerのON状態が長くなっていることが確認できる。
         </p>
         
         <h2>ATP Absorption</h2>
-        <p>次に、DNA回路がATPを消費するシミュレーションを行う(図8).
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;次に、ATP ControllerがATPを消費するシミュレーションを行う(図10).
         </p>
         <a href="Image/Block_Figure5.png" data-lightbox="fig9"><img src="Image/Block_Figure5.png" width="70%"></a>
-        <figcaption>Figure 8 : プロジェクトの全体図のDNA CircuitからATPを囲った図</figcaption>
+        <figcaption>Figure 10 : プロジェクトの全体図のATP ControllerからATPを囲った図</figcaption>
         
         <p id="math"><br>Absorber(ON)がATPを吸収する反応を、次の$v_{1} \sim v_{5}$の反応速度式で記述する。<br></p>
         <p id="math-add"><br>
@@ -174,14 +174,14 @@
             $v_{5} = -\beta \cdot [\rm Absorber(ON)] \cdot [\rm ATP]$<br><br>
         </p>
         <p id="math">ただし、$\alpha_{1}=3.0×10^{-4},\ \alpha_{2}=7.0×10^{-4},\ \alpha_{3}=9.0×10^{-4},\ \gamma=90.0$とする。
-            ここで、$v_{1} \sim v_{3}$が以下のスキーム図の反応速度式を表す(図9).
+            ここで、$v_{1} \sim v_{3}$が以下のスキーム図の反応速度式を表す(図11).
             また、$v_{4}$が細胞内で生成されるATPの生成速度を表し、今回これは生成速度一定で生成されると仮定した。
             係数の$\alpha_{1} \sim \alpha_{3}$と$\gamma$の値はKholodenkoモデルの結果と比較しながら定めた。
-            $v_{5}$がDNA回路により生成されたAbsorber(ON)がATPを消費する様子を表す。
-            冒頭で述べたように、$\beta$はDNA回路によるATPの消費効率を表す係数である。
+            $v_{5}$がATP Controllerにより生成されたAbsorber(ON)がATPを消費する様子を表す。
+            冒頭で述べたように、$\beta$はATP ControllerによるATPの消費効率を表す係数である。
         </p>
         <a href="" data-lightbox="fig10"><img src="" width="100%"></a>
-        <figcaption>Figure 9 ： Kholodenkoモデルのスキーム図のATPが関わる部分に印を付けた図</figcaption>
+        <figcaption>Figure 11 ： Kholodenkoモデルのスキーム図のATPが関わる部分に印を付けた図</figcaption>
         
         <p id="math"><br>$v_{1} \sim v_{5}$の反応速度式を用いると、ATPの微分方程式は以下のようになる。<br><br>
         </p>
@@ -189,31 +189,32 @@
             $\large \frac{d[\rm ATP]}{dt} = v_{1} + v_{2} + v_{3} + v_{4} + v_{5}$<br><br>
         </p>
         
-        <p id="math">先程DNA回路で生成されたAbsorber(ON)によってATPが吸収され、減少する様子を以下に示す(図10,図11).
-            図10は、Thresholdを一定としたとき、$\beta$の値に対するATPの濃度の時間変化を表す。
-            図11は、$\beta$を一定としたとき、Thresholdの値に対するATPの濃度の時間変化を表す。いずれの場合も、ATPの初期濃度は10000[nM]である。<br><br>
+        <p id="math">先程ATP Controllerで生成されたAbsorber(ON)によってATPが吸収され、減少する様子を以下に示す(図12,図13).
+            図12は、Thresholdを一定としたとき、$\beta$の値に対するATPの濃度の時間変化を表す。
+            図13は、$\beta$を一定としたとき、Thresholdの値に対するATPの濃度の時間変化を表す。いずれの場合も、ATPの初期濃度は10000[nM]である。<br><br>
         </p>
         
         <figure>
             <a href="Image/ATP_Threshold_50.jpg" data-lightbox="fig11"><img src="Image/ATP_Threshold_50.jpg" width="100%"></a>
-            <figcaption id="math-add">Figure 10 : $\beta$の値に対するATPの濃度の時間変化(Threshold=50)</figcaption>
+            <figcaption id="math-add">Figure 12 : $\beta$の値に対するATPの濃度の時間変化(Threshold=50)</figcaption>
         </figure>
         <figure>
             <a href="Image/ATP_beta_0_0005.jpg" data-lightbox="fig12"><img src="Image/ATP_beta_0_0005.jpg" width="100%"></a>
-            <figcaption id="math-add">Figure 11 : Thresholdの値に対するATPの濃度の時間変化($\beta$=50)</figcaption>
+            <figcaption id="math-add">Figure 13 : Thresholdの値に対するATPの濃度の時間変化($\beta$=50)</figcaption>
         </figure>
         
-        <p id="math">図10,11のいずれの場合も、$\beta$=0のとき、つまり通常のKholodenkoモデルのATPと比較すると、ATPの濃度が減少していることが確認できる。
-            また、図10からβの値を大きくする、つまり、ATPの消費効率を大きくするほど、ATPが減少していることがわかる。
+        <p id="math">図12,13から,いずれの場合も、$\beta$=0のとき、つまり通常のKholodenkoモデルのATPと比較すると、ATPの濃度が減少していることが確認できる。
+            また、図12からβの値を大きくする、つまり、ATPの消費効率を大きくするほど、ATPが減少していることがわかる。
             さらに、Thresholdの値を大きくする、つまり、DNA回路がONの時間を長くするほど、ATPが減少していることがわかる。
         </p>
         
         <h2>Inhibit Activation of Ras</h2>
-        <p>最後に、ATPの減少によるRas活性化の変化のシミュレーションを行う。ATPがRasの活性化に関わっている箇所は以下の図12に示す箇所である。<br><br></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後に、ATPの減少によるRas活性化の変化のシミュレーションを行う。
+            ATPがRasの活性化に関わっている箇所は以下の図14に示す箇所である。<br><br></p>
         <a href="" data-lightbox="fig13"><img src="" width="100%"></a>
-        <figcaption>Figure 12 : Kholodenkoのスキーム図にATPの部分を囲い、ナンバリングした図</figcaption>
+        <figcaption>Figure 14 : Kholodenkoのスキーム図にATPの部分を囲い、ナンバリングした図</figcaption>
         
-        <p><br>図12の中の&#9312;〜&#9314;の反応はそれぞれ以下の式で表される。<br><br></p>
+        <p><br>図14の中の&#9312;〜&#9314;の反応はそれぞれ以下の式で表される。<br><br></p>
         <p id="math-add">
             &#9312; $k_{3} \cdot [\rm R_{2}]-k_{-3} \cdot [\rm RP],\ k_{3}=1,\ k_{-3}=0.01$<br>
             &#9313; $k_{6} \cdot [\rm R-PL]-k_{-6} \cdot [\rm R-PLP],\ k_{6}=1,\ k_{-6}=0.05$<br>
@@ -223,14 +224,14 @@
             また、ATPの濃度は一定に保たれているとし、時刻$t$における反応速度係数を$k_{x}^{'},k_{-x}^{'}$とし、以下のように定める。<br><br>
         </p>
         <p id="math-add">
-            $\large k_{x}^{'}=\frac{[\rm ATP(t)]}{\rm ATP(0)} \cdot k_{x},\ k_{-x}^{'}=\frac{[\rm ATP(t)]}{\rm ATP(0)} \cdot k_{-x}$<br>
+            $\large k_{x}^{'}=\frac{[\rm ATP(t)]}{\rm [ATP(0)]} \cdot k_{x},\ k_{-x}^{'}=\frac{[\rm ATP(t)]}{\rm [ATP(0)]} \cdot k_{-x}$<br>
         </p>
-        <p><br>また、Ras活性化の反応速度式は図13のスキーム図の12と13であり、次のように表される(図13).
+        <p><br>また、Ras活性化の反応速度式は図15のスキーム図の12と13であり、次のように表される(図15).
             Ras-GTPが活性化したRasを、Ras-GDPが活性化前のRasを表す。
         </p>
         
         <a href="" data-lightbox="fig14"><img src="" width="100%"></a>
-        <figcaption>Figure 13 : EGFR-mediated signaling pathwaysのスキーム図</figcaption>
+        <figcaption>Figure 15 : EGFR-mediated signaling pathwaysのスキーム図</figcaption>
         
         <p id="math-add"><br>
             $\large v_{6} = \frac{k_{12} \cdot [\rm R-Sh-G-S] \cdot [\rm Ras-GDP]}{k_{-12}+[\rm Ras-GDP]}$<br><br>
@@ -238,7 +239,7 @@
             $\large v_{8} = \frac{k_{13} \cdot [\rm Ras-GTP]}{k_{-13}+[\rm Ras-GTP]}$<br><br>
         </p>
         <p id="math">ただし、$k_{12}=5.40×10^{1},\ k_{-12}=2.28×10^{2},\ k_{13}=3.09×10^{1},\ k_{-13}=2.76×10^{1}$である。
-            これらの係数の値と図13のスキーム図はTopological Analysis of MAPK Cascade for Kinetic ErbB Signalingを参考にした。
+            これらの係数の値と図15のスキーム図はTopological Analysis of MAPK Cascade for Kinetic ErbB Signalingを参考にした。
             $v_{6},v_{7}$がRasの活性化(リン酸化)を、$v_{8}$がRasの不活性化(脱リン酸化)を表す。
             したがって、Ras-GTPとRas-GDPの微分方程式はそれぞれ以下のようになる。<br><br>
         </p>
@@ -246,7 +247,13 @@
             $\large \frac{d[\rm Ras-GTP]}{dt} = v_{6}+v_{7}-v_{8}$<br><br>
             $\large \frac{d[\rm Ras-GDP]}{dt} = -v_{6}-v_{7}+v_{8}$<br><br>
         </p>
-        <p>したがって、上式や、これまで述べてきた反応速度係数を用いてシミュレーションを行うと冒頭で述べたような図1~4が得られる。</p>
+        <p id="math">したがって、上式や、これまで述べてきた反応速度係数を用いてシミュレーションを行うと冒頭で述べたような図2~5が得られる。
+            また、$\beta=0,\ 5.0×10^{-6},\ 5.0×10^{-5},\ 5.0×10^{-4}$と,Threshold$=5,\ 50,\ 95$の場合をシミュレーションした結果、
+            活性化したRasの濃度の積分値は図16のようになった。
+            この結果から、$\beta$とThresholdを調整することにより、Ras活性化を抑えることができることが確認できる。<br><br>
+        </p>
+        <a href="Image/Inregral_Ras_All.jpg" data-lightbox="fig15"><img src="Image/Inregral_Ras_All.jpg" width="50%"></a>
+        <figcaption>Figure 16 : Activatied Rasの濃度の積分値</figcaption>
         
         <h2>File Download</h2>
         <p>シミュレーションに用いたソースコードはC言語とMATLABの2つの種類で、以下のリンクからダウンロード可能である。
