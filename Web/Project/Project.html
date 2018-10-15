@@ -72,51 +72,62 @@
     <div class="space" id="Background"></div>
     <div class="section1">
       <h1>Background</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;細胞の外から得た刺激(リガンド)を細胞内で生化学的情報として変換し、これが別の刺激を誘導し伝達していく。
-        情報を伝達する役割はタンパク質が担っている。最後は核に伝達されて分裂や消滅など細胞が反応する。この情報が伝わる経路のことをシグナル伝達系と呼ぶ。私たちはDNAナノ構造によってこのシグナル伝達系のタンパク質を繋ぐ橋となる新しいシステムを開発することを目指した。
-        このシステムをDP gate bridgeと名付けた。<br><br>
-      </p>
-
-      <a href="Image/DP_gate_bridge.png" data-lightbox="fig1"><img src="Image/DP_gate_bridge.png" width="70%" height="auto"></a><br>
-      <figcaption>Figure 1 : DP Gate Bridge</figcaption><br><br>
-    </div>
-
-    <div class="space" id="Problem"></div>
-    <div class="section2">
-      <h1>Problem</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはDP gate bridgeになりうる例を考えた。DNAをシグナル伝達系のタンパク質そのものに作用させるには、タンパク質同士の結合部位への阻害などのタンパク質の構造に着目せねばならない。
-        しかし、DNA折り紙といったDNAナノ構造の技術をもってしても、タンパク質へ高い適合性を持った構造物を生成するのはたやすくない。<br><br>
-      </p>
-
-      <a href="Image/Protein_system.png" data-lightbox="fig2"><img src="Image/Protein_system.png" width="70%" height="auto"></a><br>
-      <figcaption>Figure 2 : Protein system</figcaption><br><br>
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;また、それらのタンパク質への作用させるためにmRNAに着目する方法もある。
-        ｍRNAはタンパク質の設計図であり、タンパク発現量や発現時間などを調整する物質であるとされている。つまり、DNAをmRNAに何らかの形で作用し、mRNAの阻害が出来れば、シグナル伝達系を制御しうることになる。
-        しかし、mRNAは細胞内で精密に管理されており、mRNAの動きや、mRNAの発生時間を捉えることは非常に難しい。<br><br>
-      </p>
-
-      <a href="Image/mRNA_system.png" data-lightbox="fig3"><img src="Image/mRNA_system.png" width="70%" height="auto"></a><br>
-      <figcaption>Figure 3 : mRNA system</figcaption><br><br>
+        <h2>Signal Transaction</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;細胞は環境の変化に応じて対応しなければならない。
+            細胞の外から得た刺激(リガンド)を受容体と細胞内で生化学的情報として変換し、これが別の刺激を誘導し伝達していく。
+            情報を伝達する役割はタンパク質が担っており、タンパク質が構造変化することにより信号を伝えていく。
+            最後は核に伝達されて分裂や消滅などの細胞応答が起きる。この情報が伝わる経路のことをシグナル伝達と呼ぶ。(Video 1)<br><br>
+        </p>
+        <video controls width="90%" height="auto">
+            <source src="Video/signal_transduciton.mp4">
+        </video><br>
+        Video 1 : Signal Transaction<br><br><br>
+        
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;シグナル伝達系の数理モデリングは多数研究されており、
+            その中でも信頼性の高いモデルであるkholodenkoモデルは,
+            EGF受容体のシグナル伝達をBorisN.Kholodenkoがモデル化したものである。
+            シグナル伝達系のタンパク質への作用はそのまま細胞応答に直結する。
+            私たちはDNAナノテクノロジーによってタンパク質への作用させる方法を考えた。
+        </p>
+        
+        <h2>Problem</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DNAをシグナル伝達系のタンパク質そのものに作用させるには、
+            タンパク質同士の結合部位への阻害などのタンパク質の構造に着目せねばならない。
+            しかし、DNA折り紙といったDNAナノ構造の技術をもってしても、タンパク質へ高い適合性を持った構造物を生成するのはたやすくない。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;また、それらのタンパク質への作用させるためにmRNAに着目する方法もある。
+            ｍRNAはタンパク質の設計図であり、タンパク発現量や発現時間などを調整する物質であるとされている。
+            つまり、DNAをmRNAに何らかの形で作用し、mRNAの阻害が出来れば、シグナル伝達系を制御しうることになる。
+            しかし、mRNAは細胞内で精密に管理されており、mRNAの動きや、mRNAの発生時間を捉えることは非常に難しい。
+        </p>
     </div>
 
     <div class="space" id="OurProject"></div>
     <div class="section1">
       <h1>Our Project</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;そこで、私たちはシグナル伝達系の動きを詳細に追ってみた。シグナル伝達系のタンパク質間の働きにはリン酸化が重要な機構として働いている。
-        タンパク質のリン酸化はタンパク質間をつなぐ重要な伝達機能を果たしており、タンパク質のリン酸化にはATPの供給が不可欠である。私たちはこの仕組みに注目し、細胞内のATP量を調整すれば結果的に、
-        シグナル伝達系を制御できるのではないかと考えた。<br><br>
-      </p>
+        <p>私たちはDNAナノ構造によってこのシグナル伝達系のタンパク質を繋ぐ試みをDP gate bridgeとし、新しいシステムを開発しようとした。(図1)<br><br>
+        </p>
+        <a href="Image/DP_gate_bridge.png" data-lightbox="fig1"><img src="Image/DP_gate_bridge.png" width="70%" height="auto"></a><br>
+        <figcaption>Figure 1 : DP Gate Bridge</figcaption><br><br>
+        <p>しかし、上記に述べたように往来のやり方には問題点がある。そこで、私たちはシグナル伝達系の動きを詳細に追ってみた。
+            シグナル伝達系のタンパク質間の働きにはリン酸化が重要な機構として働いている。<br><br>
+        </p>
+        <a href="" data-lightbox=""><img src="" width="70%"></a><br>
+        <figcaption>Figure 2 : Scheme of Kholodenko</figcaption><br><br>
+        
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;タンパク質のリン酸化はタンパク質間をつなぐ重要な伝達機能を果たしており、
+            タンパク質のリン酸化にはATPの供給が不可欠である。私たちはこの仕組みに注目し、細胞内のATP量を調整すれば結果的に、シグナル伝達系を制御できるのではないかと考えた。(図2)
+        </p>
+        <a href="Image/ATP_system.png" data-lightbox="fig4"><img src="Image/ATP_system.png" width="70%" height="auto"></a><br>
+        <figcaption>Figure 3 : ATP system</figcaption><br><br>
+        
+        <p>私たちはこのATPを介したタンパク質制御をATP Controllerと名付け、DP gate bridgeの一つになりうると考えた。
+            このプロジェクトの最終目標はDP gate bridgeにおける新しいシステムを提示することである。
+            そのために、ATP Controllerを完成させなければならない。ATP controllerの完成させるためにするべきことは、DNAとATPの作用方法、
+            及びATP量の調整する機構を提案し、その妥当性と実現性を立証、実験する事である。
+        </p>
 
-      <a href="Image/ATP_system.png" data-lightbox="fig4"><img src="Image/ATP_system.png" width="70%" height="auto"></a><br>
-      <figcaption>Figure 4 : ATP system</figcaption><br><br>
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはこのATPを介したタンパク質制御をATP Controllerと名付け、DP gate bridgeの一つになりうると考えた。このプロジェクトの最終目標はDP gate bridgeにおける新しいシステムを提示することである。
-        ATP  Controllerを完成させることである。ATP controllerの完成させるためにするべきことは、DNAとATPの作用方法、及びATP量の調整する機構を提案し、その妥当性と実現性を立証、実験する事である。
-      </p>
-
-      <a href="Image/DPgatebridge_system.png" data-lightbox="fig5"><img src="Image/DPgatebridge_system.png" width="70%" height="auto"></a><br>
-      <figcaption>Figure 5 : Our project</figcaption><br><br>
+        <a href="Image/DPgatebridge_system.png" data-lightbox="fig5"><img src="Image/DPgatebridge_system.png" width="70%" height="auto"></a><br>
+        <figcaption>Figure 4 : Our project</figcaption><br><br>
 
     </div>
 
@@ -162,7 +173,7 @@
       </p>
 
       <a href="Image/flow.png" data-lightbox="fig6"><img src="Image/flow.png" width="35%" height="auto"></a><br>
-      <figcaption>Figure 6 : flow</figcaption><br><br>
+      <figcaption>Figure 5 : Project Flow</figcaption><br><br>
     </div>
 
 
