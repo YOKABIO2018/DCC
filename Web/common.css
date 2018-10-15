@@ -314,3 +314,15 @@ footer {
     color: whitesmoke;
 }
 /*↑トップに戻るボタン用↑*/
+
+/*↓画像を横に並べるため↓*/
+figure{
+  width: 40%;
+  padding: 1%;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+figcaption{
+  font-size: 15px;
+}
+/*↑画像を横に並べるため↑*/
