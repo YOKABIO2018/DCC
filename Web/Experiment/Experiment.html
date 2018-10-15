@@ -65,7 +65,9 @@
             <ul>
                 <!--hrefをサブタイトルに変更して下さい-->
                 <li><a href="#Page-Overview">Page Overview</a></li>
-                <li><a href="#DryExperiment">Dry Experiment</a></li>
+                <li><a href="#ATP-Controller">Confirmation ATP Controller</a></li>
+                <li><a href="#T7-promoter">T7 promoter sequence</a></li>
+                <li><a href="#Experiment-in-vivo">Experiment in vivo</a></li>
                 <li><a href="#Material&Methods">Material &amp; Methods</a></li>
             </ul>
         </nav>
@@ -83,44 +85,79 @@
               <h1>Page Overview</h1>
             </div>
 
-            <div class="space" id="DryExperiment"></div>
+            <div class="space" id="ATP-Controller"></div>
             <div class="section2">
-                <h1>Dry Experiment</h1>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We simulated by a numerical calculation software Matlab[13](This can deal with mismatched base pair but other simulation tools cannot).
-                    First, we checked that a seesaw gate is able to control a time for ON state of DCC.
-                    The simulation is done only in the green area of Figure 1.
-                    We simulated time-dependent concentration change of Releaer in the case of
-                    initial concentrations of Signal2 and Gete2 are 100nM and, an initial concentration of Threshold is 20, 50, 80nM.
-                    As shown in Figure 2, we recognized that time dependent concentration change of the output depends on
-                    initial concentration of Threshold.<br><br>
+                <h1>Confirmation ATP Controller action in vitro</h1>
+            </div>
+            
+            <div class="space" id="T7-promoter"></div>
+            <div class="section1">
+                <h1>T7 promotor sequence variation</h1>
+                <h2>実験概要</h2>
+                <p>T7 RNA polymeraseは、T7promotor配列を認識し、下流の配列のコピーとなるRNAをバッファー中のATPを用いて合成するが、
+                    今回の実験では、ミスマッチ塩基対を用いることで、T7promotorが認識しないように設計されている。
+                    そこで、ミスマッチを含むT7promotorを,T7 RNA polymeraseを持つ大腸菌内に投入し、polymeraseが配列を認識するかどうかを実験する。<br><br>
                 </p>
-                <a href="Image/circuit_m_greenline.gif" data-lightbox="fig1"><img src="Image/circuit_m_greenline.gif" width="70%" height="auto"></a><br>
-                Figure 1 : Simulation Area<br><br>
-
-                <a href="Image/Releaser_3pattern.jpg" data-lightbox="fig2"><img src="Image/Releaser_3pattern.jpg" width="70%" height="auto"></a><br>
-                Figure 2 : Delay by the Seesaw Gate<br><br>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Similarly, as shown in Figure 3, We simulated time-dependent concentration change of DCC(ON),
-                    when innitial contcentrations of Input, Gate1, Gate2 and DCC(OFF) are 100nM and,
-                    an initial concentration of Threshold is 20, 50, 80, 100nM.
-                    As shown in Figure 4, we recognized that the larger the initial concentration of Threshold is,
-                    the longer the time of ON state is and the more DCC(ON) is generated.
-                    Moreover, when the initial concentration of Input is smaller than the initial concentration of Threshold,
-                    it was confirmed that DCC is always ON state.<br><br>
+                
+                <h2>実験方法</h2>
+                <p>プラスミドと呼ばれる環状DNAを用いて、大腸菌内で実験を行う。
+                    プラスミド内の配列中にミスマッチを含むT7promotor配列を組み込み、その下流の配列で、
+                    GFPと呼ばれる、緑色蛍光タンパク質を作るようなRNAを生成する配列を組み込んだプラスミドを設計する。
+                    これを大腸菌内に投入し、GFPが生成されて蛍光が見られるかどうかを観察する。<br><br>
                 </p>
-                <a href="Image/circuit_m_final.gif" data-lightbox="fig3"><img src="Image/circuit_m_final.gif" width="80%" height="auto"></a><br>
-                Figure 3 : Concentration of Simulation <br><br>
-
-                <a href="Image/DCC_ON_4pattern.jpg" data-lightbox="fig4"><img src="Image/DCC_ON_4pattern.jpg" width="70%" height="auto"></a><br>
-                Figure 4 : Output of the DCC(ON)<br><br>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have to consider what the initial concentration of ‘Threshold’ not to kill healthy cells,
-                  but now we have no idea about the concentration difference between normal cells and cancer cells.
-                  Therefore the initial concentration haven’t been decided. In the above simulatoins, we set the initial concentraiton of 'Threshold' to make result clear.
-                  <br><br>
+                
+                <h2>実験内容</h2>
+                <p>&#9312;変異ありプラスミドの生成<br>
+                    まず、T7promotor配列の端の1箇所を変更したミスマッチ配列を設計した。
+                    端の1箇所にしたのは、本来の2本鎖DNAから、結合力を弱めすぎないようにするためである。
+                    次に、設計したDNA配列を含むプラスミドを抽出する。PCR法を用いて、大腸菌に増殖させる。
+                    ・水・PCRに必要な素材・dNTPs・プライマー・テンプレート・KODFXNEO以上を合計50μmになるように混ぜ、3時間待つことで、変異ありのプラスミドを合成する。
+                    その後、溶液内には変異ありと変異なしのプラスミドが存在するため、元あった変異なしのプラスミドをDPN（酵素）を用いて分解する。
+                    ・DPN（1μm）・TBufferX10(1μm)・溶液（8μm）溶液内を変異ありプラスミドのみにしたのちに、大腸菌内に導入し、プラスミドを増やす。
+                    この際用いる大腸菌は、DHSrと呼ばれるもので、T7RNApolymeraseはなく、プラスミドの量を増やすために用いる。
+                    氷上でコンピテント・セルにプラスミドを入れ、30分静置する。30秒インキュベーションし、37°Cで1時間待つ。
+                    溶液をシャーレ上の培地に移し、一晩待つ。MiniPrep（と呼ばれるキット）を用いて、大腸菌からプラスミドのみを取り出し、抽出量を計測する。
+                    その後、シーケンシングし、変異が入っているかを確認した。<br>
+                    &#9313;変異ありプラスミドの反応<br>
+                    の確認次に、取り出した変異ありプラスミドを、T7 RNA polymeraseを持つ大腸菌BL21（DE3）に導入する。
+                    &#9312;と同様にして変異ありプラスミドを大腸菌に導入、1日培養したのちにGFPによる蛍光を確認した。
+                </p>
+                
+                <h2>実験結果</h2>
+                <p>&#9312;による変異ありプラスミドの生成は問題なく成功した。&#9313;での大腸菌への導入も成功し、以下のような結果が得られた。<br><br>
+                    これからは、蛍光が確認することができ、変異ありのT7promotor配列もpolymeraseが認識していることがわかる。
+                </p>
+                
+                <h2>考察</h2>
+                <p>以上の結果から、配列の端の一箇所を変えた時、polymeraseはこの配列を認識してしまうことがわかった。
+                    そのため、このミスマッチ塩基配列よりも、変異数を増やす必要があると思われる。
+                    また、今回は配列の端に変異を入れたが、変異を入れる場所によっても差が出ると考えられる。
+                    この部分は要検証であり、最終的には、polymeraseが配列を認識しない、最低限のミスマッチ量を模索していく必要がある。
+                    また、polymeraseが配列を認識することが、変異が増えるごとに徐々に認識するpolymerase量が減少するのか、
+                    一定の変異を加えた時に、一気に認識量が減少するのかはまだ解明されていない。
                 </p>
             </div>
-
+            
+            <div class="space" id="Experiment-in-vivo"></div>
+            <div class="section2">
+                <h1>Experiment in vivo</h1>
+                <h2>実験概要</h2>
+                <p>DPgate  bridgeを大腸菌内に導入し、うまくATPが吸収されるかどうかをみる。
+                    また、タイマーの作用によって、反応が時間差で終了するのかどうかを観察し、DNA回路がうまく作動しているのかどうかを確認する。
+                </p>
+                <h2>実験方法</h2>
+                <p>大腸菌(BL21(DE3))にエレクトロポレーション法等で導入する。
+                    エレクトロポレーション法とは、細胞に電気パルスで細胞膜に微小な穴を開け、その穴にDNAを送り込むという方法である。
+                    他の方法でもDNAを細胞内に送り込むことはできると思われる。その後細胞内のATP量の時間変化を測ることで回路の動きを把握する。
+                </p>
+                <h2>問題点</h2>
+                <p>問題点としては、DNA回路が実際に動くのかどうかが不明である。
+                    大腸菌は時間とともに分裂するため、細胞内の回路の量が減っていってしまう。
+                    プラスミドの場合、大腸菌の分裂の際に、プラスミドも同時に分裂するような機能が搭載されているが、DNA回路にも同様な機能が加えられるかが問題である。
+                    解決策の一つとしては、大腸菌はある温度で増殖の速度が遅くなるため、その温度に保つことで、細胞内の希釈による影響を抑えることができると思われる。
+                </p>
+            </div>
+            
             <div class="space" id="Material&Methods"></div>
             <div class="section1" >
                 <h1>Material &amp; Methods</h1>
@@ -152,23 +189,6 @@
                 Table 1 : DNA Sequences (Main Reaction Units)<br>
                 <a href="Image/DNAsequences.png" data-lightbox="table-1"><img src="Image/DNAsequences.png" width="80%" height="auto"></a>
                 <br><br>
-
-                <h2>Method of Experiment</h2>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will introduce the ways to introduce DNA circuits into cells here.
-                    The ways are three types. They are a chemical method called transfection, a physical method called electroporation
-                    and an biological method called virus vector.
-                    They have each advantage and each disadvantage.
-                    Accordingly, we should take a selectiton along the purpose of experimants.
-                    In this time, we used the electroporation method whitch is physical method[14].
-                    The electroporation method makes a hole in a cell membrane temporarily using electric pulse
-                    and introduces DNA or some materials into the cell through the hole.
-                    In additon, this method needs to destroy a cell wall of E. coli in advance.
-                    A reason we chose this method is it is known that its efficiency of introducing gene is higher than other methods
-                    and we are able to apply for various cells using it(Figure 10).<br><br>
-                </p>
-
-                <a href="Image/Electroporation.png" data-lightbox="fig10"><img src="Image/Electroporation.png" width="70%" height="auto"></a><br><br>
-                Figure 10 : Electroporation Method<br>
 
             </div>
 
