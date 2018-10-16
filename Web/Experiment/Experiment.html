@@ -83,9 +83,10 @@
             <div class="space" id="Page-Overview"></div>
             <div class="section1">
                 <h1>Page Overview</h1>
-                <p>このページでは、これまで述べてきたDNA回路についての実験の方法や結果について述べる。
-                    実験は3つ行った。最終目標としては、私たちが設計したDP gate bridge を、実際に生体内で動かしてみることである。
-                    このBIOMODでは時間の都合上達成できないが、実験を行う際の手段と起こるであろう問題点を挙げる。
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  On this page, we will describe the method and result of the experiment on the DNA circuit mentioned above.
+                  Three experiments were conducted. The final goal is to actually move the DP gate bridge designed by us in the living body.
+                  Although this BIOMOD can not be achieved due to time limit, it gives a means to do the experiment and problems that may occur.
                 </p>
             </div>
 
@@ -93,75 +94,88 @@
             <div class="section2">
                 <h1>Confirmation ATP Controller action in vitro</h1>
             </div>
-            
+
             <div class="space" id="T7-promoter"></div>
             <div class="section1">
                 <h1>T7 promotor sequence variation</h1>
-                <h2>実験概要</h2>
-                <p>T7 RNA polymeraseは、T7promotor配列を認識し、下流の配列のコピーとなるRNAをバッファー中のATPを用いて合成するが、
-                    今回の実験では、ミスマッチ塩基対を用いることで、T7promotorが認識しないように設計されている。
-                    そこで、ミスマッチを含むT7promotorを,T7 RNA polymeraseを持つ大腸菌内に投入し、polymeraseが配列を認識するかどうかを実験する。<br><br>
+                <h2>Outline of experiment</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  T7 RNA polymerase recognizes the T7 promoter sequence and synthesizes RNA that will be a copy of the downstream sequence using ATP in buffer,
+                  but in this experiment it was designed not to recognize T7 promoter by using mismatched base pair ing.
+                  Therefore, we inject T7 promoter containing mismatch into E. coli with T7 RNA polymerase and test whether polymerase recognizes the sequence.<br><br>
                 </p>
-                
-                <h2>実験方法</h2>
-                <p>プラスミドと呼ばれる環状DNAを用いて、大腸菌内で実験を行う。
-                    プラスミド内の配列中にミスマッチを含むT7promotor配列を組み込み、その下流の配列で、
-                    GFPと呼ばれる、緑色蛍光タンパク質を作るようなRNAを生成する配列を組み込んだプラスミドを設計する。
-                    これを大腸菌内に投入し、GFPが生成されて蛍光が見られるかどうかを観察する。<br><br>
+
+                <h2>Experiment method</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Experiments are performed in E. coli using cyclic DNA called plasmid.
+                  Incorporate a T7 promoter sequence that contains a mismatch in the sequence in the plasmid and design a plasmid that incorporates a sequence downstream of it that produces a green fluorescent protein called GFP called RNA.
+                  This is introduced into Escherichia coli, and observation is made as to whether or not fluorescence can be seen by generating GFP.<br><br>
                 </p>
-                
-                <h2>実験内容</h2>
-                <p>&#9312;変異ありプラスミドの生成<br>
-                    まず、T7promotor配列の端の1箇所を変更したミスマッチ配列を設計した。
-                    端の1箇所にしたのは、本来の2本鎖DNAから、結合力を弱めすぎないようにするためである。
-                    次に、設計したDNA配列を含むプラスミドを抽出する。PCR法を用いて、大腸菌に増殖させる。
-                    ・水・PCRに必要な素材・dNTPs・プライマー・テンプレート・KODFXNEO以上を合計50μmになるように混ぜ、3時間待つことで、変異ありのプラスミドを合成する。
-                    その後、溶液内には変異ありと変異なしのプラスミドが存在するため、元あった変異なしのプラスミドをDPN（酵素）を用いて分解する。
-                    ・DPN（1μm）・TBufferX10(1μm)・溶液（8μm）溶液内を変異ありプラスミドのみにしたのちに、大腸菌内に導入し、プラスミドを増やす。
-                    この際用いる大腸菌は、DHSrと呼ばれるもので、T7RNApolymeraseはなく、プラスミドの量を増やすために用いる。
-                    氷上でコンピテント・セルにプラスミドを入れ、30分静置する。30秒インキュベーションし、37°Cで1時間待つ。
-                    溶液をシャーレ上の培地に移し、一晩待つ。MiniPrep（と呼ばれるキット）を用いて、大腸菌からプラスミドのみを取り出し、抽出量を計測する。
-                    その後、シーケンシングし、変異が入っているかを確認した。<br>
-                    &#9313;変異ありプラスミドの反応<br>
-                    の確認次に、取り出した変異ありプラスミドを、T7 RNA polymeraseを持つ大腸菌BL21（DE3）に導入する。
-                    &#9312;と同様にして変異ありプラスミドを大腸菌に導入、1日培養したのちにGFPによる蛍光を確認した。
+
+                <h2>Experiment contents</h2>
+                <h3>&#9312;Production of mutated plasmids</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Firstly, we designed a mismatch sequence that changed one position at the end of the T7 promoter sequence. The reason for making it at one end is to make bond strength not too weak from the original two DNAs.
+                  Next, a plasmid containing the designed DNA sequence is extracted. PCR method is used to grow E. coli. · Water · Materials required for PCR · dNTPs · primers · templates · KODFXNEO or more are mixed so that the total is 50 μm and waiting for 3 hours to synthesize mutated plasmids.
+                  Thereafter, since plasmids with mutation and no mutation are present in the solution, the original plasmid without mutation is digested with DPN (enzyme).
+                   · DPN (1 μm) · TBuffer X 10 (1 μm) · Solution (8 μm) Mutate the inside of the solution with plasmid only, then introduce it into E. coli and increase plasmid.
+                   Escherichia coli used at this time is called DHSr, there is no T7 RNA polymerase, it is used to increase the amount of plasmid. Place the plasmid in competent cells on ice and let stand for 30 minutes.
+                   Incubate for 30 seconds and wait at 37 ° C for 1 hour.Transfer the solution to the medium on a dish and wait overnight. Using a MiniPrep (kit called), only extract plasmid from E. coli and measure the amount extracted.
+                   After that, sequencing was carried out to confirm whether mutation was contained.<br><br>
+                 </p>
+                 <h3>&#9313;Confirmation of reaction of mutated plasmid</h3>
+                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   Next, the extracted mutant plasmid is introduced into E. coli BL21 (DE3) having T7 RNA polymerase.
+                   In the same way as in &#9312;, plasmid with mutation was introduced into E. coli and cultured for 1 day, after which fluorescence by GFP was confirmed.
+                 </p>
+
+                <h2>Experiment result</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Production of mutated plasmid by &#9312; succeeded without problems.
+                  Successful introduction into E. coli at &#9312;, the following results were obtained.<br><br>
                 </p>
-                
-                <h2>実験結果</h2>
-                <p>&#9312;による変異ありプラスミドの生成は問題なく成功した。&#9313;での大腸菌への導入も成功し、以下のような結果が得られた。<br><br>
-                    これからは、蛍光が確認することができ、変異ありのT7promotor配列もpolymeraseが認識していることがわかる。
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  From now on, fluorescence can be confirmed, indicating that polymerase recognizes mutated T7 promoter sequence.
                 </p>
-                
-                <h2>考察</h2>
-                <p>以上の結果から、配列の端の一箇所を変えた時、polymeraseはこの配列を認識してしまうことがわかった。
-                    そのため、このミスマッチ塩基配列よりも、変異数を増やす必要があると思われる。
-                    また、今回は配列の端に変異を入れたが、変異を入れる場所によっても差が出ると考えられる。
-                    この部分は要検証であり、最終的には、polymeraseが配列を認識しない、最低限のミスマッチ量を模索していく必要がある。
-                    また、polymeraseが配列を認識することが、変異が増えるごとに徐々に認識するpolymerase量が減少するのか、
-                    一定の変異を加えた時に、一気に認識量が減少するのかはまだ解明されていない。
+
+                <h2>Consideration</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Based on the above results, it was found that when one part of the end of the sequence was changed, polymerase recognized this sequence.
+                    We could not do any further experiments within this BIOMOD period, but based on this experiment we investigated the paper which adds a mismatch to the promoter sequence.
+                    According to the paper, promoter sequences were found to be meaningful for enzymes in each sequence.
+                    (See the figure, from the paper.) It was found that this time, the mutation was added to the position 0 part, which is a sequence related to the synthesis rate from mRNA to protein.
+                    In the previous study, mutation was inserted between position -17 of the promoter sequence and position -5, and an experiment was conducted. In particular,
+                    there are data that mismatched from -9 to -5, and based on these results I think to think of introducing the optimal mismatch base into our promoter sequence.
                 </p>
             </div>
-            
+
             <div class="space" id="Experiment-in-vivo"></div>
             <div class="section2">
                 <h1>Experiment in vivo</h1>
-                <h2>実験概要</h2>
-                <p>DPgate  bridgeを大腸菌内に導入し、うまくATPが吸収されるかどうかをみる。
-                    また、タイマーの作用によって、反応が時間差で終了するのかどうかを観察し、DNA回路がうまく作動しているのかどうかを確認する。
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  The final goal is to actually move the DP gate bridge designed by us in the living body.
+                  Although this BIOMOD can not be achieved due to time limit, it gives a means to do the experiment and problems that may occur.
                 </p>
-                <h2>実験方法</h2>
-                <p>大腸菌(BL21(DE3))にエレクトロポレーション法等で導入する。
-                    エレクトロポレーション法とは、細胞に電気パルスで細胞膜に微小な穴を開け、その穴にDNAを送り込むという方法である。
-                    他の方法でもDNAを細胞内に送り込むことはできると思われる。その後細胞内のATP量の時間変化を測ることで回路の動きを把握する。
+                <h2>Outline of experiment</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Introduce DPgate bridge into E. coli and see whether ATP is successfully absorbed.
+                  Also, by the action of the timer, observe whether the reaction ends with time difference and check whether the DNA circuit is working well or not.
                 </p>
-                <h2>問題点</h2>
-                <p>問題点としては、DNA回路が実際に動くのかどうかが不明である。
-                    大腸菌は時間とともに分裂するため、細胞内の回路の量が減っていってしまう。
-                    プラスミドの場合、大腸菌の分裂の際に、プラスミドも同時に分裂するような機能が搭載されているが、DNA回路にも同様な機能が加えられるかが問題である。
-                    解決策の一つとしては、大腸菌はある温度で増殖の速度が遅くなるため、その温度に保つことで、細胞内の希釈による影響を抑えることができると思われる。
+                <h2>Experiment method</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  It is introduced into Escherichia coli (BL21 (DE3)) by electroporation or the like.
+                  The electroporation method is a method in which a cell is microscopically drilled with electric pulses into a cell membrane and DNA is sent into the hole.
+                  It is thought that other methods can also deliver DNA into cells. After that, we will grasp the movement of the circuit by measuring the change with time of the amount of ATP in the cell.
+                </p>
+                <h2>Problems</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  As a problem, it is unknown whether or not the DNA circuit actually moves. As E. coli divides over time, the amount of circuits in the cell decreases.
+                  In the case of a plasmid, a function that divides the plasmid simultaneously is carried when E. coli divides, but whether the same function is added to the DNA circuit is a problem.
+                  As one of the solutions, the rate of proliferation of Escherichia coli slows down at a certain temperature, so if it is kept at that temperature, the influence of intracellular dilution can be suppressed.
                 </p>
             </div>
-            
+
             <div class="space" id="Material&Methods"></div>
             <div class="section1" >
                 <h1>Material &amp; Methods</h1>
