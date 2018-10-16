@@ -158,10 +158,12 @@
                 Figure 6 : Arithmetic Element<br><br>
 
                 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This circuit was composed of four DNA strand displacement reaction processes.
-                  Each of these reaction processes is explained below.<br><br>
+                  Each of these reaction processes is explained below <a style="color: red">DNA Circuit Operation.</a><br><br>
                 </p>
+                
+                <h2 style="color: red">DNA Circuit Operation</h2>
 
-<!--- Accordion ---------------------->
+                <!--- Accordion ---------------------->
                 <dl id="acMenu">
                   <dt>&nbsp;&nbsp;&nbsp;&nbsp;First Process<span class="dt-mark">▼</span></dt>
                     <dd>
@@ -193,7 +195,7 @@
                         <video controls width="120%" height="auto">
                             <source src="Video/Gate1&input.mp4">
                         </video>
-                        <figcaption>Video 2 : Gate1&amp;Input</figcaption><br>
+                        <figcaption>Video 2 : Gate1 &amp; Input</figcaption><br>
                       </figure>
                     </dd>
 
@@ -294,7 +296,9 @@
                       </figure>
                     </dd>
 
-                    <p id="variousproblems"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to previous four processes, we are able to switch a state of the circuit(<b>OFF → ON → OFF</b>) automatically. That’s to say, single administration of DCC is come true and it is convenient.<br><br>
+                    <p id="variousproblems"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to previous four processes,
+                        we are able to switch a state of the circuit(<b>OFF → ON → OFF</b>) automatically.
+                        That’s to say, single administration of DCC is come true and it is convenient.<br><br>
 
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, Figure 5 has two ploblems.
                         First, the circuit causes an undesired reaction when it starts.
@@ -310,109 +314,11 @@
 
                         Second, some double stranded DNA make T7RNA promoter and happen polymerase reaction even when the circuit is not ON state.
                         Therefore, We used <b>mismatched base pair</b> to solve these problems.
-                        Mismatched base pair is described in detail in Experiment's <a href="../Experiment/Experiment.html#Material&Methods">Material & Method</a>.<br><br>
+                        Mismatched base pair is described in detail in Experiment's 
+                        <a href="../Experiment/Experiment.html#Material&Methods">Material &amp; Method</a>.<br><br>
                     </p>
                 </dl>
-
             </div>
-
-        <!--
-            <div class="space" id="Mismatched-base-pair"></div>
-            <div class="section2">
-                <h1>Mismatched base pair</h1>
-                <h2>What is mismatched base pair</h2>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&amp;T and C&amp;G in DNA base are held each other by hydrogen-bonding which is so-called Watson-Crick base pair,
-                    but other than that it is reported that there are other combinations (e.g. A and G ).
-                    We call this <b>Mismatched base pair</b>[11].
-                    The binding power of mismatched base pair is weaker than that of Watson-Crick base pair,
-                    but the binding power between G and T is stronger among mismatched base pair (We found this characteristic in try and error with NUPACK).
-                    The example of mismatched base pair is shown below.
-                    In the Table 1, base sequence (A) is complete complementary double stranded DNA,
-                    (B) is double stranded DNA including four mismatched C-A base pairs and
-                    (C) is double stranded DNA including four mismatched G-T base pairs.<br><br>
-                </p>
-                Table 1 : Example of Mismatch Base Pair<br>
-                <a href="Image/example_mismatch_table.png" data-lightbox="table1"><img src="Image/example_mismatch_table.png" width="70%" height="auto"></a><br><br>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We confirm whether these base sequence form double stranded DNA with NUPACK[12]
-                    (a software suite for the analysis and design of nucleic acid structures) and show the result below.<br><br>
-                </p>
-                <a href="Image/example_mistach.png" data-lightbox="fig13"><img src="Image/example_mistach.png" width="70%" height="auto"></a><br>
-                Figure 13 : Example of Mismatch Base Pair<br><br>
-
-                <p> As this Figure 13, it is clear that G and T are binding to each other, but in contrast A and C are not.</p>
-
-                <h2>Use of Mismatch</h2>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When DNA(A)(B) which we expect to be double stranded include mismatched GT base pair,
-                    DNA(C) which is complete complementary to (A) and DNA(D) which is complete complementary to (B) make mismatched CA base pair.
-                    Therefore, (A) is bound with (B) but (C) is not bound with (D) (Figure 14).<br><br>
-                </p>
-                <a href="Image/usecase_mismatch.png" data-lightbox="fig14"><img src="Image/usecase_mismatch.png" width="70%" height="auto"></a><br>
-                Figure 14 : Use of Mismatch<br><br>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We improved the circuit of Figure 5 using this character.<br>
-                    In this project, we added mismatched base pair four times and added (m1)(m2)(m3)(m4) precedes the domain name.
-                    We will show NUPACK's evaluation about each part of points added mismatched base pair below.<br>
-                </p>
-
-                <p><font color="red"><b>(m1)Input &amp; DCC(OFF)</b></font><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As previously stated, Input and DCC(OFF) are complementary, so they cause hybridization.
-                    We added mismatched base pair here (Figure 15). Its result of NUPACK is as shown in Figure 16.
-                    Red characters show desired reactions (The same hereinafter).<br><br>
-                </p>
-                <a href="Image/(m1)mismatch.png" data-lightbox="fig15"><img src="Image/(m1)mismatch.png" width="70%" height="auto"></a><br>
-                Figure 15 : (m1)Input &amp; DCC(OFF)<br><br>
-
-                <a href="Image/(m1)NUPACK.png" data-lightbox="fig16"><img src="Image/(m1)NUPACK.png" width="70%" height="auto"></a><br>
-                Figure 16 : NUPACK's Evaluation of (m1)<br><br>
-
-                <p><font color="red"><b>(m2)Signal1 &amp; Signal2</b></font><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Similarly, Signal1 and Signal2 are complementary, so they cause hybridization.
-                    They should be completely complementary but unlike (m1).
-                    We added mismatched base pair to Signal1 to make it be bound with DCC (Figure 17).
-                    A result of NUPACK is as shown in Figure 18.<br><br>
-                </p>
-                <a href="Image/(m2)mismatch.png" data-lightbox="fig17"><img src="Image/(m2)mismatch.png" width="70%" height="auto"></a><br>
-                Figure 17 : (m2)Signal1 &amp; Signal2<br><br>
-
-                <a href="Image/(m2)NUPACK.png" data-lightbox="fig18"><img src="Image/(m2)NUPACK.png" width="70%" height="auto"></a><br>
-                Figure 18 : NUPACK's Evaluation of (m2)<br><br>
-
-                <p><font color="red"><b>(m3)Input &amp; Gate2</b></font><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We also added mismatched base pair Input and Gate2 because it starts a reaction from T3 which is toehold(Figure 19).<br><br>
-                </p>
-                <a href="Image/(m3)mismatch.png" data-lightbox="fig19"><img src="Image/(m3)mismatch.png" width="30%" height="auto"></a><br>
-                Figure 19 : (m3)Input &amp; Gate2<br><br>
-
-                <p><font color="red"><b>(m4)Gate2</b></font><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polymerase reaction is happened because Gate2 includes T7 promoter sequence.
-                    We also added mismatched base pair here to prevent T7RNA polymerase from recognizing T7 promoter sequence (Figure 20).<br><br>
-                </p>
-                <a href="Image/(m4)mismatch.png" data-lightbox="fig20"><img src="Image/(m4)mismatch.png" width="50%" height="auto"></a><br>
-                Figure 20 : (m4)Gate2<br><br>
-
-                <p> A new scheme of the circuit added mismatched base pair is as shown in Figure 21.<br><br>
-                </p>
-                <a href="Image/circuit_m.gif" data-lightbox="fig21"><img src="Image/circuit_m.gif" width="90%" height="auto"></a><br>
-                Figure 21 : Scheme of ON-OFF Switch Circuit Added Mismatch<br><br>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is expected to reduce undesired reactions.
-                    NUPACK's evaluation of bonding strength of double stranded DNA whitch is added mismatched base pair
-                    is as shown in Figure 22.
-                    It includes mismatched base pair of G-T bounding, however we are able to ascertain that bouding power is kept strong.<br><br>
-                </p>
-                <a href="Image/gate1gate2.png" data-lightbox="fig22"><img src="Image/gate1gate2.png" width="50%" height="auto"></a><br>
-                Figure 22 : NUPACK's Evaluation of Gate1 and Gate2<br><br>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In additon, T7RNA promoter disappears except the circuit is ON state by adding mismatched base pair
-                    , and these problems are solved (Figure 23).<br><br>
-                </p>
-                <a href="Image/circuit_m_redline.gif" data-lightbox="fig23"><img src="Image/circuit_m_redline.gif" width="90%" height="auto"></a><br>
-                Figure 23 : Excluding T7 Promoter Sequence by Mismatch Base Pair<br><br>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When this circuit works successfully, DCC(OFF) and Waste are generated as shown in Figure 23. We are thinking whether they can be used well for something.<br><br>
-                </p><br><br>
-            </div>
-          -->
         </main>
         <!--↑変更するのはここまで↑-->
 
