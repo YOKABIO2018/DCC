@@ -3,6 +3,9 @@
   /*font-family: */
   color: #222;
 }
+#PoC-font{
+  font-size: 2.3vw;
+}
 
 .icon-box {
   position: relative;

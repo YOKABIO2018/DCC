@@ -104,3 +104,9 @@ display:block;
     opacity: 0;
   }
 }
+
+iframe{
+  display: block;
+  width: 50vw;
+  height: 28vw;
+}
