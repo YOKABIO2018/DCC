@@ -21,6 +21,9 @@
   border: #eee 1px solid;
   background-color: white;
 }
+video{
+  width: 100%;
+}
 .open{
   transform: rotate(180deg);
   transition: 0.5s;
