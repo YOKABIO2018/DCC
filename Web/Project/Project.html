@@ -43,10 +43,9 @@
   <nav>
     <ul>
       <li><a href="#Background">Background</a></li>
-      <li><a href="#OurProject">Our Project</a></li>
-      <li><a href="#Idea">Idea</a></li>
+      <li><a href="#Idea&Our Project">Idea&Our Project</a></li>
       <li><a href="#Merit">Merit</a></li>
-      <li><a href="#Goal">Goal</a></li>
+      <li><a href="#Project Plan">Project Plan</a></li>
     </ul>
   </nav>
 
@@ -55,110 +54,95 @@
     <div class="space" id="Background"></div>
     <div class="section1">
       <h1>Background</h1>
-        <h2>Signal Transaction</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;細胞は環境の変化に応じて対応しなければならない。
-            細胞の外から得た刺激(リガンド)を受容体と細胞内で生化学的情報として変換し、これが別の刺激を誘導し伝達していく。
-            情報を伝達する役割はタンパク質が担っており、タンパク質が構造変化することにより信号を伝えていく。
-            最後は核に伝達されて分裂や消滅などの細胞応答が起きる。この情報が伝わる経路のことをシグナル伝達と呼ぶ。(Video 1)<br><br>
-        </p>
-        <video controls width="90%" height="auto">
+      <h2>Signal Transaction</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cells must respond to changes in the environment. Ligands bring biochemical information from the external environment into the cell via receptors, and this information is then transmitted to induce
+        other ligands. Proteins transmit some information, often by changing their own structures. Finally, after the information reaches its destination, a cell response occurs. The pathways by which information is transmitted are known as signaling
+        systems.
+        <br><br>
+      </p>
+      <video controls width="90%" height="auto">
             <source src="Video/signal_transduciton.mp4">
-        </video><br>
-        Video 1 : Signal Transaction<br><br><br>
+        </video><br> Video 1 : Signal Transaction<br><br><br>
 
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;シグナル伝達系の数理モデリングは多数研究されており、
-            その中でも信頼性の高いモデルであるkholodenkoモデルは,
-            EGF受容体のシグナル伝達をBorisN.Kholodenkoがモデル化したものである。
-            シグナル伝達系のタンパク質への作用はそのまま細胞応答に直結する。
-            私たちはDNAナノテクノロジーによってタンパク質への作用させる方法を考えた。
-        </p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;シグナル伝達系の数理モデリングは多数研究されており、 その中でも信頼性の高いモデルであるkholodenkoモデルは, EGF受容体のシグナル伝達をBorisN.Kholodenkoがモデル化したものである。 シグナル伝達系のタンパク質への作用はそのまま細胞応答に直結する。 私たちはDNAナノテクノロジーによってタンパク質への作用させる方法を考えた。
+      </p>
 
-        <h2>Problem</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DNAをシグナル伝達系のタンパク質そのものに作用させるには、
-            タンパク質同士の結合部位への阻害などのタンパク質の構造に着目せねばならない。
-            しかし、DNA折り紙といったDNAナノ構造の技術をもってしても、タンパク質へ高い適合性を持った構造物を生成するのはたやすくない。<br></p>
-              <a href="Image/Protein_system.png" data-lightbox="fig1"><img src="Image/Protein_system.png" width="70%" height="auto"></a><br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;また、それらのタンパク質への作用させるためにmRNAに着目する方法もある。
-            ｍRNAはタンパク質の設計図であり、タンパク発現量や発現時間などを調整する物質であるとされている。
-            つまり、DNAをmRNAに何らかの形で作用し、mRNAの阻害が出来れば、シグナル伝達系を制御しうることになる。
-            しかし、mRNAは細胞内で精密に管理されており、mRNAの動きや、mRNAの発生時間を捉えることは非常に難しい。</p>
-              <a href="Image/mRNA_system.png" data-lightbox="fig1"><img src="Image/mRNA_system.png" width="70%" height="auto"></a><br>
-        </p>
+      <h2>Problem</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To ensure that the DNA targets specific proteins involved in signaling systems, protein structures must be considered such as to inhibit protein interactions. Using DNA nanotechnology such as DNA
+        origami, generating structures with high adaptability to proteins can be difficult. Additionally, specific targeting of a protein among the several tens of thousands of proteins in the body is necessary.<br></p>
+      <a href="Image/Protein_system.png" data-lightbox="fig1"><img src="Image/Protein_system.png" width="70%" height="auto"></a><br>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mRNA may be useful for regulating protein levels because mRNA is a blueprint of proteins and can regulate protein expression, timing, etc. Thus, if DNA can be used to target and inhibit mRNA, signaling
+        systems can be controlled. However, mRNAs are precisely regulated inside of cells, and thus it is difficult to control the movement and expression time of mRNA. The correlations between mRNA and proteins levels are not always consistent, and thus
+        if mRNA is inhibited, there may be no influence on the signaling system.
+      </p>
+      <a href="Image/mRNA_system.png" data-lightbox="fig1"><img src="Image/mRNA_system.png" width="70%" height="auto"></a><br>
+      </p>
     </div>
 
-    <div class="space" id="OurProject"></div>
-    <div class="section1">
-      <h1>Our Project</h1>
-        <p>私たちはDNAナノ構造によってこのシグナル伝達系のタンパク質を繋ぐ試みをDP gate bridgeとし、新しいシステムを開発しようとした。(図1)<br><br>
-        </p>
-        <a href="Image/DP_gate_bridge.png" data-lightbox="fig1"><img src="Image/DP_gate_bridge.png" width="70%" height="auto"></a><br>
-        <figcaption>Figure 1 : DP Gate Bridge</figcaption><br><br>
-        <p>しかし、上記に述べたように往来のやり方には問題点がある。そこで、私たちはシグナル伝達系の動きを詳細に追ってみた。
-            シグナル伝達系のタンパク質間の働きにはリン酸化が重要な機構として働いている。<br><br>
-        </p>
-        <a href="" data-lightbox=""><img src="" width="70%"></a><br>
-        <figcaption>Figure 2 : Scheme of Kholodenko</figcaption><br><br>
-
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;タンパク質のリン酸化はタンパク質間をつなぐ重要な伝達機能を果たしており、
-            タンパク質のリン酸化にはATPの供給が不可欠である。私たちはこの仕組みに注目し、細胞内のATP量を調整すれば結果的に、シグナル伝達系を制御できるのではないかと考えた。(図2)
-        </p>
-        <a href="Image/ATP_system.png" data-lightbox="fig4"><img src="Image/ATP_system.png" width="70%" height="auto"></a><br>
-        <figcaption>Figure 3 : ATP system</figcaption><br><br>
-
-        <p>私たちはこのATPを介したタンパク質制御をATP Controllerと名付け、DP gate bridgeの一つになりうると考えた。
-            このプロジェクトの最終目標はDP gate bridgeにおける新しいシステムを提示することである。
-            そのために、ATP Controllerを完成させなければならない。ATP controllerの完成させるためにするべきことは、DNAとATPの作用方法、
-            及びATP量の調整する機構を提案し、その妥当性と実現性を立証、実験する事である。
-        </p>
-
-        <a href="Image/DPgatebridge_system.png" data-lightbox="fig5"><img src="Image/DPgatebridge_system.png" width="70%" height="auto"></a><br>
-        <figcaption>Figure 4 : Our project</figcaption><br><br>
-
-    </div>
-
-    <div class="space" id="Idea"></div>
+    <div class="space" id="Idea&Our Project"></div>
     <div class="section2">
-      <h1>Idea</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちが初めに決定しなければならないことはDNAがATP量に対してどのようにして作用し、制御するかである。その関係性を明確にするために、私たちは二つのアイデアを考えた。<br><br>
+      <h1>Idea & Our Project</h1>
+      <p>We developed a new system, called the DP gate bridge, for producing DNA nanostructures that can be applied to proteins in cellular signaling systems.<br><br>
       </p>
-      <h2>ATP connection </h2>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちはATP量に干渉する方法として、DNA結合RNAポリミラーゼによるRNA合成に着目した。DNA結合RNAポリミラーゼはDNA配列を設計図にRNAを作成する。この際、周りのNTPを材料にしてRNAを作る。
-        そのNTPの中にはATPも含まれ、ATPはRNAではアデニンに当たる。つまり、DNA配列に大量にアデニンを記録させることによって、大量のATPを消費させることができるのである。<br><br>
+      <a href="Image/DP_gate_bridge.png" data-lightbox="fig1"><img src="Image/DP_gate_bridge.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 1 : DP Gate Bridge</figcaption><br><br>
+      <p>However, there are some limitations to the conventional methods described above. Thus, we examined the precise mechanisms of signaling systems. Protein phosphorylation is an important mechanism between proteins in signaling systems, and supplying
+        ATP is necessary for phosphorylation.
+        <br><br>
       </p>
+      <a href="" data-lightbox=""><img src="" width="70%"></a><br>
+      <figcaption>Figure 2 : Scheme of Kholodenko</figcaption><br><br>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We predicted that signaling systems could be controlled by regulating the amount of ATP in the cell.
+      </p>
+      <a href="Image/ATP_system.png" data-lightbox="fig4"><img src="Image/ATP_system.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 3 : ATP system</figcaption><br><br>
+
+      <p>To produce an ATP controller, the way interaction between DNA and ATP(ATP connection) and mechanism of altering ATP levels were investigated(ATP control). We made two predictions regarding these relationships.
+      </p>
+
+      <a href="Image/DPgatebridge_system.png" data-lightbox="fig5"><img src="Image/DPgatebridge_system.png" width="70%" height="auto"></a><br>
+      <figcaption>Figure 4 : Our project</figcaption><br><br>
+
       <h2>ATP connection </h2>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DNA結合RNAポリミラーゼはプロモーター配列のあるDNAを読み続けてしまう。これではアデニンで構成されたRNAを生産し続けてしまい、細胞内のATPが減少し続けてしまう。
-        これでは、ATP量を制御することができているとは言えない。そこで、DNA結合RNAポリミラーゼはDNA二本鎖に結びつく性質を利用した。私たちはプロモーター配列のあるDNA二本鎖を鎖置換反応によってDNA一本鎖にすることにした。
-        そうすることにより、ポリミラーゼは結合するはずだったDNAを認識できなくなり、RNAの生産が止まるのだ。このON—OFFを切り替えるDNAをReleaserと名付けた。（図挿入）また、シーソーゲートと呼ばれる技術を用いることで、このReleaserの出現時間を調整した。
-        つまり、私たちはATP量の調整をReleaserの出現時間の制御によって成し遂げた。この全体のDNA回路をDelay回路と名付けた。
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We attempted to alter ATP levels during RNA synthesis by using RNA polymerase. RNA polymerase synthesizes RNA using the DNA sequence as a blueprint from NTPs as materials. NTPs also include ATP, and
+        ATP is referred to as adenine in RNA. Thus, if large numbers of adenine are present in the DNA sequence, large amounts of ATP will be consumed.
+
+        <br><br>
+      </p>
+      <h2>ATP control </h2>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNA polymerase decode DNA containing a promoter sequence and synthesizes RNA containing adenine, continuously decreasing ATP levels in cells. However, the ATP is not controlled using this method. For
+        this, we utilized the ability of RNA polymerase to form double bonds with DNA. We used double bonds between DNA containing a promoter sequence to DNA in a strand displacement reaction. This prevents RNA polymerase from recognizing DNA to inhibit
+        RNA synthesis. We named this ON-OFF switch of DNA as the Releaser. The timing of Releaser expression was adjusted using a seesaw gate. This enabled ATP levels to be controlled by adjusting the Releaser time. We named this whole DNA circuit as
+        the Delay circuit.
+
       </p>
     </div>
 
     <div class="space" id="Merit"></div>
     <div class="section1">
       <h1>Merit</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;このATP controllerの技術を確立する事は、今まで成し遂げられなかったDNAとタンパク質間との相互作用を証明することになる。
-        ATPは細胞の活動源であり、不可欠なものであるので細胞内ATPは膨大に存在している。
-        これらは、前述した二つの方法より、DNAを作用させやすい特徴であることを意味し、このDNAとATPの作用間はDNAがタンパク質、細胞応答の順番で制御できることを表す。
-        つまり、このシステムはDNAとProtein間をつなぐ比較的、簡単な方法だと言える。<br>
-        また、DNA結合RNAポリミラーゼによるRNA発現量を調整することのできる技術、ATPcontrolの完成は別の技術にも応用できると考える。
-        例えば、大腸菌へのプラスミド導入という形でタンパク質を作る技術は確立している。
-        この技術にもDNA結合RNAポリミラーゼは使用されているが、この酵素の活動は長期的であり、タンパク質量を調整することは難しい。
-        そこで、ATPcontrolを使えばタンパク質量の過剰な発現を抑えることができる。
-        これは生物学の研究実験において、より緻密で正確なデータを確保することができるようになると考える。
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ATP controller technology was developed and the application of DNA to control proteins was examined. Strategy 1 (application of DNA to proteins ) have problems of acceptability to promotes, fact
+        that is not sure application to aimed proteins. However, the ATP controller overcomes these limitations by using RNA polymerase. </p>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, application of Strategy 2 (application of DNA to proteins with mRNA) to proteins is difficult and the application to mRNA and signaling systems is unclear. However, RNA polymerase solves
+        these problems and ATP is important in signaling systems, revealing a correlation between ATP levels and signaling systems. Thus, the ATP controller is a better system and is the first DNA circuit to be applied in signaling systems.
       </p>
     </div>
 
-    <div class="space" id="Goal"></div>
+    <div class="space" id="Project Plan"></div>
     <div class="section2">
-      <h1>Goal</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちは、BIOMODとしての研究目標をこの新しい制御系の妥当性、実現性を証明することとした。私たちはこの研究を始める際にいくつかの段階を考えた。
-        これらの段階は研究目標を意識し、BIOMODの期間内に果たすことを前提として定めた。（Figure 6）SystemDesign提案したシステムを現実にするための仕組みを考案する1,RNA合成酵素の選択2,そのATP量を調整するための機構Proof of ConceptSystem Designを踏まえ、
-        私たちのアイデアがシグナル伝達系への接続を可能にするか、またはシグナル伝達系を制御できるかを確定論的手法によって示す。
-        ExperimentMaterial and MethodDNA配列を現実的なものとして設計できたか。Operation Experiment 回路全体が動くかどうかの実験を行う。<br><br>
+      <h1>Project Plan</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this BioMod, our project goal was to validate our new control systems. We also considered several steps before beginning the project which were considered to have important effects on the output
+        of the BioMod.<br><br>
       </p>
 
       <a href="Image/flow.png" data-lightbox="fig6"><img src="Image/flow.png" width="35%" height="auto"></a><br>
       <figcaption>Figure 5 : Project Flow</figcaption><br><br>
+      <p>-Systems Design <br> Designing mechanisms to develop the proposed systems.<br> 1. Choice of RNA polymerase<br> 2. Mechanism for controlling ATP levels<br></p><br>
+      <p>-Proof of concept &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We demonstrated that our System Design can be used to evaluate or control signaling systems using a deterministic approach.</p><br>
+      <p>-Experiment <br> 1.Operation Experiment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Examine the function of the whole circuit<br> 2.Materials and Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Could we make DNA sequence practically or not.<br></p>
+
+      </p>
     </div>
 
 
