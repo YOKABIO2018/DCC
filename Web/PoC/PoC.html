@@ -82,112 +82,110 @@
     <div class="space" id="Page-Overview"></div>
     <div class="section1">
         <h1>Page Overview</h1>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this page, we simulate the entire system to show the validity of our idea.
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On this page, we simulate the entire system to demonstrate the validity of our concept.
             The ATP controller of the DNA circuit, introduced on the System Design page, 
-            worked and simulated a series of aspects affecting biological reactions.
-            In this study, we targeted the Ras activation mechanism and simulated whether to suppress Ras activation by ATP Controller.
-            We referred to the reference [x] as a mathematical model.(Click image to enlarge)<br><br>
+            simulated a series of factors affecting biological reactions. 
+            In this study, we targeted the Ras activation mechanism and simulated suppression of Ras activation using the ATP Controller. 
+            We referred to reference [x] as a mathematical model (Click image to enlarge).<br><br>
         </p>
         
         <a href="Image/Block_Figure1.png" data-lightbox="fig1"><img src="Image/Block_Figure1.png" width="70%"></a>
-        <figcaption>Figure 1 : Overall of Project</figcaption>
+        <figcaption>Figure 1: Overall of project</figcaption>
     </div>
 
     <div class="space" id="PoC"></div>
     <div class="section2">
         <h1>Proof of Concept</h1>
         <h2>Overall Simulation</h2>
-        <p id="math">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the evaluation method of the simulation, 
-            we use integral as the evaluation item in three of amplification, duration, integral shown in reference [x].
-            Next, the scheme of the transmission system used in this simulation is shown.(Figure x)
+        <p id="math">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To evaluate the simulation, 
+            we used the integral as the evaluation item in the amplification, duration, and integral as shown in reference [x]. 
+            Next, the scheme of the transmission system used in this simulation is shown (Figure x).
         </p>
         <a href="Image/Scheme.png" data-lightbox="fig"><img src="Image/Scheme.png" width="50%"></a>
-        <figcaption>Figure x : Scheme diagram used for simulation</figcaption>
+        <figcaption>Figure x: Scheme diagram used for simulation</figcaption>
         
-        <p><br>Hereinafter, let $\beta$[-] be the ATP consumption efficiency of the ATP controller.
-            Since this can not be confirmed in this project, we simulated with various values.
-            First, we show the simulation results of the part surrounded by the red line in the whole drawing of this project(Figure2).
+        <p><br>Hereinafter, let $\beta$[-] be the ATP consumption efficiency of the ATP controller. 
+            Because this value could not be confirmed in this project, we simulated this parameter using various values. 
+            First, we show the simulation results of the part surrounded by the red line in this project (Figure 2).
         </p>
         <a href="Image/Block_Figure3.png" data-lightbox="fig1"><img src="Image/Block_Figure3.png" width="70%"></a>
-        <figcaption>Figure 2 : Overall of the project</figcaption>
+        <figcaption>Figure 2: Overall of the project</figcaption>
         
         <p><br>The number of chemical species, parameters, rate equations, and differential equations
-            used in the simulation are shown in Table 1 below.[x][x]<br><br>
+            used in the simulation are shown in Table 1 below [x][x].<br><br>
         </p>
-        <figcaption>Table 1 : Number of chemical species, parameters, rate equations, differential equations used for simulation</figcaption>
+        <figcaption>Table 1: Number of chemical species, parameters, rate equations, and differential equations used for simulation</figcaption>
         <a href="" data-lightbox=""><img src="" width=""></a>
         
-        <p id="math"><br>Time change of activated Ras (part surrounded by the blue line of Figure x) when Threshold [nM] is constant
-            and $\beta$ is changed is shown in Figure 3 and its integral value is shown below as Figure 4.<br><br>
+        <p id="math"><br>Time changes in activated Ras (part surrounded by the blue line of Figure x) when the Threshold [nM] is constant
+            and $\beta$ is changed are shown in Figure 3 and its integral value is shown below as Figure 4.<br><br>
         </p>
         <figure>
             <a href="Image/Ras_Threshold_50.jpg" data-lightbox="fig2"><img src="Image/Ras_Threshold_50.jpg" width="100%"></a>
-            <figcaption id="math">Figure 3 : Time variation of activated Ras concentration with respect to $\beta$ value(Threshold=50)</figcaption>
+            <figcaption id="math">Figure 3: Time variation in activated Ras concentration with respect to $\beta$ value (Threshold = 50)</figcaption>
         </figure>
         <figure>
             <a href="Image/Threshold_50.jpg" data-lightbox="fig3"><img src="Image/Threshold_50.jpg" width="100%"></a>
-            <figcaption id="math">Figure 4 : Integrated value of activated Ras with respect to the value of $\beta$(Threshold=50)</figcaption>
+            <figcaption id="math">Figure 4: Integrated value in activated Ras with respect to the value of $\beta$ (Threshold = 50)</figcaption>
         </figure>
         
-        <p id="math">From Figs. 3 and 4, it can be seen that Ras activation is suppressed as the value of $\beta$ is increased, 
-            that is, as the consumption efficiency of ATP is increased.
-            Also, compared with the case where $\beta$ = 0, that is, 
-            when the circuit that consumes ATP is not operated (normal Kholodenko model), 
-            it can be confirmed that activation of Ras is suppressed in either case.
-            Next, time change of activated Ras (part surrounded by blue line of Figure x) 
-            when $\beta$ is constant and Threshold is varied is shown in Figure 5 and its integral value is shown below as Figure 6.
-            For the role of Threshold, see <a href="../SystemDesign/SystemDesign.html#DNA-Circuit">DNA Circuit</a> of System Design.<br><br>
+        <p id="math">Figures 3 and 4 show that Ras activation is suppressed as the value of $\beta$ is increased, 
+            that is, as the consumption efficiency of ATP is increased. 
+            Additionally, compared to the case in which $\beta$ = 0, 
+            that is, when the circuit that consumes ATP is not operated (normal Kholodenko model), activation of Ras is suppressed in either case.
+            Next, time changes in activated Ras (part surrounded by blue line in Figure x) 
+            when $\beta$ is constant and the Threshold is varied are shown in Figure 5 and the integral value is shown below as Figure 6. 
+            For the role of the Threshold, see the DNA Circuit <a href="../SystemDesign/SystemDesign.html#DNA-Circuit">DNA Circuit</a> of System Design.<br><br>
         </p>
         <figure>
             <a href="Image/Ras_beta_0_0005.jpg" data-lightbox="fig4"><img src="Image/Ras_beta_0_0005.jpg" width="100%"></a>
-            <figcaption id="math">Figure 5 : Time variation of activated Ras concentration with respect to Threshold value($\beta$=0.0005)</figcaption>
+            <figcaption id="math">Figure 5: Time variation in activated Ras concentration with respect to the Threshold value ($\beta$ = 0.0005)</figcaption>
         </figure>
         <figure>
             <a href="Image/beta_0_0005.jpg" data-lightbox="fig5"><img src="Image/beta_0_0005.jpg" width="100%"></a>
-            <figcaption id="math">Figure 6 : Integrated value of activated Ras with respect to Threshold value($\beta$=0.0005)</figcaption>
+            <figcaption id="math">Figure 6: Integrated value in activated Ras with respect to the Threshold value ($\beta$ = 0.0005)</figcaption>
         </figure>
         
-        <p>As shown in Figures 5 and 6, increasing the value of Threshold, that is, 
-            the longer the ATP controller turns on, the more ATP is consumed, so it can be seen that Ras activation is suppressed.
-            Also in this case, as in the previous case, compared with the case where ATP Controller was not operated (normal Kholodenko model),
-            in any case, it can be confirmed that activation of Ras is suppressed.
-            From these results, the following can be confirmed(Figure 7).<br><br>
+        <p>As shown in Figures 5 and 6, when the value of the Threshold is increased, 
+            that is, the longer the ATP controller turns on, the more ATP is consumed, Ras activation is suppressed. 
+            In this case, as in the previous case, compared to when the ATP Controller was not operated (normal Kholodenko model), 
+            activation of Ras is suppressed. Based on these results, the following was confirmed (Figure 7).<br><br>
         </p>
         <a href="" data-lightbox="fig6"><img src="" width="100%"></a>
-        <figcaption>Figure 7 : What can be confirmed from the whole simulation</figcaption>
+        <figcaption>Figure 7: What can be confirmed from the whole simulation</figcaption>
 
         <h2>DNA Circuit Operation</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, we simulate the operation of the ATP controller of the DNA circuit(Figure 8,9).
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, we simulate the operation of the ATP controller of the DNA circuit (Figure 8,x).
         </p>
         <a href="Image/Block_Figure4.png" data-lightbox="fig7"><img src="Image/Block_Figure4.png" width="70%"></a>
-        <figcaption>Figure 8 : Range to be simulated in this section(1)</figcaption>
+        <figcaption>Figure 8: Range to be simulated in this section (1)</figcaption>
         
         <a href="" data-lightbox="fig7"><img src="" width=""></a>
-        <figcaption>Figure x : Range of scheme to be simulated in this section(1)</figcaption>
+        <figcaption>Figure x: Range of scheme to be simulated in this section (1)</figcaption>
         
-        <p id="math"><br>The temporal change of the concentration of Absorber(ON) generated by the operation of the ATP controller
-            described in System Design is shown below(Figure 9).
-            The initial concentrations of the substances used in the simulation are as follows. 
-            All initial concentrations of substances not described below are 0[nM].<br><br>
+        <p id="math"><br>The temporal change in the concentration of Absorber(ON) generated by operation of the ATP controller 
+            described in the System Design section is shown below (Figure 9). 
+            The initial concentrations of the substances used in the simulation were as follows. 
+            All initial concentrations of substances not described below are 0 nM.<br><br>
         </p>
         <p id="math-add">
             $\rm Gate1=100[nM],\ Input=[100nM],\ Absorber(OFF)=100[nM],\ Gate2=100[nM]$<br><br>
         </p>
         <a href="Image/Absorber_beta_0_0005.jpg" data-lightbox="fig8"><img src="Image/Absorber_beta_0_0005.jpg" width="50%"></a>
-        <figcaption>Figure 9 : Temporal change in concentration of Absorber(ON) due to change in Threshold value</figcaption>
+        <figcaption>Figure 9: Temporal change in concentration of Absorber(ON) because of changes in the Threshold value</figcaption>
         
-        <p><br>From Figure 9, it can be confirmed that the larger the Threshold value, 
-            the more the amount of generation of Absorber (ON), that is, the longer the ON state of the ATP controller is.
+        <p><br>Figure 9 shows that as the Threshold value increased, Absorber(ON) generation increased, 
+            that is, the ATP controller spent a longer time in the ON state.
         </p>
         
         <h2>ATP Absorption</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, we simulate ATP Controller to consume ATP(Figure 10).
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, we simulated the ATP Controller to consume ATP (Figure 10,x).
         </p>
         <a href="Image/Block_Figure5.png" data-lightbox="fig9"><img src="Image/Block_Figure5.png" width="70%"></a>
-        <figcaption>Figure 10 : Range to be simulated in this section(2)</figcaption>
+        <figcaption>Figure 10: Range to be simulated in this section (2)</figcaption>
         
         <a href="" data-lightbox="fig"><img src="" width=""></a>
-        <figcaption>Figure x : Range of scheme to be simulated in this section(2)</figcaption>
+        <figcaption>Figure x: Range of scheme to be simulated in this section (2)</figcaption>
         
         <p id="math"><br>The reaction in which Absorber(ON) absorbs ATP is described 
             by the following rate equation of $v_{1} \sim v_{5}$.<br></p>
@@ -198,15 +196,15 @@
             $v_{4} = \gamma,\ \gamma=90.0[\rm nM/s]$<br>
             $v_{5} = -\beta \cdot [\rm Absorber(ON)] \cdot [\rm ATP]$<br><br>
         </p>
-        <p id="math">Here, $v_{1} \sim v_{3}$ represent the rate equations in the following scheme drawing(Figure 11).
-            In addition, it is assumed that $v_{4}$ represents the production rate of ATP generated in the cell,
-            and this time it was assumed to be generated at a constant generation rate.
-            The values of $\alpha_{1} \sim \alpha_{3}$ and $\gamma$ of the coefficient were determined while comparing it with the result of [x].
-            $v_{5}$ shows how Absorber(ON) generated by ATP Controller consumes ATP.
-            As mentioned at the beginning, $\beta$ is a coefficient representing the consumption efficiency of ATP by ATP Controller.
+        <p id="math">Here, $v_{1} \sim v_{3}$ shows the rate equations in the following scheme drawing (Figure 11).
+            Additionally, it is assumed that $v_{4}$ represents the production rate of ATP generated in the cell,
+            which was precited to be generated at a constant generation rate.
+            The values of $\alpha_{1} \sim \alpha_{3}$ and $\gamma$ of the coefficient were determined by comparison with the results of [x].
+            $v_{5}$ shows how the Absorber(ON) generated by the ATP Controller consumes ATP.
+            As described above, $\beta$ is a coefficient representing the consumption efficiency of ATP by the ATP Controller.
         </p>
         <a href="" data-lightbox="fig10"><img src="" width="100%"></a>
-        <figcaption>Figure 11 ： Reaction part involving ATP</figcaption>
+        <figcaption>Figure 11： Reaction part involving ATP</figcaption>
         
         <p id="math"><br>Using the rate equation of $v_{1} \sim v_{5}$, the differential equation of ATP is as follows.<br><br>
         </p>
@@ -214,56 +212,57 @@
             $\large \frac{d[\rm ATP]}{dt} = v_{1} + v_{2} + v_{3} + v_{4} + v_{5}$<br><br>
         </p>
         
-        <p id="math">The manner in which ATP is absorbed and decreased by Absorber(ON) generated by ATP Controller is shown below(Figure 12,13).
-            Figure 12 shows the temporal change of ATP concentration with respect to the value of $\beta$ when Threshold is constant.
-            Figure 13 shows the temporal change of the concentration of ATP with respect to the value of Threshold when $\beta$ is constant.
-            In either case, the initial concentration of ATP is 10000[nM].<br><br>
+        <p id="math">The manner by which ATP is absorbed and decreased by the Absorber(ON) 
+            generated by the ATP Controller is shown below (Figure 12,13).
+            Figure 12 shows the temporal change in the ATP concentration with respect to the value of $\beta$ when the Threshold is constant.
+            Figure 13 shows the temporal change in the concentration of ATP with respect to the value of the Threshold when $\beta$ is constant.
+            In either case, the initial concentration of ATP is 10,000 nM.<br><br>
         </p>
         
         <figure>
             <a href="Image/ATP_Threshold_50.jpg" data-lightbox="fig11"><img src="Image/ATP_Threshold_50.jpg" width="100%"></a>
-            <figcaption id="math-add">Figure 12 : Temporal change in concentration of ATP relative to the value of $\beta$(Threshold=50)</figcaption>
+            <figcaption id="math-add">Figure 12: Temporal change in ATP concentration of ATP relative to the value of $\beta$ (Threshold = 50)</figcaption>
         </figure>
         <figure>
             <a href="Image/ATP_beta_0_0005.jpg" data-lightbox="fig12"><img src="Image/ATP_beta_0_0005.jpg" width="100%"></a>
-            <figcaption id="math-add">Figure 13 : Temporal change of concentration of ATP with respect to Threshold value($\beta$=50)</figcaption>
+            <figcaption id="math-add">Figure 13: Temporal change in ATP concentration of ATP with respect to the Threshold value ($\beta$ = 50)</figcaption>
         </figure>
         
-        <p id="math">From Figures 12 and 13, in both cases, it can be confirmed that the concentration of ATP decreases when B = 0,
-            that is, when compared with the ATP of the ordinary Kholodenko model.
-            Further, from Figure 12, it can be seen that ATP decreases as the value of $\beta$ increases,
-            that is, as ATP consumption efficiency increases.
-            Furthermore, it can be seen that ATP decreases as the Threshold value increases,
-            that is, as the DNA circuit turns ON for a longer time.
+        <p id="math">As shown in Figures 12 and 13, in both cases, it was confirmed that the concentration of ATP decreased when $\beta$ = 0,
+            that is, when compared to ATP in the ordinary Kholodenko model.
+            Further, as shown in Figure 12, ATP decreased as the value of $\beta$ increased,
+            that is, as ATP consumption efficiency increased.
+            Furthermore, ATP decreased as the Threshold value increased,
+            that is, as the DNA circuit was turned ON for a longer time.
         </p>
         
         <h2>Inhibit Activation of Ras</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we simulate the change of Ras activation due to the reduction of ATP.
-            The part where ATP is involved in the activation of Ras is the part shown in Figure 14 below.<br><br></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we simulated the changes in Ras activation due to a reduction of ATP.
+            The part in whitch ATP is involved in activating Ras is the part shown in Figure 14 below.<br><br></p>
         <a href="" data-lightbox="fig13"><img src="" width="100%"></a>
-        <figcaption>Figure 14 : Reaction part involving ATP</figcaption>
+        <figcaption>Figure 14: Reaction part involving ATP</figcaption>
         
-        <p><br>The reactions &#9312; to &#9314; in Figure 14 are represented by the following formulas.<br><br></p>
+        <p><br>Reactions &#9312;-&#9314; in Figure 14 are represented by the following formulas.<br><br></p>
         <p id="math-add">
             &#9312; $k_{3} \cdot [{\rm R_{2}}]-k_{-3} \cdot [{\rm RP}],\ k_{3}=1{\rm [1/s]},\ k_{-3}=0.01{\rm [1/s]}$<br>
             &#9313; $k_{6} \cdot [{\rm R}$-${\rm PL}]-k_{-6} \cdot [{\rm R}$-${\rm PLP}],\ k_{6}=1{\rm [1/s]},\ k_{-6}=0.05{\rm [1/s]}$<br>
             &#9314; $k_{14} \cdot [{\rm R}$-${\rm Sh}]-k_{-14} \cdot [{\rm R}$-${\rm ShP}],\ k_{14}=6{\rm [1/s]},\ k_{-14}=0.06{\rm [1/s]}$<br>
         </p>
-        <p id="math"><br>For this time, it is assumed that these reaction rate coefficients $k_{x},k_{-x}$ 
-            change linearly with the concentration of ATP.
-            Also assume that the concentration of ATP is kept constant, and the reaction rate coefficients 
-            at time $t$ are $k_{x}^{'},k_{-x}^{'}$ and are determined as follows.<br><br>
+        <p id="math"><br>We assumed that these reaction rate coefficients, $k_{x}$ and $k_{-x}$ 
+            changed linearly with the concentration of ATP.
+             Additionally, we assumed that the concentration of ATP was kept constant, and the reaction rate coefficients 
+            at time $t$ were $k_{x}^{'}$ and $k_{-x}^{'}$ and are determined as follows.<br><br>
         </p>
         <p id="math-add">
             $\large k_{x}^{'}=\frac{[{\rm ATP}](t)}{{\rm [ATP]}(0)} \cdot k_{x},\ k_{-x}^{'}=\frac{{[\rm ATP]}(t)}{{\rm [ATP]}(0)} \cdot k_{-x}$<br>
         </p>
         <p><br>In addition, $v_{6} \sim v_{8}$ represent the reactions involved in Ras activation 
-            and represent 26, 27, 28 in the following scheme diagram(Figure 15).
+            and represent 26, 27, and 28 in the following scheme diagram (Figure 15).
             Ras activated by Ras-GTP is represented by Ras before activation of Ras-GDP.
         </p>
         
         <a href="" data-lightbox="fig14"><img src="" width="100%"></a>
-        <figcaption>Figure 15 : Reaction part directly involved in Ras activation</figcaption>
+        <figcaption>Figure 15: Reaction directly involved in Ras activation</figcaption>
         
         <p id="math-add"><br>
             $\large v_{6} = \frac{k_{26} \cdot [\rm R‐Sh‐G‐S] \cdot [\rm Ras‐GDP]}{k_{-26}+[\rm Ras‐GDP]}$<br><br>
@@ -276,28 +275,28 @@
             $\ k_{27}=5.40×10^{1}{\rm [1/s]},\ k_{-27}=2.28×10^{2}{\rm [nM]},$<br><br>
             $\ k_{28}=3.09×10^{1}{\rm [1/s]},\ k_{-28}=2.76×10^{1}{\rm [nM]}$
         </p>
-        <p><br>The values of these coefficients were referred to [(x)].
-            $v_{6},v_{7}$ represent Ras activation (phosphorylation), $v_{8}$ represents inactivation (dephosphorylation) of Ras.
+        <p><br>The values of these coefficients were referred to as [(x)].
+            $v_{6}$ and $v_{7}$ represent Ras activation (phosphorylation), while $v_{8}$ represents Ras inactivation (dephosphorylation).
             Therefore, the differential equations of Ras-GTP and Ras-GDP are as follows.<br><br>
         </p>
         <p id="math-add">
             $\large \frac{d[\rm Ras‐GTP]}{dt} = v_{6}+v_{7}-v_{8}$<br><br>
             $\large \frac{d[\rm Ras‐GDP]}{dt} = -v_{6}-v_{7}+v_{8}$<br><br>
         </p>
-        <p id="math">Therefore, when simulation is carried out using the above equation and the reaction rate coefficients described above,
-            Figure 2 to 5 as described at the beginning are obtained.
-            Also, as a result of simulating the case of 
-            $\beta=0,\ 5.0×10^{-6},\ 5.0×10^{-5},\ 5.0×10^{-4}$, and Threshold$=5,\ 50,\ 95$, 
-            the integrated value of the concentration of activated Ras is as shown in Figure 16.
-            From this result, it can be confirmed that Ras activation can be suppressed by adjusting $\beta$ and Threshold.<br><br>
+        <p id="math">Therefore, when simulation was carried out using the above equation and the reaction rate coefficients described above,
+            Figure 2-5 as described at the beginning were obtained.
+            Additionally, by simulating the case of 
+            $\beta=0,\ 5.0×10^{-6},\ 5.0×10^{-5},$ and $5.0×10^{-4}$, and Threshold$=5,\ 50,$ and $95$, 
+            the integrated values of the concentration of activated Ras were determined as shown in Figure 16.
+            These results confirmed that Ras activation was suppressed by adjusting $\beta$ and the Threshold.<br><br>
         </p>
         <a href="Image/Inregral_Ras_All.jpg" data-lightbox="fig15"><img src="Image/Inregral_Ras_All.jpg" width="50%"></a>
-        <figcaption>Figure 16 : Integrated value of Activated Ras concentration</figcaption>
+        <figcaption>Figure 16: Integrated value of activated Ras concentration</figcaption>
         
         <h2>File Download</h2>
-        <p>The source code used for simulation is C language and MATLAB, which can be downloaded from the following link.
-            Simulate with C language source code called DP_Gate_Bridge.c. 
-            The result is output to data.txt, and the graph is drawn with MATLAB source code called plot_data.m.
+        <p>The source code used for simulation was prepared in C language and MATLAB, which can be downloaded from the following link.
+            Simulation can be conducted with the C language source code called DP_Gate_Bridge.c. 
+            The result is output to data.txt, and the graph is drawn with the MATLAB source code called plot_data.m.
             The files kholodenko_add_Absorber_run.m and kholodenko_add_Absorber.m are simulated only by MATLAB.<br><br>
         </p>
         <dl id="acMenu">
