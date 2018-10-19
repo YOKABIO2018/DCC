@@ -85,7 +85,7 @@
 
 /* ---------- image backgrounds --------- */
 .icon-image-1 {
-  background: url("Image/icon-01.png");
+  background: url("Image/icon-00.png");
   background-size: 90% 90%;
   background-position: 55% 0;
 }
@@ -112,7 +112,7 @@
 }
 
 .icon-image-5 {
-  background: url("Image/icon-05.png");
+  background: url("Image/icon-01.png");
   background-size: 90% 90%;
   background-position: 55% 0;
 }
