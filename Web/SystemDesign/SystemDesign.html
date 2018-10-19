@@ -63,49 +63,46 @@
             <div class="space" id="Page-Overview"></div>
             <div class="section1">
               <h1>Page Overview</h1>
-              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As mentioned in Our Project of Idea,
-                  YOKABIO aims to establish a control system of a new system transmission system using DNA circuits.
-                  As an example, we will describe reduction of ATP and control of the decrease amount. 
-                  This page mainly explains two points. The first is about the mechanism to absorb ATP,
-                  the second is about the DNA circuit controlling the mechanism.(Click image to enlarge)
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As mentioned in Our Project of Idea, YOKABIO aims to establish a control system for a new transmission system using DNA circuits.
+                As an example, we describe the reduction of ATP levels and methods for controlling these levels.
+                This page mainly explains two points. The first is the mechanism of absorbing ATP, while the second is the DNA circuit controlling the mechanism.(Click image to enlarge)
               </p>
             </div>
 
             <div class="space" id="Mechanism-of-Absorbing-ATP"></div>
             <div class="section2">
               <h1>Mechanism of Absorbing ATP</h1>
-              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We  use  the  polymerase  reaction  as  a  way  to  absorb  ATP  from  cells.
-                  The polymerase is an enzyme which configuers a nucleic acid or a chain such as DNA or RNA[7].
-                  In this project, we use double stranded DNA including T7 promoter squence as template, NTP(Nucleoside triphosphate) as substrate.
-                  In addition, we use T7RNA polymerase which is an enzyme and makes complementary single stranded RNA for a template DNA being a part of downstream of the promoter (Figure 1, Video 1).<br><br>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the polymerase reaction as a method of absorbing ATP from cells. Polymerase is an enzyme that produces nucleic acids or chains such as DNA or RNA [7].
+                In this project, we used double-stranded DNA containing a T7 promoter sequence as a template and NTPs (nucleoside triphosphates) as substrates.
+                Additionally, we used T7 RNA polymerase, which produces complementary single-stranded RNA for a template DNA downstream of the promoter (Figure 1, Video 1).<br><br>
               </p>
 
               <figure>
                 <a href="Image/polymerase(Fig1).png" data-lightbox="fig1"><img src="Image/polymerase(Fig1).png" width="90%" height="auto"></a><br>
-                Figure 1 : Polymerase Reaction<br><br><br>
+                Figure 1: Polymerase Reaction<br><br><br>
               </figure>
 
               <figure>
               <video controls width="90%" height="auto">
                   <source src="Video/polymerase.mp4">
               </video><br>
-              Video 1 : Polymerase Reaction(Video)<br><br><br>
+              Video 1: Polymerase Reaction(Video)<br><br><br>
               </figure>
 
-              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The reason for using T7RNA Polymer is that DNA Polymerase has dNTP as a matrix and RNA Polymerase has NTP as a matrix, so RNA Polymerase can consume ATP.
-              T7RNA Polymerase is useful because it detects specific base sequence and it is convenient to our project using mismatch base pair.
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The reason for using T7 RNA polymerase is that DNA polymerase uses dNTP as a matrix and RNA polymerase uses NTP as a matrix,
+                and thus RNA polymerase can consume ATP. T7 RNA Polymerase is useful because it detects specific base sequences and is convenient for use in our project using mismatch base pairs.
               </p>
 
               <figure>
                 <a href="Image/polymerase_ATP(Fig2).png" data-lightbox="fig2"><img src="Image/polymerase_ATP(Fig2).png" width="90%" height="auto"></a><br>
-                Figure 2 : Promoter Design<br><br><br>
+                Figure 2: Promoter Design<br><br><br>
               </figure>
 
               <figure>
                 <video controls width="90%" height="auto">
                     <source src="Video/AbsorbATP.mp4">
                   </video><br>
-                Video 2 : Absorb ATP(Video)<br><br>
+                Video 2: Absorb ATP(Video)<br><br>
               </figure>
             </div>
 
@@ -113,55 +110,40 @@
             <div class="section1">
                 <h1>DNA Circuit</h1>
                 <h2>Scheme of DNA Circuit</h2>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although we can reduce ATP using the above polymerase,
-                    it has been decreasing ATP so far, it is essential in vivo. Therefore, there is a need to control weight loss of ATP.
-                    T7RNA polymerase recognizes double stranded DNA such as Figure 3(a) and starts a reaction with it.
-                    Therefore, we set double stranded DNA's state such as Figure 3(a) as switch ON state and
-                    single stranded DNA's state such as Figure 3(b) as switch OFF state.
-                    Thereby we are able to switch ON-OFF state of polymerase reaction.
-                    In addition, the actual work in the cell is as shown in Figure 4.<br><br>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although we can reduce ATP using the above polymerase, ATP is essential for in vivo processes.
+                  Therefore, the loss of ATP must be controlled.
+                  T7 RNA polymerase recognizes double-stranded DNA such as that shown in Figure 3(a) to begin the polymerization reaction.
+                  Therefore, we set the state of double-stranded DNA shown in Figure 3(a) as switched ON and single-stranded DNA shown in Figure 3(b) as switched OFF.
+                  Thus, we are able to change the ON-OFF state of the polymerase reaction. The effects of this process in cells are shown in Figure 4.<br><br>
                 </p>
 
                 <figure>
                   <a href="Image/polymerase_onoff(Fig3).png" data-lightbox="fig3"><img src="Image/polymerase_onoff(Fig3).png" width="90%" height="auto"></a><br>
-                  Figure 3 : ON-OFF Expression of T7RNA Polymerase<br><br>
+                  Figure 3: ON-OFF Expression of T7RNA Polymerase<br><br>
                 </figure>
 
                 <figure>
                   <a href="Image/ON_OFF_switch.png" data-lightbox="fig4"><img src="Image/ON_OFF_switch.png" width="100%" height="auto"></a><br>
-                  Figure 4 : Image of ON State &amp; OFF State in Cell<br><br>
+                  Figure 4: Image of ON State &amp; OFF State in Cells<br><br>
                 </figure>
 
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Figure 3 we can switch on and off by adjusting the temperature and dissociating and coupling.
-                  However, since this is actually necessary to operate in the cell, we think that it is impossible to control by heating and cooling.
-                  Also, when using enzymes, it is necessary to strictly control the temperture and pH value, so it will be difficult to operate in the cell.
-                  Therefore, we designed a DNA circuit without enzymes that utilizes only the DNA strand displacement reaction.
-                  Because this reaction condition is loose, it can be expected to be used in vivo. Here is a diagram of our intended switch.
-                  The area value in this figure represents the total ATP consumption by Absorber. In other words, you can control the ATP consumption by changing the Absorber(ON) time.<br><br>
-                </p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As shown in Figure 3, we can switch the system on and off by adjusting the temperature and through dissociating and coupling. However, because this system is used in cells, it may be impossible to control the system by heating and cooling. Additionally, when using enzymes, it is necessary to strictly control the temperature and pH value, making it difficult to apply this system in live cells. Therefore, we designed a DNA circuit without enzymes that utilizes only the DNA strand displacement reaction, which is expected to be useful in vivo. A diagram of our intended switch is shown. The area value in this figure represents the total ATP consumption by the Absorber. ATP consumption can be controlled by changing the Absorber (ON) time.</p>
 
-                <a href="" data-lightbox=""><img src="" width="70%" height="auto"></a>
-
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we reduced the ATP and switched the ON-OFF state and the DNA circuit became as shown in Figure 5.
-                  (A double strand which is made of a and a* is T7 promoter sequence. In addition, a double strand which is made of b and b* makes RNA consuming ATP)<br><br>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Finally, we reduced ATP levels and switched the ON-OFF state; the DNA circuit is shown in Figure 5. (The double-strand composed of a and a* is the T7 promoter sequence. Additionally, a double-strand composed of b and b* causes RNA to consume ATP.)
                 </p>
 
                 <a href="Image/circuit.gif" data-lightbox="fig5"><img src="Image/circuit.gif" width="80%" height="auto"></a><br>
-                Figure 5 : Scheme of ON-OFF Switch Circuit<br><br>
+                Figure 5: Scheme of ON-OFF Switch Circuit<br><br>
 
                 <h2>Delay Element</h2>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We used a seesaw gate to control time between ON state and OFF state.
-                  The seesaw gate is anarithmetic element such as Figure 6 by DNA molecular reactions[9][10].
-                  It produces an output for inputs exceeding a preset threshold, however it makes a delay.
-                  We think that the delay is useful for adjusting time for ON→OFFstateand controlling to absorption of ATP.A right part of Figure 5 is the seesaw gate.
-                  (Its simulation is described in Proof of Conceptand its advantages are described in Discussion of Application.)<br><br>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We used a seesaw gate to control the time between the ON state and OFF state. The seesaw gate is an arithmetic element such as that shown in Figure 6 for DNA molecular reactions [9][10]. It produces an output for inputs exceeding a preset threshold, but causes a delay. We predicted that this delay is useful for adjusting the times in the ON→OFF states and controlling ATP absorption. The right part of Figure 5 shows the seesaw gate. (Its simulation is described in the Proof of Concept and its advantages are described in the Discussion of Application.)<br><br>
                 </p>
 
                 <a href="Image/Arithmetic_element.png" data-lightbox="fig6"><img src="Image/Arithmetic_element.png" width="60%" height="auto"></a><br>
-                Figure 6 : Arithmetic Element<br><br>
+                Figure 6: Arithmetic Element<br><br>
 
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This circuit was composed of four DNA strand displacement reaction processes.
-                  Each of these reaction processes is explained below <a style="color: red">DNA Circuit Operation.</a><br><br>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This circuit was composed of four DNA strand displacement reaction processes. Each of these reaction processes is explained below in <a style="color: red">the DNA Circuit Operation </a>section.<br><br>
                 </p>
 
                 <h2 style="color: red">DNA Circuit Operation</h2>
@@ -171,152 +153,139 @@
                   <dt>&nbsp;&nbsp;&nbsp;&nbsp;First Process<span class="dt-mark">▼</span></dt>
                     <dd>
                       <p><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, the circuit starts by administering Input.
-                        In the first process, we aimed to make the models of Signal1 and Signal2
-                        using a strand displacement reaction (Figure 7, Figure 8).
-                        Thereby outputed Signal1 and single stranded DCC cause hybridization and they change to double stranded.
-                        In other words, DCC is changed from OFF state into ON state (Video 2).<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, the circuit starts by adding the Input.
+                        In the first process, we aimed to prepare models of Signal1 and Signal2 using a strand displacement reaction (Figure 7, Figure 8).
+                        The output Signal 1 and single-stranded DCC result in hybridization to form double-strands.
+                        Thus, DCC is changed from the OFF state to the ON state (Video 2).<br><br>
 
-                        &nbsp;&nbsp;&#9312;&nbsp;T0* of Gate1 is bound with T0 of Input.<br>
+                        &nbsp;&nbsp;&#9312;&nbsp;T0* of Gate1 is bound to T0 of Input.<br>
                         &nbsp;&nbsp;&#9313;&nbsp;Gate1 and Input are effectively combined.<br>
                         &nbsp;&nbsp;&#9314;&nbsp;A part of Gage1 separates from the complex.<br>
                         &nbsp;&nbsp;&#9315;&nbsp;Signal1, Signal2, and Waste are generated by separating the components.<br>
-                        &nbsp;&nbsp;&#9316;&nbsp;DCC(ON) is generated by DCC(OFF) and Signal1(Figure 8).<br><br>
+                        &nbsp;&nbsp;&#9316;&nbsp;Absorber(ON) is generated by Absorber(OFF) and Signal1 (Figure 8).<br><br>
                       </p>
 
                       <figure>
                         <a href="Image/1/Gate1&Input.gif" data-lightbox="fig7"><img src="Image/1/Gate1&Input.gif" width="100%" height="auto"></a>
-                        <figcaption>Figure 7 : First Process(1)</figcaption>
+                        <figcaption>Figure 7: First Process (1)</figcaption>
                       </figure>
 
                       <figure>
                         <a href="Image/1/T7Promoter(OFF)&Signal1.gif" data-lightbox="fig8"><img src="Image/1/T7Promoter(OFF)&Signal1.gif" width="80%" height="auto"></a>
-                        <figcaption>Figure 8 : First Process(2)</figcaption>
+                        <figcaption>Figure 8: First Process (2)</figcaption>
                       </figure>
 
                       <figure>
                         <video controls width="120%" height="auto">
                             <source src="Video/Gate1&input.mp4">
                         </video>
-                        <figcaption>Video 2 : Gate1 &amp; Input</figcaption><br>
+                        <figcaption>Video 2: Gate1 &amp; Input</figcaption><br>
                       </figure>
                     </dd>
 
                   <dt>&nbsp;&nbsp;&nbsp;&nbsp;Second Process<span class="dt-mark">▼</span></dt>
                     <dd>
                       <p><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the second process, we control a reacion by a gate of threshold's concentration.
-                          A threshold value is decided by Threshold. Moreover, Signal2 and Threshold meet and cause
-                          a strand displacement reaction and then Signal2 disappear.
-                          In other words, Signal2 exceeding the Threshold's concentration is required to proceed with the reacion (Figure 9, Video 3).<br><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the second process, we controlled the reaction using a gate of the threshold concentration.
+                          The threshold value is determined by Threshold. Moreover, Signal2 and Threshold interact to cause a strand displacement reaction and then Signal2 disappears.
+                          Thus, Signal2 must exceed the Threshold concentration for the reaction to proceed (Figure 9, Video 3).<br><br>
 
-                          &nbsp;&nbsp;&#9312;&nbsp;T3* of Threshold is bound with T3 of Signal2.<br>
+                          &nbsp;&nbsp;&#9312;&nbsp;T3* of Threshold is bound to T3 of Signal2.<br>
                           &nbsp;&nbsp;&#9313;&nbsp;Threshold and Signal2 are effectively combined.<br>
                           &nbsp;&nbsp;&#9314;&nbsp;A part of Waste and Fuel separates from the complex.<br>
-                          &nbsp;&nbsp;&#9315;&nbsp;Waste and Fuel are genarated by separating the conponents.<br><br>
+                          &nbsp;&nbsp;&#9315;&nbsp;Waste and Fuel are generated by separating the components.<br><br>
                       </p>
 
                       <figure>
                         <a href="Image/2/Signal2&Threshold.gif" data-lightbox="fig9"><img src="Image/2/Signal2&Threshold.gif" width="100%" height="auto"></a>
-                        <figcaption>Figure 9 : Second Process</figcaption>
+                        <figcaption>Figure 9: Second Process</figcaption>
                       </figure>
 
                       <figure>
                         <video controls width="100%" height="auto">
                          <source src="Video/signal2&threshold.mp4">
                         </video>
-                        <figcaption>Video 3 : Signal2&amp;Threshold</figcaption>
+                        <figcaption>Video 3: Signal2&amp;Threshold</figcaption>
                       </figure><br>
 
-                      <p><br> Signal2 exceeding the Threshold's concentration goes Third process,
-                          and Fule which is made in this process is used in Third process.<br><br>
+                      <p><br>Signal2 exceeding the Threshold concentration enters the Third process,
+                        in which Fuel produced in this process is used.<br><br>
                       </p>
                     </dd>
 
                   <dt>&nbsp;&nbsp;&nbsp;&nbsp;Third Process<span class="dt-mark">▼</span></dt>
                     <dd>
                       <p><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the third process, we perform processing by chain reaction of strand displacement reaction
-                          called seesaw gate (Figure 10, Figure 11 and Video 4).<br><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the third process, we perform processing through a chain reaction of the strand displacement reaction known as the seesaw gate (Figure 10, Figure 11, and Video 4).<br><br>
 
-                          &nbsp;&nbsp;&#9312;&nbsp;&nbsp;T3* of Gate2 is bound with T3 of Signal2.<br>
+                          &nbsp;&nbsp;&#9312;&nbsp;&nbsp;T3* of Gate2 is bound to T3 of Signal2.<br>
                           &nbsp;&nbsp;&#9313;&nbsp;&nbsp;Gate2 and Signal2 are effectively combined.<br>
                           &nbsp;&nbsp;&#9314;&nbsp;&nbsp;A part of Releaser and Gate3 separates from the complex.<br>
-                          &nbsp;&nbsp;&#9315;&nbsp;&nbsp;Releaser and Gate3 are genarated by separating the conponents.<br><br>
+                          &nbsp;&nbsp;&#9315;&nbsp;&nbsp;Releaser and Gate3 are generated by separating the components.<br><br>
 
-                          Gate2 made in previous steps causes a strand displacement reaction with Fuel, and Signal2 is made again.<br><br>
-                          &nbsp;&nbsp;&#9312;'&nbsp;T2* of Fule is bound with T2 of Gate3.<br>
+                          Gate2 produced in previous steps causes a strand displacement reaction with Fuel, and Signal2 is produced again.<br><br>
+                          &nbsp;&nbsp;&#9312;'&nbsp;T2* of Fuel is bound to T2 of Gate3.<br>
                           &nbsp;&nbsp;&#9313;'&nbsp;Fuel and Gate3 are effectively combined.<br>
                           &nbsp;&nbsp;&#9314;'&nbsp;A part of Signal2 and Gate4 separates from the complex.<br>
                           &nbsp;&nbsp;&#9315;'&nbsp;Signal2 and Gate4 are genarated by separating the conponents.<br><br>
 
-                          The cycle such as this system is called seesaw gate. Furthermore, it refills Signal2 which is consumed in Second process
-                          and outputs Releaser.
-                          As described above, Threshold and seesaw gate are used to adjust time between ON and OFF of DCC.<br><br>
+                          The cycle such as that used in this system is known as a seesaw gate.
+                          Furthermore, this cycle refills Signal2 which is consumed in the Second process and outputs Releaser.
+                          As described above, the Threshold and seesaw gate are used to adjust the time between the ON and OFF states of the Absorber.<br><br>
                       </p>
 
                       <figure>
                         <a href="Image/3/Gate2&Signal2.gif" data-lightbox="fig10"><img src="Image/3/Gate2&Signal2.gif" width="80%" height="auto"></a>
-                        <figcaption>Figure 10 : Third Process(1)</figcaption>
+                        <figcaption>Figure 10: Third Process (1)</figcaption>
                       </figure>
 
                       <figure>
                         <a href="Image/3/Gate2&Signal2_explanation.gif" data-lightbox="fig11"><img src="Image/3/Gate2&Signal2_explanation.gif" width="100%" height="auto"></a>
-                        <figcaption>Figure 11 : Third Process(2)</figcaption>
+                        <figcaption>Figure 11 : Third Process (2)</figcaption>
                       </figure>
 
                       <figure>
                         <video controls width="120%" height="auto">
                           <source src="Video/seasow.mp4">
                         </video>
-                        <figcaption>Video 4 : Seesaw Gate</figcaption>
+                        <figcaption>Video 4: Seesaw Gate</figcaption>
                       </figure>
                     </dd>
 
                   <dt>&nbsp;&nbsp;&nbsp;&nbsp;Final Process<span class="dt-mark">▼</span></dt>
                     <dd>
                       <p><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the final process, we aimed to change double stranded DCC into single stranded DCC
-                          by dissociating Signal1 from double stranded DCC.
-                          In other words, we aimed to swich a state of the circuit ON state to Off state (Figure 12, Video 5).<br><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the final process, we aimed to change the double-stranded Absorber into single-stranded Absorber by dissociating Signal1 from double-stranded Absorber.
+                          Thus, we aimed to switch the state of the circuit from ON to OFF (Figure 12, Video 5).<br><br>
 
-                          &nbsp;&nbsp;&#9312;&nbsp;T1 of DCC(ON) is bound with T1* of Releaser.<br>
-                          &nbsp;&nbsp;&#9313;&nbsp;DCC(ON) and Releaser are effectively combined.<br>
-                          &nbsp;&nbsp;&#9314;&nbsp;A part of DCC(ON) separates from the complex(It is Signal1).<br>
-                          &nbsp;&nbsp;&#9315;&nbsp;DCC(OFF) and Waste are genarated by separating the components.<br><br>
+                          &nbsp;&nbsp;&#9312;&nbsp;T1 of Absorber(ON) is bound to T1* of the Releaser.<br>
+                          &nbsp;&nbsp;&#9313;&nbsp;Absorber(ON) and Releaser are effectively combined.<br>
+                          &nbsp;&nbsp;&#9314;&nbsp;A part of Absorber(ON) separates from the complex (Signal1).<br>
+                          &nbsp;&nbsp;&#9315;&nbsp;Absorber(OFF) and Waste are generated by separating the components.<br><br>
                       </p>
 
                       <figure>
                         <a href="Image/4/T7Promoter(ON)&Releaser.gif" data-lightbox="fig12"><img src="Image/4/T7Promoter(ON)&Releaser.gif" width="100%" height="auto"></a>
-                        <figcaption>Figure 12 : Final Process</figcaption>
+                        <figcaption>Figure 12: Final Process</figcaption>
                       </figure>
 
                       <figure>
                         <video controls width="90%" height="auto">
                           <source src="Video/ON&Releaser.mp4">
                         </video>
-                        <figcaption>Video 5 : DCC(ON)&amp;Releaser</figcaption>
+                        <figcaption>Video 5: Absorber(ON)&amp;Releaser</figcaption>
                       </figure>
                     </dd>
 
-                    <p id="variousproblems"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to previous four processes,
-                        we are able to switch a state of the circuit(<b>OFF → ON → OFF</b>) automatically.
-                        That’s to say, single administration of DCC is come true and it is convenient.<br><br>
+                    <p id="variousproblems"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the previous four processes, we switched the state of the circuit(<b>OFF → ON → OFF</b>) automatically.
+                      Thus, single administration of Absorber can be conducted and is convenient.<br><br>
 
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, Figure 5 has two ploblems.
-                        First, the circuit causes an undesired reaction when it starts.
-                        For instance, we mention Input and DCC(OFF) here.
-                        After Input is administered, Input and DCC(OFF) may happen hybridization
-                        because a part of their base sequences is complementary.
-                        We should change their domains not to happen hybridization.
-                        However, it is impossible in principle because we should change domains of Signal1 and Gate1_under in response to Input.
-                        The circuit now causes below three undesired reactions.<br>
-                        &nbsp;&nbsp;&#9312;&nbsp;Input binds with DCC(OFF)<br>
-                        &nbsp;&nbsp;&#9313;&nbsp;Signal1 binds with Signal2<br>
-                        &nbsp;&nbsp;&#9314;&nbsp;Input binds with Gate2<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, Figure 5 shows two limitations. First, the circuit causes an undesired reaction when it starts. For instance, we mentioned the Input and DCC (OFF) here. After the Input is administered, Input and DCC (OFF) may undergo hybridization because part of their base sequences is complementary. These domains should be changed to prevent hybridization. However, this is not possible in principle because we the domains of Signal1 and Gate1_under would be changed in response to the Input. The circuit now involves the three undesired reactions listed below.<br>
+                        &nbsp;&nbsp;&#9312;&nbsp;Input binds to Absorber(OFF)<br>
+                        &nbsp;&nbsp;&#9313;&nbsp;Signal1 binds to Signal2<br>
+                        &nbsp;&nbsp;&#9314;&nbsp;Input binds to Gate2<br><br>
 
-                        Second, some double stranded DNA make T7RNA promoter and happen polymerase reaction even when the circuit is not ON state.
-                        Therefore, We used <b>mismatched base pair</b> to solve these problems.
+                        Second, some double-stranded DNA contains the T7 RNA promoter and the polymerase reaction occurs even when the circuit is not in the ON state. Therefore, we used <b>mismatched base pairs</b>  to overcome these limitations.
                         Mismatched base pair is described in detail in Experiment's
                         <a href="../Experiment/Experiment.html#Material&Methods">Material &amp; Method</a>.<br><br>
                     </p>
