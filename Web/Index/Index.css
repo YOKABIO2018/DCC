@@ -16,7 +16,7 @@ li.menu_single ul.menu_second_level {
 li.menu_single ul.menu_second_level li a{
     width: 180px;
     height: auto;
-    font-size: 18px;
+    font-size: 1.1vw;
     background-color: rgba(128, 128, 128, 1);
     /*background: #353a3f;*/
 }
