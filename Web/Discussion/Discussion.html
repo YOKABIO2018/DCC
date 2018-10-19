@@ -60,18 +60,12 @@
   <!--↑ナビゲーションバー(サブ)↑-->
 
   <main class="container">
-    <!--section1とsection2は交互に書いて下さい-->
-    <!--section1,section2の直前に,
-                <div class="space" id="subX"></div>
-                idはsectionではなく,直前のspaceのクラスに追加して下さい
-                divタグの内部では,h1,h2,pタグのみ使用して下さい
-                img,videoタグを使用するときは,pタグの外で使用して下さい
-    -->
+
     <div class="space" id="Page-Overview"></div>
     <div class="section1">
         <h1>Page Overview</h1>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this page, we mainly describe points devised when designing the system.
-          Also, we examine how we can utilize in the future society, and discuss issues that arise with human beings and society.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On this page, we mainly describe considerations made when designing the system.
+          We also describe how this system can be utilized in the future by society and issues that arise with human beings and society.</p>
     </div>
 
     <div class="space" id="DNA-Design-Innovation"></div>
@@ -79,50 +73,42 @@
         <h1>DNA Design Innovation</h1>
       <h2>(1) Application of Mismatched Base Pair</h2>
       <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        We checked up and understood the feature of mismatched base pair, and then we gave the application example. In designing DNA, it is necessary to calculate DNA’s behavior with accuracy and design base sequence as our idea, but the more complicated the
-        DNA system is, the more frequently DNA do not behave as our expectation. Today, in order to solve the problem, the method that we use special secondary structure, such as hairpin loop or bulge loop (Figure 1), is used generally.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We described the features of mismatched base pairs and an application example.
+        In designing DNA, it is necessary to accurately predict the DNA’s behavior and design base sequences.
+        However, as the DNA system becomes more complex, greater deviation from the expected results will be observed.
+        To solve this problem, special secondary structures, such as a hairpin loop or bulge loop (Figure 1), are typically used.
       </p>
       <br><br><a href="Image/bulge_hairpin.png" data-lightbox="bulge_hairpin"><img src="Image/bulge_hairpin.png" width="70%" height="auto"></a><br>
-      Figure 1 : Special Secondary Structures
+      Figure 1: Special Secondary Structures
 
       <p>
         <br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        However, we have to take not only benefits but also defects caused by using the method into our consideration, for example of the defects of bulge loop, the longer base sequence of a part of bulge is, the more unstable secondary structure gets to be (Figure 2).
+        However, bot the benefits and defects caused by using the method must be considered. For example, for defects in the bulge loop, as the base sequence of a part of the bulge increases in length, the secondary structure becomes more unstable (Figure 2).
       </p>
       <br><br><a href="Image/bulge.png" data-lightbox="bulge"><img src="Image/bulge.png" width="70%" height="auto"></a><br>
-      Figure 2 : The Structure of Bulge Loop
+      Figure 2: The Structure of Bulge Loop
 
       <p>
         <br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        Therefore we need to use them for different purposes in accordance to the goal. We use the new method ‘Mismatched base pair’ to control DNA as accurately as possible. Mismatched GT base pair can solve a variety of problems. The primary advantage of mismatched base pair
-        is high simpleness of the mechanism. In other methods, we need a knowledge and skills to keep down unintentional behaviors of DNA. In addition, we have to redesign the circulation many times as it becomes more complicated. However, by mismatched
-        base pair, all we have to do is to pick up all parts where could not behave as our expectation and to add each mismatched base pair in the circulation. But there are defects in using mismatched base pair, one of which is taking a very long time to introduce it to experiments.
-        Accordingly, we have no choice but to try a lot of patterns of mismatched base pair. Another one is that there are no simulation tools that can simulate using mismatched base pair now. Since mismatched base pairs can be applied in various applications, the
-        development of mismatched base pair technology is thought to greatly contribute to the development of molecular robotics.
+        Therefore, these features are used for different purposes according to the goal. We use the new method ‘Mismatched base pair’ to control the DNA as accurately as possible. Mismatched GT base pairs can solve a variety of problems. The primary advantage of mismatched base pairs is the simplicity of the mechanism. In other methods, detailed knowledge and skills are required to minimize unintentional behaviors of DNA. Additionally, the circulation must be redesigned many times as it becomes more complex. However, for mismatched base pairs, only parts that may not behave as expected are identified mismatched base pairs are added. However, there are some limitations to this method,  such as the long time required to introduce these base pairs into the experiments. Accordingly, various patterns of mismatched base pairs must be tested. Additionally, there are no simulation tools using mismatched base pairs. Because mismatched base pairs can be used in various applications, the development of mismatched base pair technology will greatly contribute to the development of molecular robotics.
         <br><br>
       </p>
 
       <h2>(2) Strength of DNA Binding</h2>
       <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        We mentioned the strength of DNA binding. In this project we used the T7 promoter sequence, but intentionally added G-C bonds at both ends of the chain because G-C bonds are stronger in binding strength
-        than A-T bonds, and double-stranded DNA is stable among Watson Crick base pairs. Especially in this time we decided that this kind of ingenuity is necessary because the binding force of double stranded DNA weakens by adding mismatched base
-        pair. Figure 3 compares the case where the G-C bond is added to the edge and the case where it is not added. From Figure 3, we found that double-stranded DNA is more stable by G-C bond. This prevents unintentional behavior due to instability of the
-        secondary structure.
+        We mentioned the strength of DNA binding. In this project, we used the T7 promoter sequence, but intentionally added G-C bonds at both ends of the chain because G-C bonds are stronger than A-T bonds, and double-stranded DNA is stable among Watson Crick base pairs. Particularly, this strategy is necessary because the binding force of double-stranded DNA is weakened by adding mismatched base pair. Figure 3 compares the case in which a G-C bond is added to the edge and a case in which it is not added. We found that double-stranded DNA was more stable when a G-C bond was present. This prevents unintentional behavior caused by instability of the secondary structure.
       </p>
       <br><br><a href="Image/G-C.png" data-lightbox="G-C"><img src="Image/G-C.png" width="70%" height="auto"></a><br>
-      Figure 3 : The Strength of DNA Binding
+      Figure 3: The Strength of DNA Binding
       <br><br>
 
       <h2>(3) Delay of the Seesaw Gate</h2>
       <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        We used a seesaw gate this time to delay the output time. The most common way to delay the reaction rate of DNA is to change the length of the toehold. Recently, regulation of reaction rate by mismatched base pair has also been reported. Compared to those,
-        there is one very big advantage to adjusting the time by this seesaw gate, that adjustment can be done just by changing the density of the threshold gate. In the case of toehold or mismatched base pair, it is necessary to determine the reaction
-        rate at the time of base sequence design, therefore, if we want to adjust the time according to the application, we think that it is efficient to use the seesaw gate.
+        We used a seesaw gate to delay the output time. The most common method of slowing the reaction rate of DNA is to change the length of the toehold. Recently, regulation of the reaction rate by mismatched base pair has been reported. The major advantage of adjusting the time using the seesaw gate is that adjustment can be conducted by simply changing the density of the threshold gate. For a toehold or mismatched base pair, it is necessary to determine the reaction rate at the time of base sequence design; therefore, to adjust the time according to the application, it is efficient to use the seesaw gate.
         <br>
       </p>
     </div>
@@ -130,49 +116,41 @@
     <div class="space" id="Future"></div>
     <div class="section1">
       <h1>Future</h1>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We say in this section that how we put ATP controller to good use in this world.
-          Particularly, we focused on “cancer treatment”. Now, main cancer treatments are radiation therapy and anticancer drug, but there is a big problem in these therapies. That is they can damage not only cancer cells but also normal cells. We thought the way to damage only cancer cells and then we focused on the difference of the way of generating energy between normal cells and cancer cells. <br>
-          First, we explain how normal cells generate energy.
-          After having carbohydrate like bread, rice and noodle, it is decomposed into glucose.
-          In brood cells incorporate glucose and then glucose is decomposed into ATP through 3 steps((1)glycolytic (2)TCA circuit (3) Electron transfer system).<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1st step is glycolytic. In cytoplasm, glucose is decomposed into pyruvate.
-          A little ATP is generated by glycolytic. If there is oxygen, pyruvate is incorporated into mitochondria. 2nd step is TCA circuit. In mitochondria, pyruvate is changed to Acetyl-CoA,
-          and then it is decomposed into NADH and FADH2 in TCA circuit. Like glycolytic, a little ATP is generated. 3rd step is Electron transfer system. In this system, a lot of ATP is generated.
-          Therefore, normal cells can generate ATP efficiently. It’s known that cancer cells don’t use mitochondria by Warburg from 1926.
-          That is, ATP is generated by only glycolytic in cancer cells. Therefore, cancer cells can’t generate ATP efficiently.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This section describes the applications of the ATP controller.
+          Particularly, we focused on cancer treatment. Currently, the main cancer treatments are radiation therapy and anticancer drugs, but there are some limitations to these therapies.
+          These treatments damage not only cancer cells, but also normal cells.
+          To ensure that only cancer cells are damaged, we focused on the differences in energy generation between normal cells and cancer cells. First, we explain how normal cells generate energy. Carbohydrates such as bread, rice, and noodles are decomposed into glucose. Cells incorporate glucose, which is used to generate ATP in 3 steps ((1) glycolysis, (2) TCA cycle, and (3) electron transport chain).<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first step is glycolysis. In the cytoplasm, glucose is decomposed into pyruvate. A small amount of ATP is generated by glycolysis. In the presence of oxygen, pyruvate is incorporated into the mitochondria. The second step is the TCA cycle. In the mitochondria, pyruvate is converted to acetyl-CoA, which is decomposed into NADH and FADH2 in the TCA cycle. As in glycolysis, a small amount of ATP is generated. The third step is the electron transfer chain. In this system, a large amount of ATP is generated. Therefore, normal cells can generate ATP efficiently. Cancer cells do not use mitochondria based on research by Warburg in 1926. Thus, ATP is generated only through glycolysis in cancer cells, which is an inefficient process.
           <br><br>
       </p>
 
       <figure>
         <a href="Image/normal_metabolism(Fig1).png" data-lightbox="metabolism_before"><img src="Image/normal_metabolism(Fig1).png" width="100%" height="auto"></a><br>
-        Figure 1 : 正常細胞の代謝<br><br>
+        Figure 1: Metabolism of normal cells<br><br>
       </figure>
 
       <figure>
         <a href="Image/cancer_metabolism(Fig2).png" data-lightbox="metabolism_before"><img src="Image/cancer_metabolism(Fig2).png" width="100%" height="auto"></a><br>
-        Figure 2 : がん細胞の代謝<br><br>
+        Figure 2: Metabolism of cancer cells<br><br>
       </figure>
 
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moreover, we explain the required amount of ATP in cancer cells.
-        Cancer cells need more ATP than normal cells because of increasing themselves. However, glycolytic isn’t efficient for generating ATP.
-        It’s known that cancer cells need much glucose more than normal cells. <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, there is cancer treatment using the characteristics : treatment of inhibiting glucose and treatment of inhibiting glycolytic.
-        On these situation, absorbing ATP must have a great influence on cancer cells.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancer cells require more ATP than normal cells because they undergo rapid division.
+        However, glycolytic is not efficient for generating ATP.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some cancer treatments involve inhibition of glucose or glycolysis. Thus, absorbing ATP greatly influences cancer cells.
         <br><br>
       </p>
 
       <figure>
         <a href="Image/normal_metabolism(Fig3).png" data-lightbox="metabolism_after"><img src="Image/normal_metabolism(Fig3).png" width="100%" height="auto"></a><br>
-        Figure 3 : 投入後の正常細胞の代謝<br><br>
+        Figure 3: Metabolism of normal cells after administration<br><br>
       </figure>
 
       <figure>
         <a href="Image/cancer_metabolism(Fig4).png" data-lightbox="metabolism_after"><img src="Image/cancer_metabolism(Fig4).png" width="100%" height="auto"></a><br>
-        Figure 4 : 投入後のがん細胞の代謝<br><br>
+        Figure 4: Metabolism of cancer cells after administration<br><br>
       </figure>
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we propose that ATP controller becomes an assistance for present cancer treatment using metabolic function.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we propose that the ATP controller can be used to assist in cancer treatment because of its effects on metabolism.
       </p>
     </div>
 
@@ -181,21 +159,12 @@
     <div class="section2">
       <h1>ELSI</h1>
       <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are developing a system to control the amount of ATP from cell signaling system using DNA. We are conducting verification experiments in vitro at this stage,
-        and the effect on the human body has not been confirmed. However, if medicines using this system are generated in the future and administered in vivo,
-        adverse effects on the human body by reducing the amount of ATP are predicted.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since crime and military use using this adverse effect are predicted,
-        it is necessary to evaluate it in consideration of in vivo use.
-        Although this system uses DNA, it does not contradict regulations of the Cartagena Protocol and domestically established research and development stage
-        because it does not do genetic modification etc.
-        However, it is expected that DNA circuits will be administered to genetically modified organisms in the future.
-        At the same time, in order to administer DNA, it is necessary to consider the influence on the genes of organisms.
-        In that case, we need to comply with the Cartagena Protocol and other laws, we must prepare it.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are developing a system for controlling the amount of ATP in the cell signaling system using DNA. We are conducting verification experiments in vitro, and the effect on the human body has not been confirmed. However, if medicines using this system are generated in the future and administered in vivo, adverse effects on the human body can be prevented by reducing ATP levels.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because criminal investigation and military applications  using these adverse effects are predicted, it is necessary to evaluate the use of this method in vivo. Although this system uses DNA, it does not contradict regulations of the Cartagena Protocol because the project was domestically established and is currently in the research and development stage; additionally, genetic modification is not required. However, it is expected that DNA circuits will be administered to genetically modified organisms in the future. To administer DNA, it is necessary to consider the influence on the genes of organisms. Thus, efforts much be made to comply with the Cartagena Protocol and other laws.
       </p>
     </div>
 
   </main>
-  <!--↑変更するのはここまで↑-->
 
   <footer>
     <p>&copy;YOKABIO 2018</p>
