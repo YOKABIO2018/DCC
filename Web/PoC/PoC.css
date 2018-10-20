@@ -11,13 +11,24 @@
   color: #eee;
   background-color: black;
 }
+#acMenu dt .dt-mark{
+  float: right;
+  font-size: 1.2em;
+}
+.open{
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.close{
+  transform: rotate(0deg);
+  transition: 800ms ease-in-out;
+}
 #acMenu dd{
   display: none;
   /*line-height: 1.8;*/
   border: #eee 1px solid;
   background-color: white;
 }
-
 .code{
   margin-top: 1%;
 }
