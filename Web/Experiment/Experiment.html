@@ -74,8 +74,9 @@
     <div class="space" id="Page-Overview"></div>
     <div class="section1">
       <h1>Page Overview</h1>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On this page, we describe the methods and results of the experiments examining the DNA circuit mentioned above. また、DNA回路を実用的にするために、配列にMismatchを導入し、実験を行った。Two experiments were conducted. The final
-        goal was to move our designed DP gate bridge in the living body. Although this BIOMOD was not achieved because of time limits, we developed a means to conduct the experiment and predicted problems that may occur.
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On this page, we describe the methods and results of the experiments examining the DNA circuit mentioned above. Also, in order to make the DNA circuit practical, Mismatch was introduced to the array
+        and experiments were carried out. The final goal was to move our designed DP gate bridge in the living body. Although this BIOMOD was not achieved because of time limits, we developed a means to conduct the experiment and predicted problems that
+        may occur.
       </p>
     </div>
 
@@ -114,21 +115,23 @@
     <div class="space" id="Material&Methods"></div>
     <div class="section1">
       <h1>Material&Methods</h1>
-      <p>私たちはDNA回路を実用的に動かすためにDNA配列にmismatchを加えました。理由は２つあります。</p><br>
-      <p>一つ目は、DNA回路内の鎖置換反応を正しく反応させるため。</p><br>
-      <p>二つ目は、ポリミラーゼを望ましくない部分で認識させないため。</p><br>
+      <p>We added a mismatched base pair to the DNA sequence to make the DNA circuit practical. There are two reasons.
+      </p><br>
+      <p>The first is to react strand displacement reactions in the DNA circuit correctly.</p><br>
+      <p>The second is to not let the poly merase recognize the undesirable part.
+      </p><br>
 
-      <h2>Introduction</h2>
       <h2>What is mismatched base pair</h2>
       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A & T and C & G in DNA bases are held to each other through hydrogen-bonding known as Watson-Crick base pairs, but other combinations have been reported (e.g. A and G). We refer to these as mismatched
         base pairs [11]. The binding strength of mismatched base pairs is weaker than that of Watson-Crick base pairs, but the binding strength between G and T is stronger among mismatched base pairs. An example of a mismatched base pair is shown below.
         In Table 1, base sequence (A) is completely complementary to the double-stranded DNA, (B) is double-stranded DNA containing four mismatched C-A base pairs, and (C) is double-stranded DNA containing four mismatched G-T base pairs.
+        <br>
       </p>
 
       <a href="Image/Example of Mismatch Base Pair.png" data-lightbox="table-1"><img src="Image/Example of Mismatch Base Pair.png" width="80%" height="auto"></a>
       <figcaption>Figure x: Example of Mismatch Base Pair</figcaption><br>
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We examined whether these base sequences formed double-stranded DNA using NUPACK [12] (a software suite for analyzing and designing nucleic acid structures). The results are shown below.</p>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We examined whether these base sequences formed double-stranded DNA using NUPACK [12] (a software suite for analyzing and designing nucleic acid structures). The results are shown below.<br></p>
       <a href="Image/Example of Mismatched Base Pair.png" data-lightbox="table-1"><img src="Image/Example of Mismatched Base Pair.png" width="80%" height="auto"></a>
       <figcaption>Figure x: Example of Mismatched Base Pair</figcaption><br>
 
@@ -140,69 +143,73 @@
       <a href="Image/Use of Mismatches.png" data-lightbox="table-1"><img src="Image/Use of Mismatches.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: Use of Mismatches</figcaption>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We improved the circuit shown in Figure 5 using this property. In this project, we added four mismatched base pairs and added (m1), (m2), (m3), and (m4) preceding the domain names. We show the NUPACK
-        results for each added mismatched base pair below. (m1) Input & Absorber (OFF) As previously stated, Input and (OFF) are complementary and thus hybridize. We added a mismatched base pair here (Figure 15). The results of NUPACK as analysis are
-        shown in Figure 16. Red characters show the desired reactions (same hereinafter).
+      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We improved the circuit shown in Figure 5 using this property. In this project, we added four mismatched base pairs and added (m1), (m2), (m3), and (m4) preceding the domain names. We show the
+        NUPACK results for each added mismatched base pair below. (m1) Input & Absorber (OFF) As previously stated, Input and (OFF) are complementary and thus hybridize. We added a mismatched base pair here (Figure 15). The results of NUPACK as analysis
+        are shown in Figure 16. Red characters show the desired reactions (same hereinafter).<br><br>
       </p>
 
       <a href="Image/(m1)Input&Absorber(OFF).png" data-lightbox="table-1"><img src="Image/(m1)Input&Absorber(OFF).png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: (m1) Input & Absorber (OFF)</figcaption>
-
+      <br>
       <a href="Image/NUPACK Evaluation of (m1).png" data-lightbox="table-1"><img src="Image/NUPACK Evaluation of (m1).png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: NUPACK Evaluation of (m1)</figcaption>
 
-      <p>(m2) Signal1 & Signal2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Similarly, Signal1 and Signal2 are complementary and thus hybridize. They should be completely complementary, but unlike (m1). We added a mismatched base pair to Signal1
-        for binding with Absorber (Figure 17). The results of NUPACK as analysis are shown in Figure 18.
+      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m2) Signal1 & Signal2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Similarly, Signal1 and Signal2 are complementary and thus hybridize. They should be completely complementary, but unlike (m1). We added
+        a mismatched base pair to Signal1 for binding with Absorber (Figure 17). The results of NUPACK as analysis are shown in Figure 18.<br><br>
       </p>
       <a href="Image/(m2) Signal1 & Signal2.png" data-lightbox="table-1"><img src="Image/(m2) Signal1 & Signal2.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: (m2) Signal1 & Signal2</figcaption>
-
+      <br>
       <a href="Image/NUPACK Evaluation of (m2).png" data-lightbox="table-1"><img src="Image/NUPACK Evaluation of (m2).png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: NUPACK Evaluation of (m2)</figcaption>
 
-      <p>(m3) Input & Gate2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We also added mismatched base pair Input and Gate2 because this starts a reaction from T3, which is the toehold (Figure 19).
+      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m3) Input & Gate2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We also added mismatched base pair Input and Gate2 because this starts a reaction from T3, which is the toehold (Figure 19).<br><br>
 
       </p>
       <a href="Image/(m3) Input & Gate2.png" data-lightbox="table-1"><img src="Image/(m3) Input & Gate2.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: (m3) Input & Gate2</figcaption>
 
-      <p>(m4) Gate2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The polymerase reaction occurred because Gate2 contains the T7 promoter sequence. We also added mismatched base pair here to prevent T7 RNA polymerase from recognizing the T7 promoter sequence
-        (Figure 20).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m4) Gate2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>The polymerase reaction occurred because Gate2 contains the T7 promoter sequence. We also added mismatched base pair here to prevent T7 RNA polymerase from
+        recognizing the T7 promoter sequence (Figure 20).<br><br></p>
       <a href="Image/(m4) Gate2.png" data-lightbox="table-1"><img src="Image/(m4) Gate2.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: (m4) Gate2</figcaption>
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A new scheme of the circuit containing mismatched base pairs is shown in Figure 21.</p>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A new scheme of the circuit containing mismatched base pairs is shown in Figure 21.<br><br></p>
       <a href="Image/Scheme of ON-OFF Switch Circuit Added Mismatch.png" data-lightbox="table-1"><img src="Image/Scheme of ON-OFF Switch Circuit Added Mismatch.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: Scheme of ON-OFF Switch Circuit Added Mismatch</figcaption>
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is predicted to reduce undesired reactions. NUPACK's evaluation of bonding strength of double-stranded DNA containing a mismatched base pair is shown in Figure 22. This includes the mismatched
+      <p> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is predicted to reduce undesired reactions. NUPACK's evaluation of bonding strength of double-stranded DNA containing a mismatched base pair is shown in Figure 22. This includes the mismatched
         base pair G-T; however, we found that binding strength remained strong.</p>
       <a href="Image/NUPACK Evaluation of Gate1 and Gate2.png" data-lightbox="table-1"><img src="Image/NUPACK Evaluation of Gate1 and Gate2.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: NUPACK Evaluation of Gate1 and Gate2</figcaption>
 
-      <p> Additionally, the T7 RNA promoter disappears, except that the circuit is in the ON state when the mismatched base pair is added; these problems were solved as shown in Figure 23.</p>
-      <a href="Image/Excluding T7 Promoter Sequence by Mismatch Base Pair.png" data-lightbox="table-1"><img src="Image/Excluding T7 Promoter Sequence by Mismatch Base Pair.png" width="80%" height="auto"></a><br>
+      <p> Additionally, the T7 RNA promoter disappears, except that the circuit is in the ON state when the mismatched base pair is added; these problems were solved as shown in Figure 23.<br><br></p>
+      <a href="Image/circuit_m_redline.gif" data-lightbox="table-1"><img src="Image/circuit_m_redline.gif" width="80%" height="auto"></a><br>
       <figcaption>Figure x: Excluding T7 Promoter Sequence by Mismatch Base Pair</figcaption>
 
 
-      <h2>T７promotor 変異</h2>
+      <h2>T7promotor mutation</h2>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T7 RNA polymerase recognizes the T7 promoter sequence and synthesizes RNA that will be a copy of the downstream sequence using ATP in buffer. This experiment was designed to prevent recognition of
         the T7 promoter by using mismatched base pairs. Therefore, we injected the T7 promoter containing mismatches into Escherichia coli with T7 RNA polymerase and examined whether polymerase recognized the sequence.<br><br>
       </p>
 
       <h2>Experiment method</h2>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Experiments are performed in E. coli using cyclic DNA known as a plasmid. The T7 promoter sequence containing a mismatch should be incorporated into the plasmid sequence, as well as a downstream sequence
-        that produces a green fluorescent protein known as GFP. This plasmid is introduced into E. coli, and GFP fluorescence is observed.<br><br>
+        that produces a green fluorescent protein known as GFP. This plasmid is introduced into E. coli, and GFP fluorescence is observed.　私たちは段階的にミスマッチを増やすことによって、T7promotorが配列を認識し始める要因を調べることにした。<br><br>
       </p>
 
       <h2>Experiment contents</h2>
       <h3>&#9312;Production of mutated plasmids</h3>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First, we designed a mismatch sequence changed at one position at the end of the T7 promoter sequence. This was done to maintain a similar bond strength as the original two DNAs. Next, a plasmid containing
-        the designed DNA sequence was extracted and amplified by PCR. Water, dNTPs, primers, templates, KODFXNEO, and other components were prepared in a total volume of 50 μL mutated plasmids were synthesized in 3 h. Thereafter, because plasmids with
-        mutation and no mutation were present in the solution, the original plasmid without mutation was digested with DPN (enzyme). The reaction solution contained DPN (1 μm),·TBuffer X 10 (1 μm), Solution (8 μm) Mutate, which was mixed with the plasmid
-        and introduced into E. coli for plasmid amplification. Escherichia coli used at this time was named as DHSr, which does not contain T7 RNA polymerase, and was used to increase the amount of plasmid. The plasmid was mixed with competent cells on
-        ice and incubated for 30 min. Incubate for 30 s, followed by incubation at 37°C for 1 h. The solution was transferred to a culture dish containing medium and the cells were grown overnight. Using a MiniPrep kit, the plasmid was extracted from
-        E. coli and measured. Sequencing was carried out to confirm the presence of the mutation.<br><br>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First, we designed a mismatch sequence changed at one position at the end of the T7 promoter sequence.</p>
+
+      <a href="Image/Excluding T7 Promoter Sequence by Mismatch Base Pair.png" data-lightbox="table-1"><img src="Image/Excluding T7 Promoter Sequence by Mismatch Base Pair.png" width="80%" height="auto"></a><br>
+      <figcaption>Figure x: Excluding T7 Promoter Sequence by Mismatch Base Pair</figcaption>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was done to maintain a similar bond strength as the original two DNAs. Next, a plasmid containing the designed DNA sequence was extracted and amplified by PCR. Water, dNTPs, primers, templates,
+        KODFXNEO, and other components were prepared in a total volume of 50 μL mutated plasmids were synthesized in 3 h. Thereafter, because plasmids with mutation and no mutation were present in the solution, the original plasmid without mutation was
+        digested with DPN (enzyme). The reaction solution contained DPN (1 μm),·TBuffer X 10 (1 μm), Solution (8 μm) Mutate, which was mixed with the plasmid and introduced into E. coli for plasmid amplification. Escherichia coli used at this time was
+        named as DHSr, which does not contain T7 RNA polymerase, and was used to increase the amount of plasmid. The plasmid was mixed with competent cells on ice and incubated for 30 min. Incubate for 30 s, followed by incubation at 37°C for 1 h. The
+        solution was transferred to a culture dish containing medium and the cells were grown overnight. Using a MiniPrep kit, the plasmid was extracted from E. coli and measured. Sequencing was carried out to confirm the presence of the mutation.<br><br>
       </p>
       <a href="Image/Ecoli2.jpg" data-lightbox="fig1"><img src="Image/Ecoli2.jpg" width="70%" height="auto"></a><br>
 
@@ -216,10 +223,12 @@
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Production of mutated plasmid by &#9312; was successful. After introduction into E. coli at &#9312;, the following results were obtained.
       </p>
       <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fluorescence was confirmed, indicating that polymerase recognized the mutated T7 promoter sequence.左が変異を入れた試験管。右がワイルドタイプ。
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fluorescence was confirmed, indicating that polymerase recognized the mutated T7 promoter sequence.A test tube with mutation on the left. Wild type on the right.
       </p>
       <a href="Image/T7promotor_Sequence.jpg" data-lightbox="fig1"><img src="Image/T7promotor_Sequence.jpg" width="70%" height="auto"></a><br>
-      <p>それぞれの試験管を１００分の1まで薄めて、蛍光光度計で蛍光強度を測った。下図はその結果である。</p>
+      <p>A test tube with mutation on the left. W
+ild type on the right.
+</p>
     </div>
 
     <div class="space" id="Consideration"></div>
