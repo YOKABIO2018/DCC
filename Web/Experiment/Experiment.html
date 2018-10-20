@@ -83,7 +83,12 @@
     <div class="space" id="Operation Experiment"></div>
     <div class="section2">
       <h1>Operation Experiment</h1>
-      <h1>Material &amp; Methods of Material </h1>
+    </div>
+
+    <div class="space" id="Material&Methods"></div>
+    <div class="section1">
+      <h1>Material&Methods</h1>
+
       <h2>Simulation conditions</h2>
       <p>We set the binding rate constant (kf) based on toehold length as follows.<br><br></p>
       <p>If toehold_length &#8804; 6</p>
@@ -91,41 +96,19 @@
       <p>else<br></p>
       <p>　kf = 3.0×10<sup>6</sup>[M<sup>-1</sup>s<sup>-1</sup>]</p>
       <p>Where<br></p>
-      <p>　n : toehold_length</p>
+      <p>　n : toehold_length<br></p>
 
-      <h2>Type of Strands</h2>
-      <p>We designed the strands shown in Figures 5-9.<br><br>
-      </p>
-
-      <a href="Image/Gate1.gif" data-lightbox="fig5"><img src="Image/Gate1.gif" width="30%" height="auto"></a>
-      <a href="Image/Input.gif" data-lightbox="fig5"><img src="Image/Input.gif" width="30%" height="auto"></a><br><br>
-
-      <a href="Image/Threshold.gif" data-lightbox="fig5"><img src="Image/Threshold.gif" width="30%" height="auto"></a>
-      <a href="Image/Gate2.gif" data-lightbox="fig5"><img src="Image/Gate2.gif" width="30%" height="auto"></a>
-
-      <a href="Image/DCC(OFF).gif" data-lightbox="fig5"><img src="Image/Absorber(OFF).gif" width="30%" height="auto"></a><br><br><br>
-
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, we designed DNA sequences using NUPACK. The DNA sequences are shown in Table 1. NUPACK can design DNA sequences and evaluate their secondary structures at room temperature.<br><br>
-      </p>
-      Table 1 : DNA Sequences (Main Reaction Units)<br>
-      <a href="Image/DNAsequences.png" data-lightbox="table-1"><img src="Image/DNAsequences.png" width="80%" height="auto"></a>
-      <br><br>
-    </div>
-
-    <div class="space" id="Material&Methods"></div>
-    <div class="section1">
-      <h1>Material&Methods</h1>
+      <h2>Mismatch</h2>
       <p>We added a mismatched base pair to the DNA sequence to make the DNA circuit practical. There are two reasons.
-      </p><br>
-      <p>The first is to react strand displacement reactions in the DNA circuit correctly.</p><br>
+      </p>
+      <p>The first is to react strand displacement reactions in the DNA circuit correctly.</p>
       <p>The second is to not let the poly merase recognize the undesirable part.
-      </p><br>
-
+      </p>
       <h2>What is mismatched base pair</h2>
       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A & T and C & G in DNA bases are held to each other through hydrogen-bonding known as Watson-Crick base pairs, but other combinations have been reported (e.g. A and G). We refer to these as mismatched
         base pairs [11]. The binding strength of mismatched base pairs is weaker than that of Watson-Crick base pairs, but the binding strength between G and T is stronger among mismatched base pairs. An example of a mismatched base pair is shown below.
         In Table 1, base sequence (A) is completely complementary to the double-stranded DNA, (B) is double-stranded DNA containing four mismatched C-A base pairs, and (C) is double-stranded DNA containing four mismatched G-T base pairs.
-        <br>
+        <br><br>
       </p>
 
       <a href="Image/Example of Mismatch Base Pair.png" data-lightbox="table-1"><img src="Image/Example of Mismatch Base Pair.png" width="80%" height="auto"></a>
@@ -183,9 +166,28 @@
       <a href="Image/NUPACK Evaluation of Gate1 and Gate2.png" data-lightbox="table-1"><img src="Image/NUPACK Evaluation of Gate1 and Gate2.png" width="80%" height="auto"></a><br>
       <figcaption>Figure x: NUPACK Evaluation of Gate1 and Gate2</figcaption>
 
+
       <p> Additionally, the T7 RNA promoter disappears, except that the circuit is in the ON state when the mismatched base pair is added; these problems were solved as shown in Figure 23.<br><br></p>
       <a href="Image/circuit_m_redline.gif" data-lightbox="table-1"><img src="Image/circuit_m_redline.gif" width="80%" height="auto"></a><br>
       <figcaption>Figure x: Excluding T7 Promoter Sequence by Mismatch Base Pair</figcaption>
+
+      <h2>Type of Strands</h2>
+      <p>We designed the strands shown in Figures 5-9.<br><br>
+      </p>
+      <a href="Image/Gate1.gif" data-lightbox="fig5"><img src="Image/Gate1.gif" width="30%" height="auto"></a>
+      <a href="Image/Input.gif" data-lightbox="fig5"><img src="Image/Input.gif" width="30%" height="auto"></a><br><br>
+
+      <a href="Image/Threshold.gif" data-lightbox="fig5"><img src="Image/Threshold.gif" width="30%" height="auto"></a>
+      <a href="Image/Gate2.gif" data-lightbox="fig5"><img src="Image/Gate2.gif" width="30%" height="auto"></a>
+
+      <a href="Image/DCC(OFF).gif" data-lightbox="fig5"><img src="Image/Absorber(OFF).gif" width="30%" height="auto"></a><br><br><br>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, we designed DNA sequences using NUPACK. The DNA sequences are shown in Table 1. NUPACK can design DNA sequences and evaluate their secondary structures at room temperature.<br><br>
+      </p>
+      Table 1 : DNA Sequences (Main Reaction Units)<br>
+      <a href="Image/DNAsequences.png" data-lightbox="table-1"><img src="Image/DNAsequences.png" width="80%" height="auto"></a>
+      <br><br>
+
 
 
       <h2>T7promotor mutation</h2>
@@ -200,24 +202,26 @@
 
       <h2>Experiment contents</h2>
       <h3>&#9312;Production of mutated plasmids</h3>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First, we designed a mismatch sequence changed at one position at the end of the T7 promoter sequence.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First, we designed a mismatch sequence changed at one position at the end of the T7 promoter sequence.<br><br></p>
 
-      <a href="Image/Excluding T7 Promoter Sequence by Mismatch Base Pair.png" data-lightbox="table-1"><img src="Image/Excluding T7 Promoter Sequence by Mismatch Base Pair.png" width="80%" height="auto"></a><br>
-      <figcaption>Figure x: Excluding T7 Promoter Sequence by Mismatch Base Pair</figcaption>
+      <figcaption>Figure x: Mutation T7 promotor sequence</figcaption>
+      <a href="Image/Mutation T7 promotor sequence.png" data-lightbox="table-1"><img src="Image/Mutation T7 promotor sequence.png" width="80%" height="auto"></a><br>
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was done to maintain a similar bond strength as the original two DNAs. Next, a plasmid containing the designed DNA sequence was extracted and amplified by PCR. Water, dNTPs, primers, templates,
+      <p> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was done to maintain a similar bond strength as the original two DNAs. Next, a plasmid containing the designed DNA sequence was extracted and amplified by PCR. Water, dNTPs, primers, templates,
         KODFXNEO, and other components were prepared in a total volume of 50 μL mutated plasmids were synthesized in 3 h. Thereafter, because plasmids with mutation and no mutation were present in the solution, the original plasmid without mutation was
         digested with DPN (enzyme). The reaction solution contained DPN (1 μm),·TBuffer X 10 (1 μm), Solution (8 μm) Mutate, which was mixed with the plasmid and introduced into E. coli for plasmid amplification. Escherichia coli used at this time was
         named as DHSr, which does not contain T7 RNA polymerase, and was used to increase the amount of plasmid. The plasmid was mixed with competent cells on ice and incubated for 30 min. Incubate for 30 s, followed by incubation at 37°C for 1 h. The
         solution was transferred to a culture dish containing medium and the cells were grown overnight. Using a MiniPrep kit, the plasmid was extracted from E. coli and measured. Sequencing was carried out to confirm the presence of the mutation.<br><br>
-      </p>
+        <br> </p>
       <a href="Image/Ecoli2.jpg" data-lightbox="fig1"><img src="Image/Ecoli2.jpg" width="70%" height="auto"></a><br>
+      <figcaption>Figure x: Incubator</figcaption>
 
       <h3>&#9313;Confirmation of reaction of mutated plasmid</h3>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next, the extracted mutant plasmid was introduced into E. coli BL21 (DE3) containing T7 RNA polymerase. In the same manner as in &#9312;, the plasmid containing the mutation was introduced into E.
         coli and cultured for 1 day, after which GFP fluorescence was confirmed.<br><br>
       </p>
       <a href="Image/Ecoli1.jpg" data-lightbox="fig1"><img src="Image/Ecoli1.jpg" width="70%" height="auto"></a><br>
+      <figcaption>Figure x: Chamber</figcaption>
 
       <h2>Experiment result</h2>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Production of mutated plasmid by &#9312; was successful. After introduction into E. coli at &#9312;, the following results were obtained.
@@ -226,9 +230,18 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fluorescence was confirmed, indicating that polymerase recognized the mutated T7 promoter sequence.A test tube with mutation on the left. Wild type on the right.
       </p>
       <a href="Image/T7promotor_Sequence.jpg" data-lightbox="fig1"><img src="Image/T7promotor_Sequence.jpg" width="70%" height="auto"></a><br>
-      <p>A test tube with mutation on the left. W
-ild type on the right.
-</p>
+      <figcaption>Figure x: Result of T7 Promotor Experiment</figcaption>
+      <p>蛍光光度計<br><br></p>
+
+      <figcaption>Figure x: Result of T7 Promotor Experiment</figcaption>
+      <a href="Image/Result of T7 Promotor Experiment.png" data-lightbox="table-1"><img src="Image/Result of T7 Promotor Experiment.png" width="80%" height="auto"></a><br>
+
+      <h2>Equipment</h2>
+      <p>Equipments were purchased from the conpanies indicated below.<br><br></p>
+      <figcaption>Figure x: Equipment</figcaption>
+      <a href="Image/Equipment.png" data-lightbox="table-1"><img src="Image/Equipment.png" width="80%" height="auto"></a><br>
+
+
     </div>
 
     <div class="space" id="Consideration"></div>
@@ -238,7 +251,9 @@ ild type on the right.
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Based on the above results, when one part of the end of the sequence was changed, polymerase recognized this sequence. We could not conduct further experiments during this BIOMOD period, but based
         on this experiment, we reviewed a previous study which added a mismatch to the promoter sequence. According to the paper, promoter sequences were found to be meaningful for enzymes in each sequence (See the figure from the paper). The mutation
         was added to position 0, which is a sequence that affects the synthesis rate from mRNA to protein. In the previous study, a mutation was inserted between position -17 of the promoter sequence and position -5, followed by analysis. Particularly,
-        mismatches were introduced from -9 to -5; based on these results, the optimal mismatch base can be introduced into our promoter sequence.
+        mismatches were introduced from -9 to -5; based on these results, the optimal mismatch base can be introduced into our promoter sequence.<br><br></p>
+      <a href="Image/T7 Promotor Sequence and Structure.png" data-lightbox="table-1"><img src="Image/T7 Promotor Sequence and Structure.png" width="80%" height="auto"></a><br>
+      <figcaption>Figure x: T7 Promotor Sequence</figcaption>
 
       </p>
       <h2>&#9679;Experiment in vivo</h2>
