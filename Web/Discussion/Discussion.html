@@ -73,7 +73,7 @@
             In this section, we describe some points of devises for realizing the DNA circuit described above.
             These depart from the subject of this project, however they have important meanings for realization.
         </p>
-      <h2>(1) Application of Mismatched Base Pair</h2>
+      <h2>1. Application of Mismatched Base Pair</h2>
       <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We described the features of mismatched base pairs and an application example.
         In designing DNA, it is necessary to accurately predict the DNA’s behavior and design base sequences.
@@ -95,7 +95,7 @@
         Therefore, these features are used for different purposes according to the goal. We use the new method ‘Mismatched base pair’ to control the DNA as accurately as possible. Mismatched GT base pairs can solve a variety of problems. The primary advantage of mismatched base pairs is the simplicity of the mechanism. In other methods, detailed knowledge and skills are required to minimize unintentional behaviors of DNA. Additionally, the circulation must be redesigned many times as it becomes more complex. However, for mismatched base pairs, only parts that may not behave as expected are identified mismatched base pairs are added. However, there are some limitations to this method,  such as the long time required to introduce these base pairs into the experiments. Accordingly, various patterns of mismatched base pairs must be tested. Additionally, there are no simulation tools using mismatched base pairs. Because mismatched base pairs can be used in various applications, the development of mismatched base pair technology will greatly contribute to the development of molecular robotics.<br>
       </p>
 
-      <h2>(2) Strength of DNA Binding</h2>
+      <h2>2. Strength of DNA Binding</h2>
       <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         We mentioned the strength of DNA binding. In this project, we used the T7 promoter sequence, but intentionally added G-C bonds at both ends of the chain because G-C bonds are stronger than A-T bonds, and double-stranded DNA is stable among Watson Crick base pairs. Particularly, this strategy is necessary because the binding force of double-stranded DNA is weakened by adding mismatched base pair. Figure 3 compares the case in which a G-C bond is added to the edge and a case in which it is not added. We found that double-stranded DNA was more stable when a G-C bond was present. This prevents unintentional behavior caused by instability of the secondary structure.
@@ -103,7 +103,7 @@
       <a href="Image/G-C.png" data-lightbox="G-C"><img src="Image/G-C.png" width="70%" height="auto"></a><br>
       <figcaption>Figure 3: The Strength of DNA Binding</figcaption>
 
-      <h2>(3) Delay of the Seesaw Gate</h2>
+      <h2>3. Delay of the Seesaw Gate</h2>
       <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         We used a seesaw gate to delay the output time. The most common method of slowing the reaction rate of DNA is to change the length of the toehold. Recently, regulation of the reaction rate by mismatched base pair has been reported. The major advantage of adjusting the time using the seesaw gate is that adjustment can be conducted by simply changing the density of the threshold gate. For a toehold or mismatched base pair, it is necessary to determine the reaction rate at the time of base sequence design; therefore, to adjust the time according to the application, it is efficient to use the seesaw gate.
