@@ -311,8 +311,8 @@ footer {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  background: gray;
-  opacity: 0.6;
+  background: white;
+  opacity: 1.0;
   border-radius: 50%;
   z-index: 5;
 }
@@ -327,7 +327,7 @@ footer {
     position: fixed;
     right: 25px;
     bottom: 20px;
-    color: whitesmoke;
+    color: black;
 }
 /*↑トップに戻るボタン用↑*/
 
