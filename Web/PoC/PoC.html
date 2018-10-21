@@ -89,7 +89,7 @@
     <div class="space" id="PoC"></div>
     <div class="section2">
         <h1>Proof of Concept</h1>
-        <h2>Overall Simulation</h2>
+        <h2>1. Overall Simulation</h2>
         <p id="math">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To evaluate the simulation,
             we used the integral as the evaluation item in the amplification, duration, and integral as shown in reference [x].
             Next, the scheme of the transmission system used in this simulation is shown (Figure 2).
@@ -145,10 +145,10 @@
             In this case, as in the previous case, compared to when the ATP Controller was not operated (normal Kholodenko model),
             activation of Ras is suppressed. Based on these results, the following was confirmed (Figure 8).<br><br>
         </p>
-        <a href="" data-lightbox="fig8"><img src="" width="100%"></a>
+        <a href="Image/Confirmed.png" data-lightbox="fig8"><img src="Image/Confirmed.png" width="80%"></a>
         <figcaption>Figure 8: What Can Be Confirmed from the Whole Simulation</figcaption>
 
-        <h2>DNA Circuit Operation</h2>
+        <h2>2. DNA Circuit Operation</h2>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, we simulate the operation of the ATP controller of the DNA circuit (Figure 9,10).
         </p>
         <a href="Image/Block_Figure4.png" data-lightbox="fig9"><img src="Image/Block_Figure4.png" width="70%"></a>
@@ -173,7 +173,7 @@
             that is, the ATP controller spent a longer time in the ON state.
         </p>
 
-        <h2>ATP Absorption</h2>
+        <h2>3. ATP Absorption</h2>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, we simulated the ATP Controller to consume ATP (Figure 12,13).
         </p>
         <a href="Image/Block_Figure5.png" data-lightbox="fig12"><img src="Image/Block_Figure5.png" width="70%"></a>
@@ -231,7 +231,7 @@
             Furthermore, ATP decreased as the Threshold value increased, that is, as the DNA circuit was turned ON for a longer time.
         </p>
 
-        <h2>Inhibit Activation of Ras</h2>
+        <h2>4. Inhibit Activation of Ras</h2>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we simulated the changes in Ras activation due to a reduction of ATP.
             The part in whitch ATP is involved in activating Ras is the part shown in Figure 16 below.<br><br></p>
         <a href="Image/Scheme_All5.png" data-lightbox="fig16"><img src="Image/Scheme_All5.png" width="70%"></a>
@@ -289,7 +289,7 @@
         <a href="Image/Inregral_Ras_All.jpg" data-lightbox="fig18"><img src="Image/Inregral_Ras_All.jpg" width="50%"></a>
         <figcaption>Figure 18: Integrated Value of Activated Ras Concentration</figcaption>
 
-        <h2>File Download</h2>
+        <h2>5. File Download</h2>
         <p>The source code used for simulation was prepared in C language and MATLAB, which can be downloaded from the following link.
             Simulation can be conducted with the C language source code called DP_Gate_Bridge.c.
             The result is output to data.txt, and the graph is drawn with the MATLAB source code called plot_data.m.
