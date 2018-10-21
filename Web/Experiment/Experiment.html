@@ -105,9 +105,9 @@
       <p>The second is to not let the poly merase recognize the undesirable part.
       </p>
       <h3>2.1 What is mismatched base pair</h3>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A &amp; T and C &amp; G in DNA bases are held to each other through hydrogen-bonding known as Watson-Crick base pairs, but other combinations have been reported (e.g. A and G). We refer to these as mismatched
-        base pairs [11]. The binding strength of mismatched base pairs is weaker than that of Watson-Crick base pairs, but the binding strength between G and T is stronger among mismatched base pairs. An example of a mismatched base pair is shown below.
-        In Table 1, base sequence (A) is completely complementary to the double-stranded DNA, (B) is double-stranded DNA containing four mismatched C-A base pairs, and (C) is double-stranded DNA containing four mismatched G-T base pairs.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A &amp; T and C &amp; G in DNA bases are held to each other through hydrogen-bonding known as Watson-Crick base pairs, but other combinations have been reported (e.g. A and G). We refer to these as
+        mismatched base pairs [11]. The binding strength of mismatched base pairs is weaker than that of Watson-Crick base pairs, but the binding strength between G and T is stronger among mismatched base pairs. An example of a mismatched base pair is
+        shown below. In Table 1, base sequence (A) is completely complementary to the double-stranded DNA, (B) is double-stranded DNA containing four mismatched C-A base pairs, and (C) is double-stranded DNA containing four mismatched G-T base pairs.
         <br><br>
       </p>
 
@@ -191,7 +191,7 @@
       <h2>4. T7promotor mutation</h2>
       <b><p>1) Dliute<br></p></b>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We diluted each strand until reaching the desired concentration, as shown in Table x below. The experiment was performed at 20°C in Tris - EDTA buffer supplemented with 12.5mM MgCl2.
-      <br><br></p>
+        <br><br></p>
       <b><p>2) Annealing<br></p></b>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using Thermal cycler ( ASTEC325; GeneAtlas ), we annealed each DNA from 95 to 20°C ( - 1°C/min) after heating at 95°C .
         <br><br></p>
@@ -215,7 +215,8 @@
 
       <h3>5.1. Experiment method</h3>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Experiments are performed in E. coli using cyclic DNA known as a plasmid. The T7 promoter sequence containing a mismatch should be incorporated into the plasmid sequence, as well as a downstream sequence
-        that produces a green fluorescent protein known as GFP. This plasmid is introduced into E. coli, and GFP fluorescence is observed. We decided to investigate the factors that the T7 promoter begins to recognize sequences by incrementing mismatches step by step.<br><br>
+        that produces a green fluorescent protein known as GFP. This plasmid is introduced into E. coli, and GFP fluorescence is observed. We decided to investigate the factors that the T7 promoter begins to recognize sequences by incrementing mismatches
+        step by step.<br><br>
       </p>
 
       <h3>5.2. Experiment contents</h3>
@@ -239,7 +240,7 @@
         coli and cultured for 1 day, after which GFP fluorescence was confirmed.<br><br>
       </p>
       <a href="Image/Ecoli1.jpg" data-lightbox="fig14"><img src="Image/Ecoli1.jpg" width="30%" height="auto"></a><br>
-        <figcaption>Figure 14: Chamber</figcaption>
+      <figcaption>Figure 14: Chamber</figcaption>
 
       <h3>5.3. Experiment result</h3>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Production of mutated plasmid by &#9312; was successful. After introduction into E. coli at &#9312;, the following results were obtained.
@@ -264,6 +265,34 @@
     <div class="space" id="Operation Experiment"></div>
     <div class="section1">
       <h1>Operation Experiment</h1>
+      <h2>1. Outline of experiment</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We propose an ON - OFF switch circuit for T7 RNA polymerase reaction. There are three goals of our circuit. There are three goals of our ON - OFF circuit. The first is to utilize only the DNA strand
+        displacement reaction. The second is to proceed the reaction autonomously. The third is to be able to control time. In order to achieve these goals, we conducted the following two step experiments.</p>
+      <p>1. Manual switching of ON-OFF<br><br></p>
+      <p>2. Delay element<br><br></p>
+      <a href="Image/" data-lightbox="table-4"><img src="Image/.png" width="50%" height="auto"></a><br>
+      <figcaption>Table 5: T7 Promotor Sequence</figcaption>
+
+      <p>The results and discussion of each experiment are shown below.</p>
+
+      <h2>2. Experiment1. Manual switching of ON-OFF</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, we confirmed that the ON-OFF switch operates manually. The experiment procedure is shown below.</p>
+      <p>1.Set a mixture of Gate1 and Absorber to spectrofluoremeter (FP-8300; JASCO). <br><br></p>
+      <p>2. After 5 minutes, mix Input.<br><br></p>
+      <p>3. After convergence, mix Releaser.<br><br></p>
+
+      <p>This result means that the ON - OFF switch can be controlled manually. In the reaction pathway, there was a problem that leakage reaction occurred. We could mitigate these leakage reactions by using mismatched base pairs. ON - OFF switch is in operation,
+        but the change from ON to OFF is small. We consider that this will be improved by increasing the concentration of Releaser.<br></p>
+
+      <h2>Experiment2. Delay element</h2>
+      <p>Next, we confirmed the behavior of Delay element. The experiment procedure is shown below.</p>
+
+      <p>1.et a mixture of Gate2 and Threshold to spectrofluoremeter (FP-8300; JASCO). <br><br></p>
+      <p>2. After 5 minutes, mix Signal2.<br><br></p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig x and y show Releaser output when Threshold is 5 nM or 95 nM, respectively. These comparisons are shown in the Fig z. As in our simulation, we confirmed that the output of Releaser is delayed as the Threshold concentration increases.</p>
+
+    <h2>Future work</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this BIOMOD, it was impossible to confirm the operation by the auto in the whole circuit due to the circumstances of time. However, based on these results, we consider that overall operation is possible. We believe the success of this circuit will lead to further development of DNA computing.</p>
     </div>
 
     <div class="space" id="Consideration"></div>
@@ -274,7 +303,7 @@
         on this experiment, we reviewed a previous study which added a mismatch to the promoter sequence. According to the paper, promoter sequences were found to be meaningful for enzymes in each sequence (See the figure from the paper). The mutation
         was added to position 0, which is a sequence that affects the synthesis rate from mRNA to protein. In the previous study, a mutation was inserted between position -17 of the promoter sequence and position -5, followed by analysis. Particularly,
         mismatches were introduced from -9 to -5; based on these results, the optimal mismatch base can be introduced into our promoter sequence.<br><br>
-        </p>
+      </p>
 
       <figcaption>Table 5: T7 Promotor Sequence</figcaption>
       <a href="Image/T7 Promotor Sequence and Structure.png" data-lightbox="table-4"><img src="Image/T7 Promotor Sequence and Structure.png" width="50%" height="auto"></a><br>
