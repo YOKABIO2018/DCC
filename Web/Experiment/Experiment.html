@@ -106,30 +106,30 @@
       </p>
       <h3>2.1 What is mismatched base pair</h3>
       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A &amp; T and C &amp; G in DNA bases are held to each other through hydrogen-bonding known as Watson-Crick base pairs, but other combinations have been reported (e.g. A and G). We refer to these as
-        mismatched base pairs [7]. The binding strength of mismatched base pairs is weaker than that of Watson-Crick base pairs, but the binding strength between G and T is stronger among mismatched base pairs. An example of a mismatched base pair is
+        mismatched base pairs. The binding strength of mismatched base pairs is weaker than that of Watson-Crick base pairs, but the binding strength between G and T is stronger among mismatched base pairs. An example of a mismatched base pair is
         shown below. In Table 1, base sequence (A) is completely complementary to the double-stranded DNA, (B) is double-stranded DNA containing four mismatched C-A base pairs, and (C) is double-stranded DNA containing four mismatched G-T base pairs.
         <br><br>
       </p>
 
-      <figcaption>Table 1: Example of Mismatch Base Pair</figcaption><br>
+      <figcaption>Table 1: Example of Mismatch Base Pair</figcaption>
       <a href="Image/Example of Mismatch Base Pair.png" data-lightbox="table-1"><img src="Image/Example of Mismatch Base Pair.png" width="50%" height="auto"></a>
 
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We examined whether these base sequences formed double-stranded DNA using NUPACK [12] (a software suite for analyzing and designing nucleic acid structures). The results are shown below.<br></p>
+      <p> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We examined whether these base sequences formed double-stranded DNA using NUPACK [7] (a software suite for analyzing and designing nucleic acid structures). The results are shown below.<br></p>
       <a href="Image/Example of Mismatched Base Pair.png" data-lightbox="flag2"><img src="Image/Example of Mismatched Base Pair.png" width="50%" height="auto"></a>
       <figcaption>Figure 2: Example of Mismatched Base Pair</figcaption><br>
 
-      <p>As shown in Figure 13, G and T clearly bind to each other, while A and C do not.</p>
+      <p>As shown in Figure 2, G and T clearly bind to each other, while A and C do not.</p>
 
       <h3>2.2 Use of Mismatches</h3>
       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When DNA (A) and (B), which we expect to be double-stranded, contain mismatched GT base pairs, DNA (C), which is completely complementary to (A), and DNA (D), which is completely complementary to (B),
-        form mismatched CA base pairs. Therefore, (A) is bound to (B) while (C) is not bound to (D) (Figure 14).</p>
+        form mismatched CA base pairs. Therefore, (A) is bound to (B) while (C) is not bound to (D) (Figure 3).</p>
       <a href="Image/Use of Mismatches.png" data-lightbox="flag3"><img src="Image/Use of Mismatches.png" width="50%" height="auto"></a><br>
       <figcaption>Figure 3: Use of Mismatches</figcaption>
 
-      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We improved the circuit shown in Figure 5 using this property. In this project, we added four mismatched base pairs and added (m1), (m2), (m3), and (m4) preceding the domain names. We show the
-        NUPACK results for each added mismatched base pair below. (m1) Input & Absorber (OFF) As previously stated, Input and (OFF) are complementary and thus hybridize. We added a mismatched base pair here (Figure 15). The results of NUPACK as analysis
-        are shown in Figure 16. Red characters show the desired reactions (same hereinafter).<br><br>
+      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this project, we added four mismatched base pairs and added (m1), (m2), (m3), and (m4) preceding the domain names. We show the
+        NUPACK results for each added mismatched base pair below. (m1) Input & Absorber (OFF) As previously stated, Input and (OFF) are complementary and thus hybridize. We added a mismatched base pair here (Figure 4). The results of NUPACK as analysis
+        are shown in Figure 5. Red characters show the desired reactions (same hereinafter).<br><br>
       </p>
 
       <a href="Image/(m1)Input&Absorber(OFF).png" data-lightbox="flag4"><img src="Image/(m1)Input&Absorber(OFF).png" width="50%" height="auto"></a><br>
@@ -139,7 +139,7 @@
       <figcaption>Figure 5: NUPACK Evaluation of (m1)</figcaption>
 
       <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m2) Signal1 &amp; Signal2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Similarly, Signal1 and Signal2 are complementary and thus hybridize. They should be completely complementary, but unlike (m1). We added
-        a mismatched base pair to Signal1 for binding with Absorber (Figure 17). The results of NUPACK as analysis are shown in Figure 18.<br><br>
+        a mismatched base pair to Signal1 for binding with Absorber (Figure 6). The results of NUPACK as analysis are shown in Figure 7.<br><br>
       </p>
       <a href="Image/(m2) Signal1 & Signal2.png" data-lightbox="flag6"><img src="Image/(m2) Signal1 & Signal2.png" width="50%" height="auto"></a><br>
       <figcaption>Figure 6: (m2) Signal1 &amp; Signal2</figcaption>
@@ -151,33 +151,33 @@
       <a href="Image/NUPACK Evaluation of Gate1.png" data-lightbox="flag8"><img src="Image/NUPACK Evaluation of Gate1.png" width="50%" height="auto"></a><br>
       <figcaption>Figure 8: NUPACK Evaluation of Gate1</figcaption>
 
-      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m3) Input &amp; Gate2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We also added mismatched base pair Input and Gate2 because this starts a reaction from T3, which is the toehold (Figure 19).<br><br>
+      <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m3) Input &amp; Gate2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We also added mismatched base pair Input and Gate2 because this starts a reaction from T3, which is the toehold (Figure 9).<br><br>
 
       </p>
       <a href="Image/(m3) Input & Gate2.png" data-lightbox="flag9"><img src="Image/(m3) Input & Gate2.png" width="30%" height="auto"></a><br>
       <figcaption>Figure 9: (m3) Input &amp; Gate2</figcaption>
 
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(m4) Gate2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>The polymerase reaction occurred because Gate2 contains the T7 promoter sequence. We also added mismatched base pair here to prevent T7 RNA polymerase from
-        recognizing the T7 promoter sequence (Figure 20).<br><br></p>
+        recognizing the T7 promoter sequence (Figure 10).<br><br></p>
       <a href="Image/(m4) Gate2.png" data-lightbox="flag10"><img src="Image/(m4) Gate2.png" width="30%" height="auto"></a><br>
       <figcaption>Figure 10: (m4) Gate2</figcaption>
 
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A new scheme of the circuit containing mismatched base pairs is shown in Figure 21.<br><br></p>
-      <a href="Image/Scheme of ON-OFF Switch Circuit Added Mismatch.png" data-lightbox="flag11"><img src="Image/Scheme of ON-OFF Switch Circuit Added Mismatch.png" width="50%" height="auto"></a><br>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A new scheme of the circuit containing mismatched base pairs is shown in Figure 11.<br><br></p>
+      <a href="Image/Scheme of ON-OFF Switch Circuit Added Mismatch.gif" data-lightbox="flag11"><img src="Image/Scheme of ON-OFF Switch Circuit Added Mismatch.gif" width="50%" height="auto"></a><br>
       <figcaption>Figure 11: Scheme of ON-OFF Switch Circuit Added Mismatch</figcaption>
 
-      <p> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is predicted to reduce undesired reactions. NUPACK's evaluation of bonding strength of double-stranded DNA containing a mismatched base pair is shown in Figure 22. This includes the mismatched
+      <p> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is predicted to reduce undesired reactions. NUPACK's evaluation of bonding strength of double-stranded DNA containing a mismatched base pair is shown in Figure 12. This includes the mismatched
         base pair G-T; however, we found that binding strength remained strong.</p>
       <a href="Image/NUPACK Evaluation of Gate1 and Gate2.png" data-lightbox="flag12"><img src="Image/NUPACK Evaluation of Gate1 and Gate2.png" width="50%" height="auto"></a><br>
       <figcaption>Figure 12: NUPACK Evaluation of Gate1 and Gate2</figcaption>
 
 
-      <p> Additionally, the T7 RNA promoter disappears, except that the circuit is in the ON state when the mismatched base pair is added; these problems were solved as shown in Figure 23.<br><br></p>
+      <p> <br>Additionally, the T7 RNA promoter disappears, except that the circuit is in the ON state when the mismatched base pair is added; these problems were solved as shown in Figure 13.<br><br></p>
       <a href="Image/circuit_m_redline.gif" data-lightbox="flag13"><img src="Image/circuit_m_redline.gif" width="50%" height="auto"></a><br>
       <figcaption>Figure 13: Excluding T7 Promoter Sequence by Mismatch Base Pair</figcaption>
 
       <h2>3. Type of Strands</h2>
-      <p>We designed the strands shown in Figures 5-9.<br><br>
+      <p>We designed the strands shown in Figure 14.<br><br>
       </p>
       <a href="Image/Gate1.gif" data-lightbox="table-1"><img src="Image/Gate1.gif" width="20%" height="auto"></a>
       <a href="Image/Input.gif" data-lightbox="table-1"><img src="Image/Input.gif" width="20%" height="auto"></a><br><br>
@@ -205,9 +205,8 @@
 
       <figcaption>Table 4: Initial concentrations for Experiment2-1</figcaption>
       <a href="Image/Initial concentrations for Experiment2-1.png" data-lightbox="flag16"><img src="Image/Initial concentrations for Experiment2-1.png" width="30%" height="auto"></a><br>
-
-      <figcaption>Table 5: Initial concentrations for Experiment2-2</figcaption>
       <br>
+      <figcaption>Table 5: Initial concentrations for Experiment2-2</figcaption>
       <a href="Image/Initial concentrations for Experiment2-2.png" data-lightbox="flag17"><img src="Image/Initial concentrations for Experiment2-2.png" width="30%" height="auto"></a><br>
 
       <br>
@@ -223,12 +222,12 @@
         <br><br></p>
       <a href="Image/Spectrofluorometer.jpg" data-lightbox="flag12"><img src="Image/Spectrofluorometer.jpg" width="50%" height="auto"></a><br>
       <figcaption>Figure 16: Spectofluorometer</figcaption>
-
+      <br>
       <b><p>4) Reaction confirmation<br></p></b>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We applied FRET to confirm how much output was released. For confirmation of ON - OFF reaction, we qualify 5 - FAM for 5’ terminal of Signal1 and BHQ1 for 3’ terminal of Absorber. When the Absorber
         is in the ON state, the 5 - FAM did not fluoresce since the Reporter of 5-FAM was Absorbed by BHQ1.On the other hand, when it is in the OFF state, the Absorber of 5-FAM became detectable because the distance between the 5 - FAM and BHQ1 molecules
-        increased (FigZa) . Also, for confirmation of delay element, we qualify Cy5 for 5’terminal of releaser and BHQ2 for 3’terminal of releaser_under.When Gate2 reacted with Signal,the Releaser of Cy5 became detectable because the distance between
-        the Cy5 and BHQ 2 molecules increased(FigZb).
+        increased. Also, for confirmation of delay element, we qualify Cy5 for 5’terminal of releaser and BHQ2 for 3’terminal of releaser_under.When Gate2 reacted with Signal,the Releaser of Cy5 became detectable because the distance between
+        the Cy5 and BHQ 2 molecules increased.
         <br><br>
       </p>
 
@@ -331,12 +330,12 @@
       </p>
       <a href="Image/T7promotor_Sequence.jpg" data-lightbox="fig15"><img src="Image/T7promotor_Sequence.jpg" width="30%" height="auto"></a><br>
       <figcaption>Figure 23: Result of T7 Promotor Experiment</figcaption>
-      <p><br>Each test tube was diluted to 1/100 and the fluorescence intensity was measured with a fluorometer. The figure below shows the result.<br><br></p>
+      <p><br>Each test tube was diluted to 1/100 and the fluorescence intensity was measured with a fluorometer. The Table 3 below shows the result.<br><br></p>
 
       <figcaption>Table 8: Result of T7 Promotor Experiment</figcaption>
       <a href="Image/Result of T7 Promotor Experiment.png" data-lightbox="table-3"><img src="Image/Result of T7 Promotor Experiment.png" width="60%" height="auto"></a><br>
 
-      <h2>1.4. T7promotor Experiment</h2>
+      <h3>1.4. T7promotor Experiment</h3>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Based on the above results, when one part of the end of the sequence was changed, polymerase recognized this sequence. We could not conduct further experiments during this BIOMOD period, but based
         on this experiment, we reviewed a previous study which added a mismatch to the promoter sequence. According to the paper, promoter sequences were found to be meaningful for enzymes in each sequence (See the figure from the paper). The mutation
         was added to position 0, which is a sequence that affects the synthesis rate from mRNA to protein. In the previous study, a mutation was inserted between position -17 of the promoter sequence and position -5, followed by analysis. Particularly,
