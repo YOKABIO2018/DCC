@@ -21,7 +21,7 @@
   <script src="../js/scroll_current.js"></script>
   <script src="../js/page_top.js"></script>
 
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" }}, tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true }, "HTML-CSS": { matchFontHeight: false }, displayAlign: "left", displayIndent: "2em" });
   </script>
@@ -84,14 +84,14 @@
     <div class="section2">
       <h1>Material&amp;Methods</h1>
 
-      <h2>1. Simulation conditions</h2>
+      <h2>1. Simulation Conditions</h2>
       <p>We set the binding rate constant (kf) based on toehold length as follows.<br><br></p>
-      <b><p>If toehold_length &#8804; 6</p>
-      <p>　kf = 5.0×10<sup>n-1</sup>[M<sup>-1</sup>s<sup>-1</sup>]</p>
-      <p>else<br></p>
-      <p>　kf = 3.0×10<sup>6</sup>[M<sup>-1</sup>s<sup>-1</sup>]</p>
-      <p>Where<br></p>
-      <p>　n : toehold_length<br></p></b>
+      <p>${\rm If\ toehold\ length\ \leq \ 6}$</p>
+      <p>　$k_{f} = 5.0×10^{n-1}{\rm[M^{-1}s^{-1}]}$</p>
+      <p>${\rm else}$</p>
+      <p>　$k_{f} = 3.0×10^{6}{\rm [M^{-1}s^{-1}]}$</p>
+      <p>${\rm Where}$</p>
+      <p>　${\rm n:\ toehold\ length}$</p>
 
       <h2>2. Mismatch</h2>
       <p>We added a mismatched base pair to the DNA sequence to make the DNA circuit practical. There are two reasons.
@@ -210,14 +210,14 @@
 
       <h3>5.1. Experiment method</h3>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Experiments are performed in E. coli using cyclic DNA known as a plasmid. The T7 promoter sequence containing a mismatch should be incorporated into the plasmid sequence, as well as a downstream sequence
-        that produces a green fluorescent protein known as GFP. This plasmid is introduced into E. coli, and GFP fluorescence is observed.　私たちは段階的にミスマッチを増やすことによって、T7promotorが配列を認識し始める要因を調べることにした。<br><br>
+        that produces a green fluorescent protein known as GFP. This plasmid is introduced into E. coli, and GFP fluorescence is observed. We decided to investigate the factors that the T7 promoter begins to recognize sequences by incrementing mismatches step by step.<br><br>
       </p>
 
       <h3>5.2. Experiment contents</h3>
       <p><b>&#9312;Production of mutated plasmids</b></p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First, we designed a mismatch sequence changed at one position at the end of the T7 promoter sequence.<br><br></p>
 
-      <figcaption>Figure x: Mutation T7 promotor sequence</figcaption>
+      <figcaption>Table x: Mutation T7 promotor sequence</figcaption>
       <a href="Image/Mutation T7 promotor sequence.png" data-lightbox="table-1"><img src="Image/Mutation T7 promotor sequence.png" width="80%" height="auto"></a><br>
 
       <p> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was done to maintain a similar bond strength as the original two DNAs. Next, a plasmid containing the designed DNA sequence was extracted and amplified by PCR. Water, dNTPs, primers, templates,
@@ -246,12 +246,12 @@
       <figcaption>Figure x: Result of T7 Promotor Experiment</figcaption>
       <p>蛍光光度計<br><br></p>
 
-      <figcaption>Figure x: Result of T7 Promotor Experiment</figcaption>
+      <figcaption>Table x: Result of T7 Promotor Experiment</figcaption>
       <a href="Image/Result of T7 Promotor Experiment.png" data-lightbox="table-1"><img src="Image/Result of T7 Promotor Experiment.png" width="80%" height="auto"></a><br>
 
       <h2>6. Equipment</h2>
       <p>Equipments were purchased from the conpanies indicated below.<br><br></p>
-      <figcaption>Figure x: Equipment</figcaption>
+      <figcaption>Table x: Equipment</figcaption>
       <a href="Image/Equipment.png" data-lightbox="table-1"><img src="Image/Equipment.png" width="80%" height="auto"></a><br>
     
     </div>
